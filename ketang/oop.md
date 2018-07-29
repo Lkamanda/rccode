@@ -70,6 +70,7 @@
 - conda creat - n  python == 3.6 :
     - 创建Python版本为3.6的虚拟环境.名称为 xxx
     - 使用虚拟环境 source activate xxx
+-
 
 
 
