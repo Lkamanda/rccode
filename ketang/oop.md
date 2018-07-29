@@ -46,7 +46,22 @@
 - 实例化类
 
         变量名  = 类名() # 实例化一个对象
+
 - 访问对象成员
+    -使用点操作符
+
+        obj.成员属性
+        obj.成员方法
+        # obj (变量名)即为实例对象
+- 可以通过默认内置变量检查类和对象的所有成员
+    - 对象所有成员检测
+
+        # obj.__dict__
+
+    - 类所有的成员
+        class_name.__dict__
+            # dict 前后个带俩个下滑线
+            obj.__dict__
 # 3.anaconda基本使用
 - 主要是一个虚拟环境管理器
 - 还是一个安装包管理器
@@ -54,6 +69,8 @@
 - conda env list :显示anaconda 的虚拟环境列表
 - conda creat - n  python == 3.6 :
     - 创建Python版本为3.6的虚拟环境.名称为 xxx
+    - 使用虚拟环境 source activate xxx
+
 
 
 

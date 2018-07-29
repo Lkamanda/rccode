@@ -34,4 +34,8 @@ zxy.doHomework()
 print(zxy.age)
 print(zxy.name)
 
+print(zxy.__dict__)
+print(Student.__dict__)
+
+
 
