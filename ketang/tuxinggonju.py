@@ -1,4 +1,5 @@
 class Tuxing():
+
   #矩形
   def s_juxing(self):
     for i in range(1,5):
@@ -50,33 +51,31 @@ class Tuxing():
 #  输入不正确时设置返回，重新输入，超过几次痴线提示，退出
 
 
-b = Tuxing()
 
-a = input("请输入你想展示的图形名：")
+
+
 # 空集合 ，错误提示使用
 
-tuku = {'矩形':b.s_juxing,'空心矩形':b.k_juxing,'实心直角三角形靠左':b.s_zhijiao,'空心直角三角形靠左':b.k_zhijiao,'实心居中三角形':b.s_jzsanjiao}
-tishi= tuku.keys
+  tuku = {'矩形': s_juxing, '空心矩形': k_juxing, '实心直角三角形靠左': s_zhijiao, '空心直角三角形靠左': k_zhijiao,
+          '实心居中三角形': s_jzsanjiao}
 
-#错误提示调用
-def tishi():
-  c = []
-  c.clear()
-  print('请输入以下图形名称：', end='')
-  for k,v in tuku.items():
-    c.append(k)
-  print(c)
+  # 错误提示调用
+  def tishi(self):
+    tips = self.tuku.keys()
+    print(tips)
 
-
-
-def f(a) :
-  tuku.get(a,tishi)()
-f(a)
+  def f(self) :
+    a = input("请输入你想展示的图形名：")
+    self.tuku.get(a,self.tishi)(self)
+# f(a)
 
 
 
 
 #　while 1: 加入死循环
+#　while 1: 加入死循环
 # if a == '-1'
     #break
 
+b = Tuxing()
+b.f()
