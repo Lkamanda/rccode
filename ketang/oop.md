@@ -234,7 +234,26 @@
         name = 'xiaolin'
      a = A()       
      hasattr(a,"name")
-- getattr 获取  
-- setattr 设置
-- delattr 删除
+- getattr 获取  getattribute 
+- setattr 设置   setattribute 
+- delattr 删除   delattribute 
 - dir : 获取对象的成员列表
+
+参照:011.4oop属性
+# 5类的成员描述符 (属性)
+- 类的成员描述是为了在李忠对垒的成员属性进行相关操作而创建的一种方式
+    - get : 获取操作
+    - set : 修改或者让添加属性操作
+    - delete : 删除属性操作
+- 如果想使用类的成员描述符,三种方法:
+    - 使用类实现描述器
+    - 使用属性修饰符
+    - 使用property函数
+        - property函数很简单
+        - property(fget,fest,fdel,doc)
+    - 案例
+- 无论那种修饰符都是为了对成员属性进行相应的控制
+    - 类的方式: 适合对个类中的多个属性公用一个描述符
+    - property:使用当前类中国使用,可以控制一个类中多个属性
+    - 类属性修饰符:使用于当前类中使用,控制一个类中的一个属性
+# 
