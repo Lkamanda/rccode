@@ -317,3 +317,58 @@
     定义:使用装饰器@staticmethod 参数随意,没有self 和 cls 参数,但是方法体重不能使用类或实例的热河属性和方法
     调用:实例对象和类对象都可以调用
  
+# 10 抽象 
+- 抽象的方法: 没有具体实现内容的方法成为抽象方法
+- 抽象方法的主要意义是规范子类的行为和借口
+- 抽象类的使用需要借助abc模块
+ 
+            import abc
+
+- 抽象类包含抽象方法的类叫抽象类,通常成为ABC类
+- 抽象类的使用
+    - 抽象类可以包含抽象的方法,也可以包含具体方法
+    - 抽象中可以有方法有属性
+    - 抽象类无法直接实例化
+    - 抽象类不允许直接实例化
+    - 必须继承才可以使用,继承的子类必须实现所有继承来的所有抽象方法
+    - 假定子类没有实现所有的抽象方法,则子类也不能被实例化
+    - 抽象的主要作用设定类的标准,以便开发的时候具有同一的规范
+
+
+class Human(metaclass = abc.ABCMeta):
+    
+    # 定义一个抽象方法
+    @abc.abstractmethod
+    
+    def smoking(self):
+        pass 
+    
+    # 定义类的抽象 方法
+    
+    @abc.abstractclassmethod
+    def drink():
+        pass
+    
+    # 定义静态的抽象方法
+    @abc.abstractstaticmethod
+    
+    def play():
+        pass 
+    
+    def sleep(self):
+        print('sleeping')   
+
+# 自定义类
+- 类其实是一个类定义和各种方法的组合
+- 可以定义函数 ,然后通过类直接赋值  
+- 可以借助MethodType实现  (讲俩个对象绑定)
+- 借助于type实现
+    ## A = type (object_or_name, bases , dict)
+                           #父类     属性
+
+- 利用元类来实现- MetClass
+    - 元类是类
+    - 被用来创建別的类
+
+
+    
