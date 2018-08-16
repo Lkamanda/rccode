@@ -63,4 +63,84 @@
                 - 简而言之,一旦更改请求方法,请注意其他请求头部信息相适应
             - urllib.parse.urlencode 可以将字符串自动转换成上面的
             - 案例V5      
-        
+            - 为更多的设置请求信息,淡村的通过urlopen函数已经不太好用了
+            - 需要利用request.Request 类 (模拟求情了类)
+            - 案例V6
+
+- urllib.error
+    - URLError 产生原因:
+        - 没网
+        - 服务器连接失败
+        - 找不到指定服务器
+        - OSError的子类
+        - 案例V7
+    
+        -HTTPError,是URLError的一个子类
+            -先处理子类再处理父类
+            - 案例V8
+    - URLError 和HTTPError的区别
+        - HTTPError是对应的HTTP请求的返回码错误
+           - 如果 Status Code(返回码) 大于400以上的,则引发HTTPError
+        - URLError 对应的一般是网络出现问题,包括url问题
+        -关系区别:
+        OSEorror - URLError  - HTTPError
+
+- UserAgent() 根据UserAgent判断身份
+   - UserAgent : 用户代理,简称UA, 属于heads的一部分,服务器通过UA来判断访问者身份
+   - 常见的UA值, 使用的时候可以直接赋值粘贴, 可以用浏览器访问的时候抓包
+            
+            1.Android
+            
+            
+            2.Firefox
+            
+            3.linux chrome
+    User-Agent:Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36
+            
+            4. windows chrome
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+
+- 设置UA可以通过俩种方式
+    - headers    对其设置
+        - headers={}
+          heeaders['User-Agent']=''
+          req = request.Request(url,headers)
+        - 案例V10
+    - add_header  调用函数
+        - (self, key, value)
+        - req = request.Request(url)
+          req.add_header(key,value)
+        - 案例 V10
+- ProxyHandler处理(代理服务器)     
+    - 使用代理IP,是爬虫的常用手段
+    - 获取代理服务器的地址:
+        - www.xicidaili.com
+        - goubanjia.com
+    - 代理使用来隐藏真是访问,代理也不允许频繁访问某一个固定网站,所以,代理一定要大量
+    - 基本使用代理:
+        1. 设置代理地址
+        2. 创建ProxyHandle
+        3. 创建Opener
+        4. 安装Opener
+    - 案例V11
+        -url = ''
+        proxy = {'http':'代理IP'}
+        proxy_handler = request.ProxyHandler(proxy)
+        opener = request.build_opener(proxy_handler)
+        request.install_opener(opener)
+
+- cookie  & session 
+    - 由于http协议的无记忆性,人们为了弥补这个缺憾,所采用的一个补充协议
+    - cookie 是发放给用户(即http浏览器) 的一段信息
+    - session是保存在服务器上的对应的另一半信息,用来记录用户信息
+- cookie 和session的区别
+    - 存放位置不同
+    - cookie 不安全
+    - session会保存在服务器上一定时间,会过期
+    - 单个cookie保存数据不允许超过4k,很多浏览器限制一个站点最多保存20个
+- session的存放
+    - 存在服务器端
+    - 一般情况,session是放在内存中或者数据库中
+    
+    

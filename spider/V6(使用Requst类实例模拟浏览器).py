@@ -1,3 +1,6 @@
+'''
+任务要求同V5只是使用Request 实现
+'''
 # header 身份切片 更改身份
 import json
 from urllib import request, parse
@@ -11,11 +14,16 @@ data = {
 
 data = parse.urlencode(data).encode('utf-8')
 print(type(data))
+# 使用request 通过header 模拟浏览器
 headers = {
-    'Conten-Length': len(data)
+    'Content-Length': len(data)
 }
+# 构造一个Request类的实例
+# Request 参数 url   data header (header为字典格式)
+req = request.Request(url=baseurl, data=data, headers=headers)
 
-rsp =request.urlopen(baseurl, data=data)
+# 因为我们已经构造了一个Request的请求实例,则所有的请求信息都可以封装在Requrst实例中
+rsp =request.urlopen(req)
 json_data= rsp.read().decode('utf-8')
 
 # 把json字符串转换成字典
