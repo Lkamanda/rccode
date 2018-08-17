@@ -115,7 +115,7 @@
 - ProxyHandler处理(代理服务器)     
     - 使用代理IP,是爬虫的常用手段
     - 获取代理服务器的地址:
-        - www.xicidaili.com
+        - www.xicidaili.com  
         - goubanjia.com
     - 代理使用来隐藏真是访问,代理也不允许频繁访问某一个固定网站,所以,代理一定要大量
     - 基本使用代理:
@@ -142,5 +142,55 @@
 - session的存放
     - 存在服务器端
     - 一般情况,session是放在内存中或者数据库中
-    
+    - 没有Cookie登录 v12 ,可以看到没使用cookie则反馈网页未登录状态
+
+- 使用Cookie登录
+    - 直接把Cookie复制下来,然后手动放入请求头,案例 V13
+    -http模块: (python自带)包含一些关于cookie的模块,通过他们我们可以自动使用cookie
+        - CookieJar
+            -管理存储Cookie,向传出http请求添加Cookie
+            -Cookie存储在内存中,CookieJar实则回收后Cookie将消失
+        - FileCookieJar(filename,delayload=None,policy=None):
+            - 使用文件管理cookie 
+            - filename是保存cookie的文件       
+        - LwpCookieJar(filename, delayload=None, policy=None)
+            - 创建与libwww-perl标准兼容的Set-Cookie3格式的FileCookieJar实例
+        - MozillaCookieJar(filename, delayload=None, policy=None)
+            - 创建于mocilla浏览器cookie.txt兼容的FileCookieJar实例
+    - 它们的关系是:Cookie --> FileCookieJar ->> MozillaCookieJar & LwpCookieJar
+    - 利用CookieJar访问人人网 -V14
+        - 自动使用cookie登录,大致流程:
+            - 打开登录页面自动通过用户名密码登录
+            - 自动提取反馈回来的cookie
+            - 利用提取的cookie登录隐私页面
+    - handler 是Handerler的实例,常用的参照案例代码
+        - 用来处理复杂请求:
+          
+            # 生成cookie的管理器
+            cookie_handler =request.HTTPCookieProcessor(cookies)
+            # 创建http请求管理器
+            http_handler = request.HTTPHander()
+            # 创建https管理器
+            https_handler = request.HTTPSHandler()
+            
+    - 创立handler后,使用opener打开,打开后相应的业务由相应的handler处理
+    - cookie 作为一个变量打印出来 案例V14
+        - cookie 的属性
+            - name:名称
+            - value: 值
+            - domain : 可以访问次cookie的与名
+            - path: 可以访问此cookie的页面路径
+            - expires:过期时间
+            - size: 大小
+            - HTTP字段 
+    - cookie的保存 - FileCookieJar  案例V16
+            
+            -创建FileCookie实例 :
+            filename = 'cookie.txt'
+            cookie = cookie.MozillaCookiaJar(filename)
+            
+            - 保存cookie
+            cookie.save(ignore_discard =True, ignore_expiress=True)
+            ignore_discard = True : 即使cookie将要被丢弃也保存
+            ignore_expiress = True : 表示如果文件中cookie即使已经过期,保存
     
