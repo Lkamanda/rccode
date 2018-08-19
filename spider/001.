@@ -193,4 +193,5 @@
             cookie.save(ignore_discard =True, ignore_expiress=True)
             ignore_discard = True : 即使cookie将要被丢弃也保存
             ignore_expiress = True : 表示如果文件中cookie即使已经过期,保存
+    -  cookie 的读取 - V17
     

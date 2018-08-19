@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c043a2e3-9a64-47ca-9f56-1f6d11b7ff7e" name="Default" comment="xiaolin">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/V12.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/V14.使用cookie自动登录.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/V15打印cookie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/V16(FileCookieJar保存cookie).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/v13.cookie登录.py" afterDir="false" />
+    <list default="true" id="c043a2e3-9a64-47ca-9f56-1f6d11b7ff7e" name="Default" comment="rc">
+      <change afterPath="$PROJECT_DIR$/ketang/oop/oop2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ketang/oop/oopexe1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider/V17(读取cookie).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ketang/001.1txxunhuan.py" beforeDir="false" afterPath="$PROJECT_DIR$/ketang/oop/001.1txxunhuan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ketang/001.2txxunhuan.py" beforeDir="false" afterPath="$PROJECT_DIR$/ketang/oop/001.2txxunhuan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ketang/01.py" beforeDir="false" afterPath="$PROJECT_DIR$/ketang/oop/01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ketang/oop.md" beforeDir="false" afterPath="$PROJECT_DIR$/ketang/oop/oop.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ketang/oop2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ketang/oop/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ketang/tuxinggonju.py" beforeDir="false" afterPath="$PROJECT_DIR$/ketang/oop/tuxinggonju.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spider/001." beforeDir="false" afterPath="$PROJECT_DIR$/spider/001." afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/002.(piliangdaili.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V12(代理).py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/V11(代理).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/V16(FileCookieJar保存cookie).py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/V16(FileCookieJar保存cookie).py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,13 +62,14 @@
     <session id="-802905148">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.37" value="1" />
-          <entry key="project.open.time.45" value="2" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.45" value="3" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.61" value="1" />
@@ -75,9 +78,10 @@
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.77" value="1" />
           <entry key="project.open.time.81" value="1" />
+          <entry key="project.open.time.84" value="1" />
           <entry key="project.open.time.88" value="1" />
           <entry key="project.open.time.89" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -86,37 +90,38 @@
           <entry key="002,内置函数" value="2" />
           <entry key="V12" value="1" />
           <entry key="V6" value="1" />
-          <entry key="html" value="15" />
-          <entry key="py" value="50" />
+          <entry key="html" value="28" />
+          <entry key="py" value="66" />
           <entry key="pyi" value="1" />
-          <entry key="txt" value="2" />
+          <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="15" />
+          <entry key="HTML" value="28" />
           <entry key="Markdown" value="5" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="50" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Python" value="66" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="" value="4977" />
+          <entry key="" value="5008" />
           <entry key="002,内置函数" value="12" />
           <entry key="V12" value="27" />
           <entry key="V6" value="4" />
-          <entry key="dummy" value="354" />
+          <entry key="dummy" value="357" />
           <entry key="md" value="1499" />
-          <entry key="py" value="14094" />
+          <entry key="py" value="16828" />
+          <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="6519" />
-          <entry key="PLAIN_TEXT" value="354" />
-          <entry key="Python" value="14094" />
+          <entry key="Markdown" value="6550" />
+          <entry key="PLAIN_TEXT" value="360" />
+          <entry key="Python" value="16828" />
         </counts>
       </usages-collector>
     </session>
@@ -125,49 +130,49 @@
     <favorites_list name="rccode" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6189474">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/spider/001.">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="670">
-                    <caret line="194" column="54" selection-start-line="194" selection-start-column="54" selection-end-line="194" selection-end-column="54" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/spider/V15打印cookie.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="864">
-                  <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-                  <folding>
-                    <element signature="e#0#32#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/spider/V16(FileCookieJar保存cookie).py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="27" column="16" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ketang/oop/oopexe1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+              <folding>
+                <element signature="e#142#155#0" expanded="true" />
+                <element signature="e#489#710#0" />
+                <element signature="e#864#1051#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ketang/oop/demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="11" lean-forward="true" selection-start-column="11" selection-end-line="1" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spliderexe/001.(tieba).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="6" selection-start-line="6" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spliderexe/001.1(gaijin).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -219,6 +224,11 @@
         <option value="$PROJECT_DIR$/spider/V16(file.py" />
         <option value="$PROJECT_DIR$/spider/V16(FileCookieJar).py" />
         <option value="$PROJECT_DIR$/spider/001." />
+        <option value="$PROJECT_DIR$/spider/V16(FileCookieJar保存cookie).py" />
+        <option value="$PROJECT_DIR$/spider/V17(读取cookie).py" />
+        <option value="$PROJECT_DIR$/ketang/oop/oop练习1.py" />
+        <option value="$PROJECT_DIR$/ketang/oop/demo.py" />
+        <option value="$PROJECT_DIR$/ketang/oop/oopexe1.py" />
       </list>
     </option>
   </component>
@@ -228,11 +238,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="309" />
-    <option name="y" value="25" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="918" />
+    <option name="y" value="40" />
     <option name="width" value="1090" />
-    <option name="height" value="964" />
+    <option name="height" value="925" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -241,41 +251,19 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="rccode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rccode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rccode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rccode" type="462c0819:PsiDirectoryNode" />
-              <item name="spider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rccode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rccode" type="462c0819:PsiDirectoryNode" />
-              <item name="spliderexe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rccode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/venv" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="settings.editor.splitter.proportion" value="0.2693837" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ketang/oop" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -289,28 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.V16(FileCookieJar)">
-    <configuration name="V13" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pythonjichu" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/V12.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.oop练习1">
     <configuration name="V14" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pythonjichu" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -324,27 +291,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/V14.使用cookie自动登录.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="V15" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pythonjichu" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/V15打印cookie.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -374,7 +320,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="v13.cookie登录" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="V17(读取cookie)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pythonjichu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -386,7 +332,49 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/v13.cookie登录.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/V17(读取cookie).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pythonjichu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ketang/oop" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ketang/oop/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="oop练习1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pythonjichu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ketang/oop" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ketang/oop/oopexe1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -396,19 +384,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.V13" />
-      <item itemvalue="Python.v13.cookie登录" />
       <item itemvalue="Python.V14" />
-      <item itemvalue="Python.V15" />
       <item itemvalue="Python.V16(FileCookieJar)" />
+      <item itemvalue="Python.V17(读取cookie)" />
+      <item itemvalue="Python.oop练习1" />
+      <item itemvalue="Python.demo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.oop练习1" />
+        <item itemvalue="Python.demo" />
+        <item itemvalue="Python.V17(读取cookie)" />
         <item itemvalue="Python.V16(FileCookieJar)" />
         <item itemvalue="Python.V14" />
-        <item itemvalue="Python.V15" />
-        <item itemvalue="Python.v13.cookie登录" />
-        <item itemvalue="Python.V13" />
       </list>
     </recent_temporary>
   </component>
@@ -451,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534394901723</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="rc">
+      <created>1534532030882</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1534532030883</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -464,23 +459,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="25" width="1922" height="926" extended-state="6" />
+    <frame x="918" y="40" width="1090" height="925" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4994233" weight="0.2663158" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4994233" weight="0.025280898" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5005767" side_tool="true" weight="0.0" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.34359607" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.85831285" weight="0.2364706" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.86076987" weight="0.39866155" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32881773" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.85831285" visible="true" weight="0.23427866" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.86076987" weight="0.00863132" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4992126" weight="0.32881773" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.14168714" side_tool="true" weight="0.17112811" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.02200489" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.21208385" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.4996063" weight="0.32935154" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -489,20 +484,20 @@
       <window_info anchor="right" id="SciView" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4994233" visible="true" weight="0.2663158" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4994233" weight="0.025280898" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5005767" side_tool="true" weight="0.0" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.34359607" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.85831285" weight="0.2364706" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.86076987" weight="0.39866155" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32881773" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.85831285" visible="true" weight="0.23427866" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.86076987" weight="0.00863132" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4992126" weight="0.32881773" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.14168714" side_tool="true" weight="0.17112811" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.02200489" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.21208385" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.4996063" weight="0.32935154" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -514,12 +509,39 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="xiaolin" />
-    <option name="LAST_COMMIT_MESSAGE" value="xiaolin" />
+    <MESSAGE value="rc" />
+    <option name="LAST_COMMIT_MESSAGE" value="rc" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
@@ -531,22 +553,11 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ketang/oop2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/tuxinglianxi.py" />
     <entry file="file://$PROJECT_DIR$/ketang/001.txxunhuan.py" />
-    <entry file="file://$PROJECT_DIR$/ketang/01.py">
+    <entry file="file://$PROJECT_DIR$/ketang/oop/01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/tuxinggonju.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -580,7 +591,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/oop.md">
+    <entry file="file://$PROJECT_DIR$/ketang/oop/oop.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
@@ -670,21 +681,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spliderexe/001.(tieba).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" selection-start-line="6" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spliderexe/htmlcf使用cookie自动登录.html" />
-    <entry file="file://$PROJECT_DIR$/spliderexe/htmlcf/使用cookie自动登录.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6480">
-          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spider/v13.cookie登录.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -699,50 +696,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spider/V15打印cookie.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spliderexe/htmlcf/第1次使用cookie自动登录.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-648" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spider/V14.使用cookie自动登录.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <marker date="1534499166216" expanded="true" signature="379:384" ph="..." />
-            <marker date="1534499166216" expanded="true" signature="842:1116" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spliderexe/htmlcf/Cookie.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider/Cookie.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider/rsp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/Cookie.txt" />
+    <entry file="file://$PROJECT_DIR$/spider/rsp.html" />
     <entry file="file://$PROJECT_DIR$/spider/V11(代理).py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-162">
@@ -750,27 +710,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spliderexe/001.1(gaijin).py">
+    <entry file="file://$PROJECT_DIR$/spliderexe/htmlcf/使用cookie登录.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///var/sw/anaconda3/envs/oop/lib/python3.6/http/cookiejar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="118">
+          <caret line="1773" column="7" lean-forward="true" selection-start-line="1773" selection-end-line="1774" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spider/V16(FileCookieJar保存cookie).py">
+    <entry file="file://$PROJECT_DIR$/spider/V15打印cookie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spliderexe/htmlcf/Cookie.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="16" />
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spliderexe/htmlcf/使用cookie自动登录.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/V14.使用cookie自动登录.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/读取cookie获取html**V17.html" />
+    <entry file="file://$PROJECT_DIR$/spider/cookie.txt" />
+    <entry file="file://$PROJECT_DIR$/spider/html_path读取cookie获取html**V17.html" />
+    <entry file="file://$PROJECT_DIR$/spider/V16(FileCookieJar保存cookie).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spliderexe/htmlcf/读取cookie获取html**V17.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="947" column="4" selection-start-line="947" selection-start-column="4" selection-end-line="947" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/V17(读取cookie).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ketang/oop/tuxinggonju.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spider/001.">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="670">
-            <caret line="194" column="54" selection-start-line="194" selection-start-column="54" selection-end-line="194" selection-end-column="54" />
+          <first_editor relative-caret-position="588">
+            <caret line="195" column="23" selection-start-line="195" selection-start-column="23" selection-end-line="195" selection-end-column="23" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spliderexe/001.(tieba).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" selection-start-line="6" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spliderexe/001.1(gaijin).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ketang/oop/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ketang/oop/oopexe1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="e#142#155#0" expanded="true" />
+            <element signature="e#489#710#0" />
+            <element signature="e#864#1051#0" />
+          </folding>
         </state>
       </provider>
     </entry>

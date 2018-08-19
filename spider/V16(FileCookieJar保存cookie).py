@@ -3,8 +3,9 @@
 '''
 from urllib import request ,parse
 from http import cookiejar
-# 创建FileCookieJar实例
 filename = r'/home/tlxy/PCM/rccode/spliderexe/htmlcf/Cookie.txt'
+
+
 cookie = cookiejar.MozillaCookieJar(filename)
 cookie_handler = request.HTTPCookieProcessor(cookie)
 http_handler = request.HTTPHandler()
