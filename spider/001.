@@ -194,4 +194,26 @@
             ignore_discard = True : 即使cookie将要被丢弃也保存
             ignore_expiress = True : 表示如果文件中cookie即使已经过期,保存
     -  cookie 的读取 - V17
+
+- SSL
+    - ssl证书是值遵守SSL安全套阶层协议的服务器数字证书(SercurSocketLayer)
+    - 美国网警公司开发
+    - 带有https
+    - CA(CertifacateAuthority)是数字证书认证中心,是发放,管理,废除数字证书的收信人的第三方机构
+    - 遇到不信任的SSL证书,需要单独处理 -V18
+        - 忽略ssl 方法 
+            import ssl
+            # 利用证书上下文环境替换认证的向下问环境
+            ssl._create_default_https_context = ssl._create_unverified_context
+             
+- js加密
+    - 有道反爬虫策略采用js对需要传输的数据进行加密处理(通长是取md5值)
+    - 经过加密,传输的就是刘文,但是
+    - 加密函数或者过程衣服那个是在浏览器完成,也就是一定会把代码(js代码) 暴露给使用者
+    - 通过阅读加密算法,就可以模拟出加密过程从而破解
+    - 参照V19
     
+      
+    
+
+             
