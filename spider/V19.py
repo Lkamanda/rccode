@@ -1,7 +1,8 @@
-'''
-破解有道词典
-'''
 
+#破解有道词典
+'''
+v1失败版
+'''
 from urllib import request, parse
 
 def youdao(key):
@@ -27,7 +28,7 @@ def youdao(key):
     data = parse.urlencode(data).encode()
     headers = {
                 "Accept": "application/json,text/javascript,*/*; q = 0.01",
-                #"Accept-Encoding": "gzip, deflate",
+                # "Accept-Encoding": "gzip, deflate",
                 "Accept-Language":" zh - CN, zh;q = 0.9",
                 "Connection": "keep - alive",
                 "Content-Length": "200",

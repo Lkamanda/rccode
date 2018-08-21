@@ -212,8 +212,43 @@
     - 加密函数或者过程衣服那个是在浏览器完成,也就是一定会把代码(js代码) 暴露给使用者
     - 通过阅读加密算法,就可以模拟出加密过程从而破解
     - 参照V19
-    
-      
-    
+- 加密 :明文 经过一系列算法 -> 密文
+    - sort 加入sort 防止利用创建字典反推,加sort
+- js格式话网站: http://tool.oschina.net/codeformat/js
+    - V19:注释
+        - 通过js 网站整理的js 从而得到salt 和 sign的公式
+        - 使用python语言实现公式
+        - md5 模拟
+            # 生成一个md5 实例
+            md5 = hashlib.md5()
+
+            md5.update(v.encode('utf-8')
+            sign = md5.hexdigest()
+        - 使用python 模拟对salt的处理
+        - def getSalt()      获得salt
+        - def getMD5(sign)  对sign进行MD5处理
+        - def getSign(sign,salt)  通过salt 生成对应的salt
+            - sign = getSign(sign) 使用 def getMD5 对sign
+            - return sign   返回处理玩的sign
+        - def yd(k)
+            - url
+            - salt = getSalt() 最开是就对salt进行获取
+            - sign
+            - data
+                - i : k
+                - salt : str(salt)
+                - sign ; getSign(key,salt)
+            - 对data 进行编码
+                - data  = parse.urlencode(data).encode()        # ?????
+            - 构建headers ={}
+                - 注意 :Content-Length : len(data)
+                - 不要 Accept-Encoding":"gzip,deflate
+            - 构建 请求
+                - req = request.Request(url=url, data=data, headers=headers)
+            - 根据构建的请求对目标进行访问
+                - rsp = request.urlopen(req)
+            - 对得到的html进行读取,译码 
+                - html = rsp.read().decode()
+
 
              
