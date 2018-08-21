@@ -15,4 +15,4 @@ class Game_num():
             return str_num
 
     def num_game(total,source):
-        while
+        pass
