@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c043a2e3-9a64-47ca-9f56-1f6d11b7ff7e" name="Default" comment="rc">
+      <change afterPath="$PROJECT_DIR$/ketang/oop/oop26zimu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider/V20ajax.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider/V21.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ketang/oop/oopexe1.py" beforeDir="false" afterPath="$PROJECT_DIR$/ketang/oop/oopexe1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ketang/oop/oopexeobject1.py" beforeDir="false" afterPath="$PROJECT_DIR$/ketang/oop/oopexeobject1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/001." beforeDir="false" afterPath="$PROJECT_DIR$/spider/001." afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/V19.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/V19.0.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,35 +124,44 @@
     <session id="939842895">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.57" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="11" />
+          <entry key="HTML" value="1" />
+          <entry key="JSON" value="1" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Python" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="" value="1142" />
-          <entry key="py" value="2090" />
+          <entry key="" value="1494" />
+          <entry key="dummy" value="18" />
+          <entry key="html" value="24" />
+          <entry key="py" value="6003" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="" value="1" />
-          <entry key="py" value="11" />
+          <entry key="" value="2" />
+          <entry key="1" value="5" />
+          <entry key="html" value="1" />
+          <entry key="json" value="1" />
+          <entry key="py" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="1142" />
-          <entry key="Python" value="2090" />
+          <entry key="HTML" value="24" />
+          <entry key="PLAIN_TEXT" value="1512" />
+          <entry key="Python" value="6003" />
         </counts>
       </usages-collector>
     </session>
@@ -154,50 +170,35 @@
     <favorites_list name="rccode" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/ketang/oop/oopexeobject1.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="54">
-                  <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-                  <folding>
-                    <element signature="e#0#13#0" expanded="true" />
-                    <marker date="1534842306195" expanded="true" signature="43:48" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ketang/oop/demo.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-615">
-                  <caret column="11" selection-start-column="11" selection-end-line="1" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/ketang/oop/oopexe1.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="567">
-                  <caret line="30" selection-start-line="30" selection-end-line="30" />
-                  <folding>
-                    <element signature="e#142#155#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spider/001.">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="269" lean-forward="true" selection-start-line="269" selection-end-line="269" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spider/V21.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spliderexe/htmlcf/V21.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -252,12 +253,16 @@
         <option value="$PROJECT_DIR$/spider/V17(读取cookie).py" />
         <option value="$PROJECT_DIR$/ketang/oop/oop练习1.py" />
         <option value="$PROJECT_DIR$/ketang/oop/demo.py" />
-        <option value="$PROJECT_DIR$/ketang/oop/oopexe1.py" />
         <option value="$PROJECT_DIR$/spider/V19.1.py" />
         <option value="$PROJECT_DIR$/spider/V19.py" />
         <option value="$PROJECT_DIR$/spider/V19.2.py" />
-        <option value="$PROJECT_DIR$/spider/001." />
+        <option value="$PROJECT_DIR$/ketang/oop/oopexe1.py" />
         <option value="$PROJECT_DIR$/ketang/oop/oopexeobject1.py" />
+        <option value="$PROJECT_DIR$/ketang/oop/oop26zimu.py" />
+        <option value="$PROJECT_DIR$/spider/V20.py" />
+        <option value="$PROJECT_DIR$/spider/001." />
+        <option value="$PROJECT_DIR$/spider/V21.py" />
+        <option value="$PROJECT_DIR$/spliderexe/htmlcf/V21.html" />
       </list>
     </option>
   </component>
@@ -268,10 +273,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="935" />
-    <option name="y" value="63" />
-    <option name="width" value="1452" />
-    <option name="height" value="1232" />
+    <option name="x" value="1019" />
+    <option name="y" value="66" />
+    <option name="width" value="1280" />
+    <option name="height" value="1273" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -295,7 +300,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -311,20 +315,31 @@
             <path>
               <item name="rccode" type="b2602c69:ProjectViewProjectNode" />
               <item name="rccode" type="462c0819:PsiDirectoryNode" />
-              <item name="ketang" type="462c0819:PsiDirectoryNode" />
-              <item name="oop" type="462c0819:PsiDirectoryNode" />
+              <item name="spider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rccode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rccode" type="462c0819:PsiDirectoryNode" />
+              <item name="spliderexe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rccode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rccode" type="462c0819:PsiDirectoryNode" />
+              <item name="spliderexe" type="462c0819:PsiDirectoryNode" />
+              <item name="htmlcf" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2693837" />
   </component>
   <component name="RecentsManager">
@@ -344,8 +359,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.V19.2">
-    <configuration name="V17(读取cookie)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.V21">
+    <configuration name="V20" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pythonjichu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -357,7 +372,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/V17(读取cookie).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/V20ajax.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -366,7 +381,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="V19.1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="V21" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pythonjichu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -378,49 +393,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/V19.1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="V19.2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pythonjichu" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/V19.2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pythonjichu" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ketang/oop" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ketang/oop/demo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/V21.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -450,20 +423,62 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="oop26zimu" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pythonjichu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ketang/oop" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ketang/oop/oop26zimu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="oopexeobject1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pythonjichu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ketang/oop" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ketang/oop/oopexeobject1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.V17(读取cookie)" />
       <item itemvalue="Python.oop练习1" />
-      <item itemvalue="Python.demo" />
-      <item itemvalue="Python.V19.1" />
-      <item itemvalue="Python.V19.2" />
+      <item itemvalue="Python.oopexeobject1" />
+      <item itemvalue="Python.oop26zimu" />
+      <item itemvalue="Python.V20" />
+      <item itemvalue="Python.V21" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.V19.2" />
-        <item itemvalue="Python.V19.1" />
+        <item itemvalue="Python.V21" />
+        <item itemvalue="Python.V20" />
+        <item itemvalue="Python.oop26zimu" />
+        <item itemvalue="Python.oopexeobject1" />
         <item itemvalue="Python.oop练习1" />
-        <item itemvalue="Python.demo" />
-        <item itemvalue="Python.V17(读取cookie)" />
       </list>
     </recent_temporary>
   </component>
@@ -527,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534842311404</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="rc">
+      <created>1534842395851</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1534842395851</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -540,15 +562,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1004" y="25" width="1452" height="1232" extended-state="0" />
+    <frame x="1019" y="66" width="1280" height="1273" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4994233" visible="true" weight="0.025174825" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4994233" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" weight="0.24965034" />
       <window_info id="Favorites" order="2" sideWeight="0.5005767" side_tool="true" weight="0.0" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32881773" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.85831285" visible="true" weight="0.24418604" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.86076987" weight="0.00863132" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32179055" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.85831285" visible="true" weight="0.43140638" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.86076987" weight="0.0076013515" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4992126" weight="0.32881773" />
@@ -564,13 +587,13 @@
       <window_info anchor="right" id="SciView" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4994233" weight="0.025280898" />
-      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4994233" weight="0.0" />
+      <window_info id="Structure" order="1" weight="0.24965034" />
       <window_info id="Favorites" order="2" sideWeight="0.5005767" side_tool="true" weight="0.0" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32881773" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.85831285" visible="true" weight="0.23427866" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.86076987" weight="0.00863132" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.85831285" visible="true" weight="0.24331321" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.86076987" weight="0.0076013515" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4992126" weight="0.32881773" />
@@ -633,50 +656,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spider/V6" />
-    <entry file="file://$PROJECT_DIR$/spider/V4(request.data) # get.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider/V3(urlopen).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider/V5(request.data) # post.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="771">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/oop/oop.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="784">
-            <caret line="372" selection-start-line="372" selection-end-line="372" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider/V8(HTTPError).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spider/V2(chardet).py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -734,13 +713,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spliderexe/htmlcf使用cookie自动登录.html" />
-    <entry file="file://$PROJECT_DIR$/spider/v13.cookie登录.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spider/V1(urllib).py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -819,11 +791,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/V19.0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ketang/oop/oopexeobject1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="33" />
           <folding>
-            <marker date="1534824052954" expanded="true" signature="63:68" ph="..." />
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1534914182344" expanded="true" signature="75:101" ph="..." />
+            <marker date="1534914182344" expanded="true" signature="96:101" ph="..." />
+            <marker date="1534914182344" expanded="true" signature="505:506" ph="..." />
+            <marker date="1534914182344" expanded="true" signature="534:535" ph="..." />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ketang/oop/oop26zimu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <marker date="1534921634864" expanded="true" signature="807:1139" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ketang/oop/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ketang/oop/oopexe1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-976">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#146#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spliderexe/htmlcf/1">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/v13.cookie登录.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spliderexe/htmlcf/2.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/spider/V19.2.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -836,7 +866,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spider/V20ajax.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <folding>
+            <element signature="e#24#50#0" expanded="true" />
+            <element signature="e#436#449#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spider/001.">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="269" lean-forward="true" selection-start-line="269" selection-end-line="269" />
+        </state>
+      </provider>
       <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="588">
@@ -845,44 +891,18 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/V21.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="189">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spider/V19.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/oop/oopexe1.py">
+    <entry file="file://$PROJECT_DIR$/spliderexe/htmlcf/V21.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#142#155#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/oop/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-615">
-          <caret column="11" selection-start-column="11" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/oop/oopexeobject1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1534842306195" expanded="true" signature="43:48" ph="..." />
-          </folding>
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>

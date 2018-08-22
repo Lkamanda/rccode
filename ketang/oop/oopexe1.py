@@ -44,12 +44,14 @@ def a():
 
             pass
         if num < random_num:
+
             # 由于120个字符每行12个可知需要存入10行就可以
             for i in range(10):
                 str_line = line()
                 # 执行文件存入操作
                 # a 追加
                 path =r'/home/tlxy/PCM/rccode/spliderexe/htmlcf/'
+
                 with open(path +'str_num.txt','a') as f:
                     f.write(str_line +'\n')
         return a()

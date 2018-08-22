@@ -215,7 +215,7 @@
 - 加密 :明文 经过一系列算法 -> 密文
     - sort 加入sort 防止利用创建字典反推,加sort
 - js格式话网站: http://tool.oschina.net/codeformat/js
-    - V19:注释
+    - V20:注释
         - 通过js 网站整理的js 从而得到salt 和 sign的公式
         - 使用python语言实现公式
         - md5 模拟
@@ -249,6 +249,25 @@
                 - rsp = request.urlopen(req)
             - 对得到的html进行读取,译码 
                 - html = rsp.read().decode()
+- ajax 一段js代码
+    - 异步请求
+    - 一定会有url,请求方法,可能有数据
+    - 一般使用json格式
+    - 案例V20 爬去豆瓣电影
+    - dict写入文件:https://stackoverflow.com/questions/20169493/how-to-write-a-dictionary-into-an-existing-file
+
+# Requests -献给人类
+- HTTP FOR Humans,跟简洁更好用
+- 集成urllib的所有特征
+- 保持连接,连接池,文件上传,cookie,自动确定编码,国际化
+- 底层使用的是urllib3
+- 开源地址:https://github.com/requests/requests
+- get 请求
+    - requeest.get()
+    - request.request("get",url)
+        - 可以带有headers 和parmas参数
+    - 案例V21
+
 
 
              
