@@ -1,0 +1,120 @@
+# 1.模块 
+- 一个模块就是一个包含python代码的文件,后缀名是.py就可以
+- 为什么我们用模块
+    - 程序太大,编写维护非常不方便,需要拆分
+    - 模块可以增加代码的重复利用方式
+    - 当做名名空见使用避免命名冲突
+- 如何定义模块
+    - 模块就是一个普通文件,所以任何代码可以直接书写
+    - 不过根据模块的规范,最好在模块中编写一下内容
+        - 函数(单一功能)
+        - 迷信 一个迷信一个单一功能
+        - 类(相似的组合,或者类似的业务模块)
+        - 写入测试代码
+- 如何使用模块
+    - 模块直接导入
+        - 所谓的导入其实就是把需要导入的包复制过来并执行
+        - 假如模块名一数字开头,需要借助importlib 帮助
+        - 案例 01 ,p01,p02
+    - 语法
+        import module_name
+        module_name.function_name
+        module_name.class_name  
+    - import 模块 as 别名  
+        - 导入的同时给模块起一个别名,其余的和第一种一样
+    - from module_name import func_name, class_name
+        - 指定导入,使用什么导入什么
+        - 使用时可以直接使用导入,不需要前缀
+    - from module_name import * 
+        - 导入文件所有内容
+- 程序的入口
+    - 可以解决模块被导入被动执行的问题
+    if __name__ = '__main__':
+        print('程序入口')
+    - 程序自身被调用执行 if __name__ = '__main__' 下操作
+    - 被导入其他模块时 if __name__ = '__main__' 下操作不执行.
+# 2.模块的搜索路径
+- 什么是模块搜索路径:
+    - 加载模块的时候,系统会在哪些模块寻找此模块
+- 系统默认的模块搜索路径
+    
+        import  sys
+        sys.path 属性可以获取路径列表
+        - 案例p04
+- 添加搜索路径
+    
+        sys.path.append(dir)
+- 模块加载顺序
+    1.搜索内存中已经加载好的模块
+    2.搜索python的内置模块
+    3.sys.path路径
+# 3.包
+- 包是一种组织管理代码的方式,包里面存放的是模块
+- 用于将包含在一起的文件夹就是包
+- 自定义包的结构
+
+        |---包
+        |---|--- __init__.py 包的标志文件
+        |---|--- 模块1
+        |---|--- 模块2
+        |---|--- 子包(子文件夹)
+        |---|---|--- __init__.py 包的标志文件
+        |---|---|--- 子包模块1
+        |---|---|--- 子包模块2 
+        
+- 包的导入操作
+    - 直接导入一个包
+        - import package_name
+        - 可以使用__init__.py 中的内容
+        - 使用方式
+            
+                package_name.func_name
+                package_name.class_name.func_name
+                
+            -跟其他使用无异,只是前加包名
+            - 此种方法的访问内容是:
+                - 案例pk01 , p05
+    - import package_name as alias   别名
+        - 注意此种方法是默认对__init__.py内容的导入
+    - import package.module 
+        - 导入包中某一个具体的模块
+        - 使用方法
+                
+                package.module.func_name
+                package.module.class.fun()
+                package.module.class.var
+        - 案例p06
+    
+    - import package.module as alisa 别名
+- from package import module 导入
+    - 此种导入方法不执行__init__的内容
+    - from package import * 
+        - 导入当前包__init__.py 中所有函数和类
+        - 不是导入package的所有文件
+        
+- from package.module import * 
+    - 导入包中制定模块的所有内容
+ 
+- 在开发环境中经常会用其他模块,可以在当前包中直接导入其他模块中的内容
+    - import 完整的包或者模块路径
+    
+- '__all__' 的用法
+     - 在使用from package import * 的时候, * 可以导入的内容
+     - __init__ 中如果文件为空,或这没有'__all__' ,那么只可以把'__init__'中的内容导入
+     - '__init__' 如果设置了__all__的值,那么则按照'__all__'制定的子包或者模块进行加载
+     如此不会凹入'__init__'中的内容
+     - '__all__' = ['module1','module2','packle1'....]
+- 在'__init__'中如果定义了__all__ 则,__init__下的其他内容失效    
+
+# 4 命名空间
+- 用于区分不同位置不同功能蛋相同名称的函数或者变量的一个特定前缀
+- 作为防止命名冲突
+- 不同的包具有不同的命名空间
+            
+               
+                
+               
+            
+    
+    
+                

@@ -267,7 +267,7 @@
     - request.request("get",url)
         - 可以带有headers 和parmas参数
     - 案例V21
-
+- get 的访问内容
 
 
              
