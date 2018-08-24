@@ -204,9 +204,12 @@
         - 忽略ssl 方法 
             import ssl
             # 利用证书上下文环境替换认证的向下问环境
-            ssl._create_default_https_context = ssl._create_unverified_context
-             
+            ## ssl._create_default_https_context = ssl._create_unverified_context
+
 - js加密
+    #将html格式转json
+    - html  = json.loads(html)
+
     - 有道反爬虫策略采用js对需要传输的数据进行加密处理(通长是取md5值)
     - 经过加密,传输的就是刘文,但是
     - 加密函数或者过程衣服那个是在浏览器完成,也就是一定会把代码(js代码) 暴露给使用者
@@ -215,7 +218,7 @@
 - 加密 :明文 经过一系列算法 -> 密文
     - sort 加入sort 防止利用创建字典反推,加sort
 - js格式话网站: http://tool.oschina.net/codeformat/js
-    - V20:注释
+    - V19.2:注释
         - 通过js 网站整理的js 从而得到salt 和 sign的公式
         - 使用python语言实现公式
         - md5 模拟
