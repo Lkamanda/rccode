@@ -2,49 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c043a2e3-9a64-47ca-9f56-1f6d11b7ff7e" name="Default" comment="rc">
-      <change afterPath="$PROJECT_DIR$/HTML+CSS+JS/01/HTML_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML+CSS+JS/01/V1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML+CSS+JS/01/V2-锚点.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML+CSS+JS/01/V3-Table.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V23-post.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/A02-getdata/01" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spliderexe/Cookies/V03Cookie.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spliderexe/Cookies/kaixin.com:Cookie.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spliderexe/EXE/EX04-猫眼电影/V1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spliderexe/EXE/V1-request-代理.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spliderexe/htmlcf/1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spliderexe/htmlcf/2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spliderexe/htmlcf/E03-zhuye.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spliderexe/htmlcf/V21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spliderexe/htmlcf/kaixin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spliderexe/htmlcf/kx_zhuye.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spliderexe/htmlcf/lufei.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ketang/01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ketang/V3-调试/NOTE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/001." beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/001." afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V1(urllib).py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V1(urllib).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V10(User-Agent之add_header模拟访问).py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V10(User-Agent之add_header模拟访问).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V11(代理).py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V11(代理).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V12.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V12.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V14.使用cookie自动登录.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V14.使用cookie自动登录.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V15打印cookie.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V15打印cookie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V16(FileCookieJar保存cookie).py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V16(FileCookieJar保存cookie).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V17(读取cookie).py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V17(读取cookie).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V18(ssl).py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V18(ssl).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V19.0.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V19.0-js.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V19.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V19.1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V19.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V19.2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V2(chardet).py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V2(chardet).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V20ajax.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V20ajax.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V21.request.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V21.request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V22.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V22-get.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V3(urlopen).py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V3(urlopen).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V4(request.data) # get.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V4(request.data) # get.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V5(request.data) # post.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V5(request.data) # post.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V6(使用Requst类实例模拟浏览器).py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V6(使用Requst类实例模拟浏览器).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V7(URLErroe).py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V7(URLErroe).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V8(HTTPError).py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V8(HTTPError).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/V9(User-Agent之header伪装访问).py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/V9(User-Agent之header伪装访问).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/v13.cookie登录.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/v13.cookie登录.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +119,7 @@
     <session id="939842895">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.27" value="1" />
@@ -170,9 +130,10 @@
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.57" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -180,9 +141,9 @@
           <entry key="HTML" value="22" />
           <entry key="IPNB" value="1" />
           <entry key="JSON" value="1" />
-          <entry key="Markdown" value="4" />
+          <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Python" value="73" />
+          <entry key="Python" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -190,10 +151,10 @@
           <entry key="" value="3062" />
           <entry key="01" value="283" />
           <entry key="HTML_1" value="2093" />
-          <entry key="NOTE" value="2560" />
+          <entry key="NOTE" value="2735" />
           <entry key="dummy" value="95" />
           <entry key="html" value="1986" />
-          <entry key="py" value="14545" />
+          <entry key="py" value="14784" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -203,38 +164,64 @@
           <entry key="01" value="1" />
           <entry key="1" value="5" />
           <entry key="HTML_1" value="1" />
-          <entry key="NOTE" value="1" />
+          <entry key="NOTE" value="2" />
           <entry key="filename" value="1" />
           <entry key="html" value="22" />
           <entry key="ipynb" value="1" />
           <entry key="json" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="73" />
+          <entry key="py" value="75" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1986" />
-          <entry key="Markdown" value="4936" />
+          <entry key="Markdown" value="5111" />
           <entry key="PLAIN_TEXT" value="3158" />
-          <entry key="Python" value="14545" />
+          <entry key="Python" value="14784" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="rccode" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ketang/V3-调试/NOTE">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="270">
+                <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ketang/01.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+              <folding>
+                <marker date="1537520535339" expanded="true" signature="19:24" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -244,8 +231,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ketang/oop/oop练习1.py" />
-        <option value="$PROJECT_DIR$/ketang/oop/demo.py" />
         <option value="$PROJECT_DIR$/spider/V19.1.py" />
         <option value="$PROJECT_DIR$/spider/V19.py" />
         <option value="$PROJECT_DIR$/spider/V19.2.py" />
@@ -295,6 +280,8 @@
         <option value="$PROJECT_DIR$/HTML+CSS+JS/01/V2-lufei.html" />
         <option value="$PROJECT_DIR$/HTML+CSS+JS/01/V2-锚点.html" />
         <option value="$PROJECT_DIR$/HTML+CSS+JS/01/V3-Table.html" />
+        <option value="$PROJECT_DIR$/ketang/V3-调试/NOTE" />
+        <option value="$PROJECT_DIR$/ketang/01.py" />
       </list>
     </option>
   </component>
@@ -304,11 +291,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1036" />
-    <option name="y" value="79" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="958" />
+    <option name="y" value="51" />
     <option name="width" value="1457" />
-    <option name="height" value="1243" />
+    <option name="height" value="1236" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -338,6 +325,17 @@
             <path>
               <item name="rccode" type="b2602c69:ProjectViewProjectNode" />
               <item name="rccode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rccode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rccode" type="462c0819:PsiDirectoryNode" />
+              <item name="ketang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rccode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rccode" type="462c0819:PsiDirectoryNode" />
+              <item name="ketang" type="462c0819:PsiDirectoryNode" />
+              <item name="V3-调试" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -375,8 +373,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.V1-request-代理">
-    <configuration name="E03-getcookie" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.01">
+    <configuration name="01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pythonjichu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -384,11 +382,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spliderexe/EXE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ketang" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spliderexe/EXE/E02-开心网/E03-getcookie.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ketang/01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -482,19 +480,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.E03-getcookie" />
       <item itemvalue="Python.E03-usecookie" />
       <item itemvalue="Python.V1" />
       <item itemvalue="Python.V23-post" />
       <item itemvalue="Python.V1-request-代理" />
+      <item itemvalue="Python.01" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.01" />
         <item itemvalue="Python.V1-request-代理" />
         <item itemvalue="Python.V23-post" />
         <item itemvalue="Python.V1" />
         <item itemvalue="Python.E03-usecookie" />
-        <item itemvalue="Python.E03-getcookie" />
       </list>
     </recent_temporary>
   </component>
@@ -592,7 +590,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="25" width="2562" height="1298" extended-state="6" />
+    <frame x="958" y="51" width="1457" height="1236" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4994233" weight="0.20139372" />
       <window_info id="Structure" order="1" weight="0.24965034" />
@@ -600,7 +598,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32094595" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8629921" weight="0.2834123" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8593005" weight="0.4586207" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8593005" weight="0.4581105" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4980315" weight="0.32772365" />
@@ -685,30 +683,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ketang/V2-high-Pickage/p01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/V2-high-Pickage/p02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/1-OOP/oop.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="635">
-            <caret line="370" column="14" lean-forward="true" selection-start-line="370" selection-start-column="14" selection-end-line="370" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ketang/2-高级-包管理/pko1.py" />
     <entry file="file://$PROJECT_DIR$/ketang/V2-high-Pickage/p04.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -978,10 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1067">
           <caret line="96" selection-start-line="96" selection-end-line="96" />
-          <folding>
-            <element signature="e#1276#1280#0" expanded="true" />
-            <element signature="e#1281#1285#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -999,6 +969,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ketang/V3-调试/NOTE">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="270">
+            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///var/sw/anaconda3/lib/python3.6/json/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="358" lean-forward="true" selection-start-line="358" selection-end-line="358" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ketang/01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding>
+            <marker date="1537520535339" expanded="true" signature="19:24" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
