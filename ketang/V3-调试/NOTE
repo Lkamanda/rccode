@@ -8,6 +8,12 @@
 - python 调试库
 # pycharm 调试
 - run/debug模式
+- 案例01.py
 
+- 断点:程序在debug模式下,遇到断点就会暂停
+- f8 跳过
+- f7 进去
 
-
+# 单元测试
+推荐文档
+    - 官方测试文档集合:https://www.cnblogs.com/iamjqy/p/7155315.html
