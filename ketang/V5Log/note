@@ -61,5 +61,53 @@
         - 级别:WARNING
         - 格式:level:log_name:content
      - 案例 01
-     - 
+ - format 参数
+        
+        asctime  %(asctime)s 日志发生时间 --人类可读时间,如20003-07-08 16:47:23
+        created  %(created)f  日志发生时间 --时间戳 就是当时调用time.time()函数返回值
+        relativedCreated  %(relativeCreated)d  日志时间发生时间对于logging模块加载
+        msecs  %(msecs)d 该日志时间的毫秒部分
+        levelname  %(levelname)s 该日志记录的文字形式的日志级别('DEBUG','INFO','WARNING','CRITICAL')
+        name    %(name)s 所使用的日志器名称,默认是'root',因为默认使用的是rootLogger
+        message %(message)s  日志记录的文本内容,通过msg% args记算得到
+        pathname %(pathname)s 调用日志记录函数的源码文件的全路径
+        filename  %(filename)s pathname的文件名部分,包含后缀
+        module %(module)s filename的名称部分,不含后缀
+        lineno  %(lineno)d 调用日志记录函数的源代码所在的行号
+        funcName  $(funcName)s    调用日志记录函数的函数名
+        process   $(process)d     进程ID
+        processName   $ (processName)s 进程名称python 3.1 新增
+        thread   $(thread)d  线程ID
+        threadname $(threadname)s    线程名称
+# 2.2logging模块的处理流程
+- 四大组件
+    -日志器(logger):产生日志的一个接口
+    -处理器(Handler):把产生的日志发送到相应的目的地(一个处理器负责一个去向)
+    -过滤器(Filter):更精致的控制那些日志输出
+    -格式器(Formatter):对输出信息进行格式化
+- 1. 发生一条告警
+  2. 1)记录者条信息 ->filter(none)->formatter(通常处理) 日志属性全写
+     2)打印控制台   ->filter(告警级别) ->formatter (加入日志属性的筛选) 只关心内容
+     3)通知相应人员 ->Filter(manager过滤)  ->foramtter (时间,级别,content) 属性
+- Logger 
+    - 产生一个日志
+    - 操作
+    
+         Logger.setLevel() 设置日志器将会处理的日志消息的最低严重级别
+         Logger.addHandler() 和Logger.removeHandler() 为该logger对象添加和移除一个处理器
+         Logger.addFilter() 和Logger.removeFilter() 为该logger对象添加和移除一个Filter
+            - Logger.debug:产生一条debug级别的日志,同理,info.error等
+            - Logger.exception():创建类似于Logger.error的日志消息
+            - Logger.log():获取一个明确的日志level参数创建一个日志记录
+                -Logger.log(DEBUG):
+                -Logger.log():获取一个明确的日志level参数类型创建以个日志记录
+            -如何得到一个logger对象
+                - 实例化
+                - logging.getLogger()
+                
+                
+           
+        
+
+    
         
