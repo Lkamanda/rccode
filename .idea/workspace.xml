@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c043a2e3-9a64-47ca-9f56-1f6d11b7ff7e" name="Default" comment="rc">
-      <change beforePath="$PROJECT_DIR$/ketang/V3-调试/NOTE" beforeDir="false" afterPath="$PROJECT_DIR$/ketang/V3-调试/NOTE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ketang/V5Log/01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ketang/V5Log/note" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ketang/01.py" beforeDir="false" afterPath="$PROJECT_DIR$/ketang/V3-调试/01.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +124,7 @@
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.27" value="1" />
-          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.28" value="2" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="1" />
@@ -131,8 +134,9 @@
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.67" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -140,9 +144,9 @@
           <entry key="HTML" value="22" />
           <entry key="IPNB" value="1" />
           <entry key="JSON" value="1" />
-          <entry key="Markdown" value="5" />
-          <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Python" value="83" />
+          <entry key="Markdown" value="6" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="Python" value="85" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -153,7 +157,8 @@
           <entry key="NOTE" value="2839" />
           <entry key="dummy" value="95" />
           <entry key="html" value="1986" />
-          <entry key="py" value="14784" />
+          <entry key="note" value="1086" />
+          <entry key="py" value="15590" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -168,17 +173,19 @@
           <entry key="html" value="22" />
           <entry key="ipynb" value="1" />
           <entry key="json" value="1" />
+          <entry key="log" value="2" />
           <entry key="md" value="1" />
-          <entry key="py" value="83" />
+          <entry key="note" value="1" />
+          <entry key="py" value="85" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1986" />
-          <entry key="Markdown" value="5215" />
+          <entry key="Markdown" value="6301" />
           <entry key="PLAIN_TEXT" value="3158" />
-          <entry key="Python" value="14784" />
+          <entry key="Python" value="15590" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -189,28 +196,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ketang/V3-调试/NOTE">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ketang/V5Log/note">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="459">
-                <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+              <first_editor relative-caret-position="151">
+                <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ketang/01.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ketang/V5Log/01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <marker date="1537520535339" expanded="true" signature="19:24" ph="..." />
-              </folding>
+            <state relative-caret-position="53">
+              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ketang/V5Log/xiaolin.log">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ketang/V5Log/xiaolin1.log">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -230,8 +244,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spider/V19.1.py" />
-        <option value="$PROJECT_DIR$/spider/V19.py" />
         <option value="$PROJECT_DIR$/spider/V19.2.py" />
         <option value="$PROJECT_DIR$/ketang/oop/oopexe1.py" />
         <option value="$PROJECT_DIR$/ketang/oop/oopexeobject1.py" />
@@ -281,6 +293,8 @@
         <option value="$PROJECT_DIR$/HTML+CSS+JS/01/V3-Table.html" />
         <option value="$PROJECT_DIR$/ketang/01.py" />
         <option value="$PROJECT_DIR$/ketang/V3-调试/NOTE" />
+        <option value="$PROJECT_DIR$/ketang/V5Log/note" />
+        <option value="$PROJECT_DIR$/ketang/V5Log/01.py" />
       </list>
     </option>
   </component>
@@ -290,11 +304,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="1054" />
-    <option name="y" value="86" />
-    <option name="width" value="1457" />
-    <option name="height" value="1236" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="680" />
+    <option name="y" value="25" />
+    <option name="width" value="680" />
+    <option name="height" value="317" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -317,7 +331,31 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="rccode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rccode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rccode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rccode" type="462c0819:PsiDirectoryNode" />
+              <item name="ketang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rccode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rccode" type="462c0819:PsiDirectoryNode" />
+              <item name="ketang" type="462c0819:PsiDirectoryNode" />
+              <item name="V5Log" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -329,11 +367,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ketang/V3-调试" />
       <recent name="$PROJECT_DIR$/HTML+CSS+JS/01/picture" />
       <recent name="$PROJECT_DIR$/spider/A01-URL" />
       <recent name="$PROJECT_DIR$/spliderexe/EXE/E01-张继科百度贴吧" />
       <recent name="$PROJECT_DIR$/spliderexe/EXE/E02-开心网" />
-      <recent name="$PROJECT_DIR$/spliderexe/EXE" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -348,7 +386,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.01">
+  <component name="RunManager" selected="Python.01 (1)">
+    <configuration name="01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pythonjichu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ketang/V5Log" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ketang/V5Log/01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pythonjichu" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -361,28 +420,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ketang/01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="E03-usecookie" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pythonjichu" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spliderexe/EXE" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spliderexe/EXE/E02-开心网/E03-usecookie.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ketang/V3-调试/01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -455,19 +493,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.E03-usecookie" />
       <item itemvalue="Python.V1" />
       <item itemvalue="Python.V23-post" />
       <item itemvalue="Python.V1-request-代理" />
       <item itemvalue="Python.01" />
+      <item itemvalue="Python.01 (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.01 (1)" />
         <item itemvalue="Python.01" />
         <item itemvalue="Python.V1-request-代理" />
         <item itemvalue="Python.V23-post" />
         <item itemvalue="Python.V1" />
-        <item itemvalue="Python.E03-usecookie" />
       </list>
     </recent_temporary>
   </component>
@@ -565,16 +603,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1356" y="51" width="1457" height="1236" extended-state="0" />
+    <frame x="680" y="25" width="680" height="317" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4994233" weight="0.20139372" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4994233" weight="0.013432836" />
       <window_info id="Structure" order="1" weight="0.24965034" />
       <window_info id="Favorites" order="2" sideWeight="0.5005767" side_tool="true" weight="0.0" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32094595" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8629921" weight="0.2825312" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.8593005" visible="true" weight="0.4581105" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8629921" weight="1.0" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8593005" weight="0.4581105" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4980315" weight="0.32772365" />
@@ -590,20 +628,20 @@
       <window_info anchor="right" id="SciView" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4994233" weight="0.20139372" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4994233" visible="true" weight="0.013432836" />
       <window_info id="Structure" order="1" weight="0.24965034" />
       <window_info id="Favorites" order="2" sideWeight="0.5005767" side_tool="true" weight="0.0" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32094595" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8629921" weight="0.2834123" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8593005" visible="true" weight="0.4581105" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8629921" visible="true" weight="0.40804598" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8593005" weight="0.4581105" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4980315" weight="0.32772365" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.13700788" side_tool="true" weight="0.45945945" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4996063" weight="0.32890996" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4992126" weight="0.21199325" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4992126" weight="0.21122995" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.4992126" weight="0.32179055" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -653,7 +691,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ketang/01.py</url>
+          <url>file://$PROJECT_DIR$/ketang/V3-调试/01.py</url>
           <line>8</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -670,35 +708,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ketang/V2-high-Pickage/pk01/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/V2-high-Pickage/p03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/V2-high-Pickage/01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/V2-high-Pickage/pk01/p06.py" />
-    <entry file="file://$PROJECT_DIR$/ketang/V2-high-Pickage/p06.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ketang/V2-high-Pickage/NOTE">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -972,7 +981,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/01.py">
+    <entry file="file://$PROJECT_DIR$/ketang/V3-调试/01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
@@ -985,10 +994,40 @@
     <entry file="file://$PROJECT_DIR$/ketang/V3-调试/NOTE">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="459">
-            <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <first_editor relative-caret-position="432">
+            <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ketang/V5Log/note">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="151">
+            <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///var/sw/anaconda3/lib/python3.6/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1753">
+          <caret line="1733" column="4" selection-start-line="1733" selection-start-column="4" selection-end-line="1733" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ketang/V5Log/xiaolin.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ketang/V5Log/xiaolin1.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ketang/V5Log/01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
         </state>
       </provider>
     </entry>

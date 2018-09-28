@@ -1,0 +1,65 @@
+# Log
+- https:www.cnblogs.com//yyds/p/6901864.html
+- logging
+- loging提供模块级别的图数记录日志
+- 包括4个组件
+
+## 1.日志相关的概念
+- 日志的级别(level)
+    - 不同用户关注不同的程序信息
+    - DEBUG    调试
+    - INFO     信息
+    - NOTICE   通知
+    - WARNING  警告
+    - ERROR    错误
+    - CRITICAL  紧急
+    - ALERT     报警
+    - EXERGENCY 紧急事件
+- IO操作不要太频繁
+- Log的作用
+    - 调试
+    - 了解软件的运行情况
+    - 分析定位问题
+- 日志信息
+    - time
+    - 地点
+    - level 
+
+- 成熟的第三方
+    - log4j
+    - log4php
+    - logging
+# 2logging模块
+- 日志级别
+    - 级别可自定义
+    - DEBUG
+    - INFO
+    - WARNING
+    - ERROR
+    - CRAITICAL
+- 初始话日志实例需要指定级别
+    - 只有级别等于或高于制定级别才被记录
+- 使用方式
+    - 直接使用logging(封装了其他组件)
+    - logging四大组件
+# 2.1logging模块级别的日志
+- 使用一下几个函数
+    - logging.debug(msg,*args,**kwargs)
+    创建一条DEBUG的日志记录
+    - logging.info(msg,*args,**kwargs)
+    创建一条严重级别为INFO的日志记录
+    - logging.warning(msg,*args,**kwargs)
+    创建一条级别为warning的日志记录
+    - logging.critical(msg,*args,**kwargs)
+    - logging.log(level,*args,**kwargs)
+    创建一条严重级别为level的日志记录
+- logging.basicConfig(**kwargs)
+对root logger进行一次型配置
+    - 只在第一次调用的时候起作用
+    - 不配置logger则使用默认值
+        - 输出:sys.stderr(标准控制输出)
+        - 级别:WARNING
+        - 格式:level:log_name:content
+     - 案例 01
+     - 
+        

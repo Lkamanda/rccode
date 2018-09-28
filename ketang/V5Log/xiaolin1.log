@@ -1,0 +1,20 @@
+DEBUG:root:this is a debug log.
+INFO:root:this is a info log.
+WARNING:root:this is warning log.
+ERROR:root:this is error log
+CRITICAL:root:this is a critical log.
+DEBUG:root:this a debug log
+INFO:root:INFO
+WARNING:root:WARNING
+ERROR:root:ERROR
+CRITICAL:root:CRITICAL
+DEBUG:root:this is a debug log.
+INFO:root:this is a info log.
+WARNING:root:this is warning log.
+ERROR:root:this is error log
+CRITICAL:root:this is a critical log.
+DEBUG:root:this a debug log
+INFO:root:INFO
+WARNING:root:WARNING
+ERROR:root:ERROR
+CRITICAL:root:CRITICAL
