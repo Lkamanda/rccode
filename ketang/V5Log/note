@@ -101,9 +101,39 @@
             - Logger.log():获取一个明确的日志level参数创建一个日志记录
                 -Logger.log(DEBUG):
                 -Logger.log():获取一个明确的日志level参数类型创建以个日志记录
-            -如何得到一个logger对象
+            -如何logger对象
                 - 实例化
-                - logging.getLogger()
+                - logging.ge
+- Handler 
+    - 把log发送到指定位置
+    - 方法
+        - setLevel 设置级别
+        - setFormat 设置格式
+        - addilter ,removeFilter 添加,删除过滤器
+    - 不需要直接使用,Handler是基类 (使用时被继承)
+            
+            logging.StreamHandler    将日志消息发送到Stream,std.out,std.error或任何file
+            logging.FileHandler      将日志消息发送到磁盘文件大小会无先增长
+            logging.handlers.RotaingFileHandler    将日志消息发送到磁盘文件,并支持日志文件按大小切割
+            loggiing.handlers.TimeRobatingFileHandler  将日志消息发送到磁盘文件,并支持日志文件按时间生成
+            logging.handlers.HTTPHandler     将日志消息以GET或POST的方式发送给一个HTTP服务器
+            logging.handlers.SMTPHandler     将日志消息发送给一个指定的email地址
+            logging.NullHandler        该Handler实例会忽略error messages 通常被想使用logging的过滤
+- Format 类
+    - 直接实例化
+    - 可以继承Format 添加特殊内容
+    - 三个参数
+       - fmt:指定小格式化字符串, 如果不指定该参数则默认使用message的原始值
+       - datefmt :指定日期格式字符串,乳沟不指定该参数则默认使用
+            "%Y-%m-%d %H:%M:%S"
+       - style :PYTHON 3.2新增参数
+            可取值为'%','{和'$'如果不指定该参数则默认使用'%'如果不指定该参数则默认使用'%''}'
+- Filter类
+    - 可以被Handler和Logger使用
+    - 控制传递过来的信息的具体内容
+    - 案例02
+    
+        
                 
                 
            
