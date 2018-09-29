@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c043a2e3-9a64-47ca-9f56-1f6d11b7ff7e" name="Default" comment="rc">
-      <change afterPath="$PROJECT_DIR$/ketang/02.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ketang/02.py" beforeDir="false" afterPath="$PROJECT_DIR$/ketang/V5Log/02.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ketang/V5Log/note" beforeDir="false" afterPath="$PROJECT_DIR$/ketang/V5Log/note" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -124,7 +124,7 @@
     <session id="939842895">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.27" value="1" />
@@ -133,6 +133,7 @@
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.49" value="1" />
@@ -140,7 +141,7 @@
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.67" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -150,7 +151,7 @@
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="6" />
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="85" />
+          <entry key="Python" value="87" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -161,8 +162,8 @@
           <entry key="NOTE" value="2839" />
           <entry key="dummy" value="95" />
           <entry key="html" value="1986" />
-          <entry key="note" value="1086" />
-          <entry key="py" value="15590" />
+          <entry key="note" value="1087" />
+          <entry key="py" value="16661" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -180,16 +181,16 @@
           <entry key="log" value="2" />
           <entry key="md" value="1" />
           <entry key="note" value="1" />
-          <entry key="py" value="85" />
+          <entry key="py" value="87" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1986" />
-          <entry key="Markdown" value="6301" />
+          <entry key="Markdown" value="6302" />
           <entry key="PLAIN_TEXT" value="3158" />
-          <entry key="Python" value="15590" />
+          <entry key="Python" value="16661" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -203,8 +204,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ketang/V5Log/01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            <state relative-caret-position="270">
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -213,8 +214,8 @@
         <entry file="file://$PROJECT_DIR$/ketang/V5Log/note">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="823">
-                <caret line="134" column="4" selection-start-line="134" selection-start-column="4" selection-end-line="134" selection-end-column="4" />
+              <first_editor relative-caret-position="3159">
+                <caret line="117" column="35" selection-start-line="117" selection-start-column="35" selection-end-line="117" selection-end-column="35" />
               </first_editor>
               <second_editor />
             </state>
@@ -222,12 +223,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ketang/02.py">
+        <entry file="file://$PROJECT_DIR$/ketang/V5Log/02.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+            <state relative-caret-position="345">
+              <caret line="31" column="110" selection-start-line="31" selection-start-column="110" selection-end-line="31" selection-end-column="110" />
+              <folding>
+                <element signature="e#480#494#0" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ketang/V5Log/xiaolin.log">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ketang/V5Log/xiaolin1.log">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -247,7 +261,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ketang/oop/oopexe1.py" />
         <option value="$PROJECT_DIR$/ketang/oop/oopexeobject1.py" />
         <option value="$PROJECT_DIR$/ketang/oop/oop26zimu.py" />
         <option value="$PROJECT_DIR$/spider/V20.py" />
@@ -296,8 +309,9 @@
         <option value="$PROJECT_DIR$/ketang/01.py" />
         <option value="$PROJECT_DIR$/ketang/V3-调试/NOTE" />
         <option value="$PROJECT_DIR$/ketang/V5Log/01.py" />
-        <option value="$PROJECT_DIR$/ketang/V5Log/note" />
         <option value="$PROJECT_DIR$/ketang/02.py" />
+        <option value="$PROJECT_DIR$/ketang/V5Log/note" />
+        <option value="$PROJECT_DIR$/ketang/V5Log/02.py" />
       </list>
     </option>
   </component>
@@ -308,10 +322,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="627" />
-    <option name="y" value="235" />
-    <option name="width" value="1303" />
-    <option name="height" value="1038" />
+    <option name="x" value="449" />
+    <option name="y" value="29" />
+    <option name="width" value="749" />
+    <option name="height" value="631" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -335,7 +349,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -358,6 +371,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,11 +384,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ketang/V5Log" />
       <recent name="$PROJECT_DIR$/ketang/V3-调试" />
       <recent name="$PROJECT_DIR$/HTML+CSS+JS/01/picture" />
       <recent name="$PROJECT_DIR$/spider/A01-URL" />
       <recent name="$PROJECT_DIR$/spliderexe/EXE/E01-张继科百度贴吧" />
-      <recent name="$PROJECT_DIR$/spliderexe/EXE/E02-开心网" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -606,11 +620,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="627" y="235" width="1303" height="1038" extended-state="0" />
+    <frame x="449" y="29" width="749" height="631" extended-state="0" />
     <layout>
-      <window_info active="true" anchor="top" content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.021017699" />
       <window_info id="Favorites" order="0" sideWeight="0.5021645" side_tool="true" weight="0.021077283" />
-      <window_info id="Structure" order="1" visible="true" weight="0.16783762" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4978355" weight="0.21458046" />
+      <window_info id="Structure" order="2" weight="0.16783762" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32094595" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8629921" weight="0.1390785" />
@@ -710,13 +724,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ketang/V2-high-Pickage/pk01/p01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spider/03-exe-kaixinwang.py" />
     <entry file="file://$PROJECT_DIR$/spliderexe/htmlcfstr_num.txt" />
     <entry file="file://$PROJECT_DIR$/spliderexe/EXE/E02.kaixinwang-dl.py" />
@@ -872,17 +879,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spider/A01-(URL-Requests)-(gethtml)/001.">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="323" column="23" lean-forward="true" selection-start-line="323" selection-start-column="23" selection-end-line="323" selection-end-column="23" />
-        </state>
-      </provider>
       <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="588">
             <caret line="195" column="23" selection-start-line="195" selection-start-column="23" selection-end-line="195" selection-end-column="23" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="323" column="23" lean-forward="true" selection-start-line="323" selection-start-column="23" selection-end-line="323" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -980,9 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/V5Log/xiaolin.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/ketang/V3-调试/01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -997,35 +1001,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/V5Log/xiaolin1.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-621" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ketang/V5Log/xiaolin2.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ketang/V5Log/01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        <state relative-caret-position="270">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ketang/V5Log/note">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="823">
-            <caret line="134" column="4" selection-start-line="134" selection-start-column="4" selection-end-line="134" selection-end-column="4" />
+          <first_editor relative-caret-position="3159">
+            <caret line="117" column="35" selection-start-line="117" selection-start-column="35" selection-end-line="117" selection-end-column="35" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ketang/02.py">
+    <entry file="file://$PROJECT_DIR$/ketang/V5Log/xiaolin.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ketang/V5Log/xiaolin1.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///var/sw/anaconda3/lib/python3.6/logging/handlers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        <state relative-caret-position="-1211">
+          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ketang/V5Log/02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="31" column="110" selection-start-line="31" selection-start-column="110" selection-end-line="31" selection-end-column="110" />
+          <folding>
+            <element signature="e#480#494#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

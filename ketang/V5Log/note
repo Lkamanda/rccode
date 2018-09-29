@@ -115,7 +115,7 @@
             logging.StreamHandler    将日志消息发送到Stream,std.out,std.error或任何file
             logging.FileHandler      将日志消息发送到磁盘文件大小会无先增长
             logging.handlers.RotaingFileHandler    将日志消息发送到磁盘文件,并支持日志文件按大小切割
-            loggiing.handlers.TimeRobatingFileHandler  将日志消息发送到磁盘文件,并支持日志文件按时间生成
+            loggiing.handlers.TimedRobatingFileHandler  将日志消息发送到磁盘文件,并支持日志文件按时间生成
             logging.handlers.HTTPHandler     将日志消息以GET或POST的方式发送给一个HTTP服务器
             logging.handlers.SMTPHandler     将日志消息发送给一个指定的email地址
             logging.NullHandler        该Handler实例会忽略error messages 通常被想使用logging的过滤
