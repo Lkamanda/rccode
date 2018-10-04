@@ -1,0 +1,6 @@
+2018-09-30 00:03:44,475 - DEBUG - 02.py[:40] -debug message
+2018-09-30 00:03:44,476 - INFO - 02.py[:41] -info message
+2018-09-30 00:03:44,476 - WARNING - 02.py[:42] -warning message
+2018-09-30 00:09:04,002 - DEBUG - 02.py[:40] -debug message
+2018-09-30 00:09:04,007 - INFO - 02.py[:41] -info message
+2018-09-30 00:09:04,007 - WARNING - 02.py[:42] -warning message
