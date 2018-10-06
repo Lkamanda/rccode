@@ -70,7 +70,7 @@
             - 对多线程共享资源 ,进行上锁
                 - lock.acquire
             - 共享资源使用完成解锁
-                - lcok.release()
+                - lock.release()
         - 理解锁: 锁其实是一个令牌,只有拿到令牌的线程才有资格去访问锁,其他的排队
     - 线程安全问题:
         - 如果一个在资源/变量,他对于多线程来讲,不用枷锁也不会引起任何问题,则称为线程安全
@@ -106,11 +106,69 @@
         - 案例v16
         - 设置6秒钟后开始进程
             - t = threading.Timer(6,func)
+        - Timer是利用多线程,在指定时间启动一个工功能
         
-            
-        
-        
-                       
+    - 可以重入锁
+        - 一个锁可以被一个进程多次申请
+        - 主要解决递归调用的时候,需要申请锁的情况
+        - 案例v17 : RLock()
+            - mutex = threading.RLock()
     
-        
+# 线程代替方案
+- subprocess
+    - 完全跳过线程,使用进程
+    - 是派生进程的主要代替方案
+    - python2.4后进入
+- multiprocessing 
+    - 使用threading 接口派生,使用子进程
+    - 允许为多核或者多cpu派生进程,接口跟threading 非常相似
+    - python 2.6
+
+- concurrent.futures
+    - 新的异步执行模块
+    - 任务级别的操作
+    - Python 3.2 后引入
+# 多进程
+- 进程间通讯(InternprocessCommunication , IPC)
+- 进程之间无任何共享状态
+- 进程的创建
+    - 案例 V18 
+    - 直接生成Process实例对象
+        -  p = multiprocessing.Process(target=clock, args=(5, ))
+
+    - 案例V19
+        - 衍生一个子类创建进程
+
+- 在os中查看pid. ppid以及他们的关系
+    - pid 进程的id
+    - ppid 父进程id          
+    - 案例20
+        - 得到运行函数名称
+            - __name__
+        - 得到父进程id
+            - os.getppid()
+        - 得到进程本身id
+            - os.getpid()   
+            
+- 生产者消费者模型
+    - 进程实现
+    - queue(队列)
+        - work1                         消费者1
+        - work2                         消费者2
+        - workn --- 仓库(queue)    ----  消费者n
+                    -FIFO(first in first out)    
+    
+    - JoinableQueue
+    - 案例 V21
+        - q = multiprocessing.JoinableQueue()
+    
+    - 队哨兵的使用
+        - 案例V22    
+            - 在队列里加入哨兵
+            - 在消费者里加入判断
+        -  哨兵的改进
+            - 案例 V23
+                - 假定有多个消费者
+                
+      
     
