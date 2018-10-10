@@ -40,9 +40,9 @@ def youdao(key):
                 "User-Agent":"Mozilla/5.0(X11;Linux x86_64) AppleWebKit/537.36(KHTML, likeGecko)Chrome/64.0.3282.119Safari/537.36",
                 "X-Requested-With":" XMLHttpRequest"
     }
-    req = request.Request(url=url, data =data, headers =headers)
+    req = request.Request(url=url, data=data, headers=headers)
     rsp = request.urlopen(req)
-    html  =rsp.read().decode()
+    html = rsp.read().decode()
     print(html)
 
 if __name__ == '__main__':
