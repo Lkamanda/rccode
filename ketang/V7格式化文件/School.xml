@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<school>
+    <Teacher desc="理工大学" score="01">
+        <!-- desc是Teacher的属性-->
+        <Name>dana</Name>
+        <Age> details="Age for yeat 1996"</Age>
+    </Teacher>
+    <Student>
+        <Name>小林</Name>>
+        <age>27</age>
+    </Student>
+    <!-- 这是一个注释 -->
+</school>

@@ -1,0 +1,74 @@
+# JSON
+- 在线工具
+    - https://www.sojson.com/
+    - http://www.w3school.com.cn/json/index.asp
+    - http://www.ruboob.com/json/json-tutorial.html
+
+- JSON (JavaScriptNotation)
+- 轻量级数据交互格式, 基于ECMAScript
+- json格式是一个键值对形式的数据集
+    - key:字符串
+    - value:字符串,数字,列表,json
+    - json使用大括号包裹
+    - 键值对直接用大括号隔开
+        
+        student ={
+            "name": "xiaolin",
+            "age" : 22,
+            "mobile: "123"
+        }
+- json和python 格式的对应
+    - 字符串:字符串
+    - 数字: 数字
+    - 队列: list
+    - 对象: dict 
+    - 布尔值: 布尔值
+- python for json 
+    - json包
+    - json 和python对象的转换
+        - json.dunps():对数据编码, 把python编码格式转换成json格式
+        - json.loads():对数据解码, 把json格式转换成python格式
+        - 案例 v01
+    - python读取json文件
+        - json.dump():把内容写入文件
+        - json.load():把json内容写入python
+        - V02
+        
+ # 正则表达式(RegularExpression, re)
+ - 文本文件内查找
+    - 是一个计算机概念
+    - 用于使用单个字符串来描述,匹配符合某个规则的字符串
+- 脱敏
+   - 一个查找一个替换
+## 正则写法
+- .(点号): 表示任意一个字符,除了\n, 比如查找所有的一个字符\.
+- [](中括号): 匹配中括号中列举的任意字符,比如[L,Y,0] ,LLY,Y0可以,LIU不可以
+- \d:任意一个数字
+- \D:除了数字都行
+- \s:表示空格,tab键
+- \S:除了空白字符串
+- \w:单词字符串,就是a-z, A-Z, 0-9
+- \W:除了 \w的
+- * : 表示前面内容重复零次或多次, \w*
+- + : 前面内容至少出现一次
+- ? : 前面才出现的内容零次或一次
+- {m,n}:允许前面内容出现最少m次,最多n次
+- ^ : 匹配字符串的开始
+- $ : 匹配字符串结尾
+- \b : 匹配单词边界
+- () : 对正则表达式进行分组, 从第一个括号开始,编号逐渐增大
+        
+        验证一个数字: ^\d$
+        必须有一位数字,最少一位:^\d+$
+        只能出现一位数字, 且位数为5-10: ^\d{5,10}$
+        注册者输入年龄,要求16岁以上,99岁以下: ^[16-99]$
+        只能输入英文字符和数字: ^[A-Za-z0-9]$
+        验证qq号码; [0-9]{5,12}
+- \A:只匹配字符串开头, \Aabcd,abcd 
+- (!?) 不能出现的括号内
+- \Z:仅匹配字符串末尾, abcd\Z , abcd
+- | : 左右任意一个
+- (?P<name>..): 分组
+- (?P=name): 引用分组
+ # xpath 
+ - xml 中查找
