@@ -1,0 +1,29 @@
+# 验证码问题
+- 分类:
+    - 简单图片
+    - 极验证GEETest
+    - 12306
+    - 电话
+    - Google 验证
+- 验证码破解
+    - 通用方法:
+        - 下载网页和验证码
+        - 手动输入验证号码
+    - 简单图片
+        - 使用图像识别软件或文字识别软件
+        - 可以使用第三方推向验证码破解网站
+            - www.chaojiying.com
+    - 极验
+        - 破解比较麻烦
+        - 可以模拟鼠标等移动
+        - 一直进化
+    - 电话:语音识别    
+
+# Tesseract
+    - 机器视觉领域的基础软件
+    - OCR:OpticalChracterRecognition,官学文字识别
+    - Tesseract: 一个ocr 库,有google资助
+    - 安装
+        -  pip install pytesseract
+    - 案例v-01     
+        

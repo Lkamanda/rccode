@@ -1,0 +1,43 @@
+# 动态HTML
+## 爬虫根反爬虫
+## 动态HTL介绍
+- JavaScript
+- jQuery
+- Ajax: 数据
+- DHTML
+- python采集动态数据
+    - 以Javascript代码入手采集
+    - Python 第三方库运行JavaScript直接采集你在浏览器看到的页面
+
+## Selenium + PhantomJS
+- Selenium :web 自动化测试工具
+    - 自动加载页面
+    - 获取数据
+    - 截屏
+    
+- PhantomJS(幽灵)
+    - 基于webkit 的无界面的浏览器
+    
+- Selenium 库有一个WebDriver 的API
+- WebDriver 可以跟页面上的元素进行各种交互,用它可以来进行爬取
+    - 案例01
+- Chrome headless
+- Selenium 操作主要分俩大类
+    - 得到UI元素
+        - find_element_by_id()
+        - find_elements_by_name()
+        - by_xpath
+        - by_link_text
+        - by_partical_link_text
+        - by_tag_name
+        - by_css_selector
+    - 基于UI元素操作模拟
+        - 单击:click(on_element=None)
+        - 右键:context_click(on_element=None)
+        - 拖拽:drag_and_drop(source, target)
+        - 输入:send_keys
+        - 可以通过ActionChians类
+        - V02
+            - 键盘事件:
+                - http://www.cnblogs.com/guo-zhi-jia-123/p/9386797.html
+             

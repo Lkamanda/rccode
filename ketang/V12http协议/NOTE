@@ -1,0 +1,97 @@
+# HTTP简介
+- 超文本
+    - 包含有超链接和各种多媒体元素表紧(Markup)的文本,这些超文本文件,这些超文本
+    文件彼此链接,形成网状(web),因此又被称为网页(Web Page),这些链接使用URL表示,
+    最常见的超文本格式是超文本标记语言(HTML)
+- URL
+    - URL即统一资源定位符(Uniform Resource Locator),用来唯一地表示网维网中的某一个文档,
+    - URL: 协议 主机和端口(默认为80)三部分构成
+- HTTP
+    - 是一种按url指示,将超文本文档从一台主机()web 服务器)传输到另一台主机/浏览器的应用层协议,以实现超链接的功能
+ 
+- HTTP工作原理
+    - 请求响应模型
+        - 1.分析超链接url 
+        - 2.浏览器向DSN解析url的IP地址
+        - 3.DNS将解析出的IP地址返回浏览器
+        - 4.浏览器与服务器建立TCP链接(80端口)
+        - 5.浏览器请求文档:GET/ index.html
+        - 6.服务器给出相应,将index.html发送给浏览器
+        - 7.释放TCP链接
+        - 8.浏览器显示index.html中内容
+        - DNS根服务器
+    - 链接方式
+        - 持久连接
+            - 在一个连接中,可以进行多次文档的请求和响应,服务器在发送完响应后,并不立即释放链接,浏览器可以使用该链接继续
+            请求其他文档,链接保持时间可以由双方进行协商
+            - 你问我答,我一直等你
+        - 非持久连接
+            - 浏览器请求每一个web文档,就创建一个连接.当文档传输完毕后,连接就立即被释放
+            - 你问我给你连接,我不等你反馈
+    - 无状态性 
+        - 是指同一个客户端第二次访问统一个web端服务器页面时,服务器无法知道这个客户端曾经访问过.
+        HTTP的无状态性简化了服务器的设计,使其跟容易支持大量并发的HTTP请求.
+        
+    - HTTP报文结构:
+        - 请求报文
+            - 请求行:即重客户端向Web服务器发送请求报文,报文的所有字段都是ASCII码
+                - 方法 url 版本 : 例: GET  /index.html HTTP/1.1
+                    - 版本:不同版本解析方式不同
+            - 首部行: 用来说明浏览器、服务器或报文主体的一些信息
+                - 首部字段名: 值  例:Host www.xctyu.com
+                - 首部字段名: 值     Connection: close
+                                     User-Agent: Mozilla/5.0
+                                     Accept-Language: cn
+            - 实体主体:Entity body
+        - 返回报文
+            - 状态行
+                - 版本 状态码 短语 CRLF     例: HTTP/1.1 200 OK 
+            - 首部行 用来说明浏览器/服务器或报文主体的一些信息
+                - 首部字段名 值 CRLF     例: Data: Wed,08 May 2008 22
+                                             Sever: Apache/1.3.2(Unix)
+                                             Content-Length:
+                                             DateDaDat4069
+                                             Content-Type: text/html
+            - 实体主体(Entity body)                                      
+        - 请求报文中方法
+            - GET :读取一个Web页面
+            - POST: 附加一个命名资源(如web页面) 给服务器发消息
+            - DELETE:删除Web 页面 
+            - CONNECT: 用于代理服务器
+            - HEAD : 请求读取一个Web页面的首部
+            - PUT: 请求存储一个Web页面
+            - TRACE:用于测试,要求服务器发送收到的请求
+            - OPTION:查询特定选项
+        - 响应报文中的状态码
+            - 状态码  含义        例子
+            - 1XX     通知信息    100 = 服务器正在处理客户请求
+            - 2XX     成功        200 = 请求成功(OK)
+            - 3XX     重定向      301 = 页面改变了位置
+            - 4XX     客户错误    403 = 进制页面: 404 页面未找到
+            - 5XX     服务器错误  500 = 服务器内部错误: 503= 以后再试
+        - 首部字段或消息头
+            - User-Agent  请求 身份信息
+            - Accept      请求 客户处理页面类型 text/html
+            - Accept-Charset 请求 客户可以接受的字符集 如Unicode-1-1
+            - Accept-Encoding 请求 客户端请求页面编码法法, 如: gzip
+            - Accept- Language 请求 客户端处理的自然语言 如:中文 zh-cn
+            - Host  请求  服务器的DNS名称,从URL中提取出来,必须
+            - Authorization 请求 客户凭据列表
+            - Cookie  请求 将以前设置的Cookie 发送回服务器,可以用来作为会话信息
+            - Data   双向  消息被发送时的日期和时间
+            - Server 响应  关于服务器的信息,Microsoft-LLS/6.0
+            - Connect-Encoding 响应 内容是如何编码的(如zip)
+            - Connect-Language 响应 页面所使用的自然语言
+            - Connect-Length 以字节计算的页面长度
+            - Content- Type 响应 页面MIME类型
+            - Last-Modified 响应 页面最后被修改的时间和日期,在页面缓存机制意义重大
+            - Location 响应 制式客户将请求发送给别处,即重定向到另一个URL
+            - Set-Cookie  响应 服务器希望客户保存一个Cookie 
+        - 报文结构实例
+- HTTP代理 
+    - 什么事HTTP代理
+         - HTTP代理又称web缓存或服务器代理(proxy Server)是一种网络实体,能代表浏览器发出HTTP请求,并将
+         最近的一些请求和享用缓存在本地磁盘中,当请求的web页面先前暂存过,则直接减暂缓的页面大宋给客户端
+         ,无需在次访问
+    - 使用HTTP代理的web访问过程
+        - 本在有直接给你,没有去网上找,本地保留一份,把页面你.

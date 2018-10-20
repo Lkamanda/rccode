@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding="utf-8" ?>
+<bookstore>
+    <book category="cooking">
+        <title lang="en">Everyday English</title>
+        <author>xiaolin</author>
+        <year>2018</year>
+    </book>
+
+    <book category="education">
+        <title lang="en">python is python </title>
+        <author>xiaolin</author>
+        <year>2018</year>
+    </book>
+
+    <book category="sport">
+        <title lang="en">basketball</title>
+        <author>xiaolin</author>
+        <year>2018</year>
+    </book>
+</bookstore>

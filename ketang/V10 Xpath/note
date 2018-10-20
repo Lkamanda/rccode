@@ -1,0 +1,39 @@
+# Xpath 
+- 在XML文件中查找一套规则/语言，根据XML的元素或者属性进行遍历
+- http://www.w3school.com.cn/xpath/index.asp
+- XPath 开发工具
+    - 开源的Xpath 表达式编辑工具：XMLQuire
+    - Chrome 插件 ：XPath Helper
+    - Firefox 插件： Xpath Checker 
+    - scrapy shell
+ - json 美化工具
+ # 选区节点
+ - nodename : 选区此节点所有子节点
+ - /： 从根节点开始选取
+    
+        /Student： 没有结果
+        /School : 选区school节点
+- //： 选区节点不考虑位置
+        
+        //age : 选取多个几点，一般组成列表
+- .： 选区当前当前节点
+- ..: 选区当前节点的父亲节点
+- @ : 选区属性
+            
+            //@ OTher : 选取Other属性
+            //Age[@Detail]: 选取带有Detail的age属性
+ 
+# 谓语 -Predicates 
+- /School/Student[1]: 选取School下面的第一个Student节点
+- /School/Student[last()]: 选取School下面的最后一个Student的节点
+- /School/Student[last()-1]: 选取School下面倒数第二Student的节点
+- /School/Student[position()<3]: 选取School下面的前俩个Student节点
+- //Student[@score]: 选取带有属性score的student节点
+- //Student[@score="99] : 选取属性为score=99 的student的节点
+- //Student[@score]/Age: 选取带有属性score的Student节点的子节点Age
+
+# Xpath 的一些操作
+- |: 或者 （并集）
+        
+        //Student[@score] | //Teacher: 把这俩个节点找到
+- 其余不常见Xpath运算符号包括 + - * div >  < 
