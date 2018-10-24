@@ -4,6 +4,7 @@ import json
 
 def shanbei(page):
     url ="https://www.shanbay.com/wordlist/187711/540709/?page=%s" % page
+    url = ""
     rsp = request.urlopen(url)
     html = rsp.read()
     html = etree.HTML(html)

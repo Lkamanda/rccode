@@ -1,0 +1,24 @@
+import xml.dom.minidom
+from xml.dom.minidom import parse
+
+# 使用minidom解析xml文件
+DomTree = xml.dom.minidom.parse("school.xml")
+
+# 显示子元素
+doc = DomTree.documentElement
+
+# 显示子元素
+for ele in doc.childNodes:
+    if ele.nodeName == "Teacher":
+        print("---------Node:{0}--------".format(ele.nodeName))
+        childs = ele.childNodes
+        for child in childs:
+            if child.nodName == "Name":
+                # data 是文本节点的一个属性,表示他的值
+                print("Name:{0}".foramt(child.childNodes[0].date))
+            #if child.nodeName =="Mobile":
+                #data是文件是文本节点的一个属性,表示他的值
+            if child.nodeName == "Age":
+                # data是文本节点的一个属性,表示它的值
+                if child.hasAttribute("detail"):
+                    print("Age.detail:{0}".format(child.getAttribute("detail")))
