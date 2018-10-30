@@ -179,6 +179,31 @@
 - 安装scray_redis
     - pip install scrapy_redis
     - scrapy-redis.readthedocs.org
+- scrapy startproject baidu
+  scrapy crawl baidu
+  
+- 案例el_02
+    - 创建新项目
+    - 定义item 
+    - 编写pipeline ,确定如何处理item 
+    - 编写spider 确定如何提取item 
+    - 可以增加一个单独命令文件的方式在pycharm中启动爬虫
+
+- 案列el_03 qq招聘
+    - 创建项目
+    - 编写item
+    - 编写spider 
+    - 设置pipeline
+    
+- el_04- 校花网
+    - 创建项目
+    - 编写item
+    - spider
+    - pipeline
+    - 设置pipeline
+    - 中间件,会使用selenium
+
+    
     
    
    
