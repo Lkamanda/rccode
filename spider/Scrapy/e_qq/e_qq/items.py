@@ -8,13 +8,18 @@
 import scrapy
 
 
-class El04Item(scrapy.Item):
+class EQqItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
 
-class XiaohuaItem(scrapy.Item):
+class QQItem(scrapy.Item):
+    '''
+    # 下面定义需要的数据段
+    '''
+    name = scrapy.Field()
+    detailLink = scrapy.Field()
+    positionInfo = scrapy.Field()
+    workLocation = scrapy.Field()
 
-    title = scrapy.Field()
-    href = scrapy.Field()
-    src = scrapy.Field()
+

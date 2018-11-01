@@ -8,13 +8,12 @@
 import scrapy
 
 
-class El04Item(scrapy.Item):
+class V01Item(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    name = scrapy.Field()
+    href = scrapy.Field()
+    tv = scrapy.Field()
+    time = scrapy.Field()
     pass
 
-class XiaohuaItem(scrapy.Item):
-
-    title = scrapy.Field()
-    href = scrapy.Field()
-    src = scrapy.Field()

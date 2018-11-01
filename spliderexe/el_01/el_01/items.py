@@ -8,13 +8,7 @@
 import scrapy
 
 
-class El04Item(scrapy.Item):
+class El01Item(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
-
-class XiaohuaItem(scrapy.Item):
-
-    title = scrapy.Field()
-    href = scrapy.Field()
-    src = scrapy.Field()

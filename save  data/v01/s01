@@ -1,0 +1,12 @@
+# 非结构化数据
+- ETL : extract , transformation loading 
+- DOM Tree
+    - Document Object Model
+- 使用requests urllib  获取页面
+    - InfoLite
+- 使用bs4 把页面内容剖析
+- re
+
+- Python for Data Analysis
+    - Table-Like 
+    - 提供高效能简易的资料格式(Data frame) 使用者可以快速操作以及分析资料

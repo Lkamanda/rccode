@@ -23,8 +23,8 @@ headers = {
 req = request.Request(url=baseurl, data=data, headers=headers)
 
 # 因为我们已经构造了一个Request的请求实例,则所有的请求信息都可以封装在Requrst实例中
-rsp =request.urlopen(req)
-json_data= rsp.read().decode('utf-8')
+rsp = request.urlopen(req)
+json_data = rsp.read().decode('utf-8')
 
 # 把json字符串转换成字典
 json_data = json.loads(json_data)
