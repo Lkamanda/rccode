@@ -1,0 +1,48 @@
+# 网络爬虫
+- 数据结构算法
+- scrapy redis  分布式爬虫
+- findjs
+- mysql mongodb 存放数据  redis 分布式
+- hbase 大数据数据库
+##
+- python 基础语法学习
+- HTML页面内容抓取(数据抓取)
+- HTML页面数据提取
+- scrapy 框架以及scrapy - redis 分布式（第三方框架）
+- 爬虫Spider,反爬虫（Aniti-Spider）,反反爬虫
+ 
+ ## 爬虫流程
+ - 1.获取网页
+ - 2.解析网页(获取数据)
+ - 3.存储数据
+ ### 三个流程技术实现
+ - 获取网页
+    - 获取网页的基础技术:urllib ,request ,selenium
+    - 获取网页的进阶技术:多线程,登录抓区域,突破ip限制和服务器抓取 
+- 解析网页
+    - 解析网页的基础技术:re 正则表达式,BeautifulSoup 和xmL
+    - 解析网页的进阶技术:解决中文乱码
+- 存储数据
+    - 存储数据的基本技术:存入txt 文件和存入csv文件
+    - mysql mongoDB
+
+###搭建python 爬虫平台 
+    - python的安装
+    - 集成环境Anconda安装
+    - 使用pip工具安装第三方库
+### urllib 库
+- request.urlopen
+    - 主要使用get发起请求
+        from urllib import request 
+        url = 'http://baidu.com'
+        response = request.urlopen(url)
+        # 默认为utf-8 根据网页实际设置进行解码
+        content = response.read().decode()   
+- 验证headers 通过添加headers
+- parse :urllib 用来解析各种数据格式的模块
+    - urlencode 传入的参数必须是字典格式的
+    qs ={
+    'kw':name,
+    'pn':i*50
+    }    
+    parse.urlencode(qs)
