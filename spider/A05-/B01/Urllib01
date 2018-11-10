@@ -46,3 +46,9 @@
     'pn':i*50
     }    
     parse.urlencode(qs)
+    
+- urllib.error 
+    - URLError , HTTPError (是URLError的子类)
+- urlopen 默认范文方式为GET ,
+    - 当urlopen()中传入data参数是,则会发起pose请求
+    
