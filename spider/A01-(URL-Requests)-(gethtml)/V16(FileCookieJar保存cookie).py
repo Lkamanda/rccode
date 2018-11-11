@@ -18,8 +18,8 @@ def login():
     url = 'http://www.renren.com/PLogin.do'
 
     data = {
-        'email':'18612463553',
-        'password':'123456zxy'
+        'email': '18612463553',
+        'password': '123456zxy'
     }
 
     data = parse.urlencode(data)
@@ -29,7 +29,7 @@ def login():
     #保存cookie到文件
     #ignor_discard表示即使cookie将要被丢弃也要保存下来
     #ignore_expire 表示文件中cookie即时已经过期,保存
-    cookie.save(ignore_discard=True, ignore_expires= True)
+    cookie.save(ignore_discard=True, ignore_expires=True)
 
 if __name__ == '__main__':
     login()

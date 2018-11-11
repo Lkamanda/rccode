@@ -49,6 +49,17 @@
     
 - urllib.error 
     - URLError , HTTPError (是URLError的子类)
-- urlopen 默认范文方式为GET ,
-    - 当urlopen()中传入data参数是,则会发起pose请求
-    
+- urlopen 默认访问方式为GET ,
+    - 当urlopen()中传入data参数是,则会发起post请求
+        - 传入data 数据需要为bytes 格式
+- 使用cookie登录
+- proxy 使用
+    - 构建 proxy_list
+    - 构建 proxy_handler 代理管理器
+        - proxy_handler=request.ProxyHandler(proxy)
+    - 构建 opener 对象
+        - opener = request.build_opener(proxy_handler)
+    - 构建请求对象
+        - req = request.Request(url, headers= headers)
+    - 发起请求
+        - response = opener.open(req)
