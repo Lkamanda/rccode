@@ -8,6 +8,7 @@ def spider(url):
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
     ]
     user_agent = random.choice(user_agent_list)
+    print(user_agent)
     headers = {
         "User_Agent": user_agent
     }
