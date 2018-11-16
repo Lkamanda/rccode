@@ -40,7 +40,6 @@ def yd_spidler(context):
     headers = {
         "User_Agent": user_agent,
         "Content_Length": len(data),
-        "Accept-Encoding": "gzip, deflate",
         "Accept-Language": "zh,en;q=0.9,en-US;q=0.8",
         "Connection": "keep-alive",
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
