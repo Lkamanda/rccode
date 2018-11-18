@@ -1,0 +1,24 @@
+# request : HTTP For Human
+## 请求方法
+### get 请求
+- headers 参数 和 params 参数
+    import requests 
+    kw= {"kw":"小林"}
+    response = requests.get(url=url,params = kw, headers=headers) 
+    
+    - 俩种查看返回信息的方法
+        - response.text 
+            - 返回的是字符串
+        - response.content
+            - 返回的是二进制, 字节流
+            
+### post 请求 (data 参数)
+- 登录的时候,提交表单
+
+### 代理
+    proxies= {
+    "http": "http://171.37.165.131:8123",
+    "http": "http://218.14.115.211:3128"
+     }
+     response = request.get(url=url, proxies=proxies) 
+           
