@@ -21,4 +21,20 @@
     "http": "http://218.14.115.211:3128"
      }
      response = request.get(url=url, proxies=proxies) 
-           
+     - 私密代理
+     proxy = {"http":"用户名:密码:代理地址:端口号"}
+     请求的时候一样
+### web 客户端的验证
+- 针对于登录接口的请求
+    - requests.get("接口",auth=('user','pass')) 
+        - 需要对user ,pass 进行设置
+
+### Cookies
+- 对cookie 的获取
+    - response = requests.get(url)
+    - 返回cookiejar对象  
+        - cookiejar = response.cookies
+    - 将cookiejar 转换成字典
+        - cookiedict = requests.utils.dict_from_cookiejar(cookiejar)
+            
+    
