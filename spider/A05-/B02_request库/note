@@ -36,5 +36,20 @@
         - cookiejar = response.cookies
     - 将cookiejar 转换成字典
         - cookiedict = requests.utils.dict_from_cookiejar(cookiejar)
-            
-    
+### 去求到页面出现乱码的解决办法
+- response.encoding = response.apparent_encoding  
+### session 
+- session 对象代表依次对话: 从客户端对浏览器链接服务器开始,到客户端浏览器与服务器断开.
+- 会话能让我们在请求时保持默写参数,比如在同一个session实例发出的所有请求之间保持cookie
+    - 实例
+    - 创建一个session 对象,可以保存cookie值
+    session = requests.session()
+    - 处理headers
+    headers = {}
+    - 创建data :内包含登录的用户名密码
+    data = {"user":"用户名","password":"密码"}
+    - 发起请求,并获取携带cookie的session 
+    session.post(url=url, data=data,headers=headers)
+    - session 对象被使用后自动携带cookie,即可使用session对只能登录后才能访问的页面进行访问
+    response = session.get(url=url)
+### ssl 
