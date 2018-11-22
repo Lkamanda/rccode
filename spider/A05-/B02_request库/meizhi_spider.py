@@ -20,7 +20,8 @@ def mz_spider(base_url, headers):
 # 对详情页面的处理
 def img_parse(img_url):
     headers={
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
+        "User-Agent": user_agent,
+        "Referer": "https://www.mzitu.com/"
     }
     req = requests.get(img_url, headers=headers)
     html = etree.HTML(req.text)
@@ -34,7 +35,7 @@ def img_parse(img_url):
     #print(page_num)
 
     # 拼接详情页的n页链接地址
-    for num in range(1,int(page_num)+1):
+    for num in range(1, int(page_num)+1):
         img_src = img_url + "/" + str(num)
         #print(img_src)
         download_img(img_src, title)
@@ -57,7 +58,7 @@ def download_img(img_src, title):
     root_dir = root_dir + "\\" + title
     if not os.path.exists(root_dir):
         os.makedirs(root_dir)
-    res = requests.get(img_url, headers)
+    res = requests.get(img_url, headers=headers)
 
     # 写入文件
     with open(root_dir + "\\" + img_name, 'wb') as f:
@@ -66,6 +67,7 @@ def download_img(img_src, title):
         print(title+"---" + img_name)
 
 if __name__ == '__main__':
+    pages = input("你想抓取多少页的图片:")
     start_url = "https://www.mzitu.com/"
     user_agent_list = [
         "Mozilla/4.0(compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
@@ -82,7 +84,7 @@ if __name__ == '__main__':
 
     # base_url = "https://www.mzitu.com/page/2/"
     # 妹子图
-    for n in range(1, 2):
+    for n in range(1, int(pages)):
         base_url = start_url + "page/" + str(n)
         print(base_url)
         mz_spider(base_url, headers)
