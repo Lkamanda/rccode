@@ -2,7 +2,6 @@ import requests
 from lxml import etree
 import random
 # 代码优化,将相同的操作封装成装饰器
-from time import sleep
 import os
 
 def mz_spider(base_url, headers):

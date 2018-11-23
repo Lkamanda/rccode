@@ -6,5 +6,5 @@ def getMd5(value):
     sign = md5.hexdigest()
     print(sign)
 if __name__ == '__main__':
-    a = '123456'
+    a = '1234567'
     getMd5(a)
