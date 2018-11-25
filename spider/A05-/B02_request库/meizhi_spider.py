@@ -1,4 +1,5 @@
 import requests
+from bs4 import BeautifulSoup
 from lxml import etree
 import random
 # 代码优化,将相同的操作封装成装饰器
