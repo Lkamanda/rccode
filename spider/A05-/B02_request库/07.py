@@ -32,6 +32,32 @@ class Sdn():
             # title 每个帖子下的标题
             title = item.select('h3 a[class="titlelnk"]')[0].get_text()
             print(title)
+            # href 帖子链接
+            href = item.select('h3 a[class="titlelnk"]')[0]['href']
+            # author 帖子作者
+            # aut = item.select('div a[class="lightblue"]')[0].get_text()
+            # time 贴发表时间
+            time = item.select('div[class="post_item_foot"]')[0].get_text().strip(' ').strip('\n')
+            # print(time)
+            time = time.split(' ')
+            # print(len(time))
+            # 发布时间
+            aut1 = time[0]
+            print(aut1)
+            time_1 = str(time[6]) + ' ' + str(time[ 7 ])
+            print(time_1)
+            # comment 评论数  readnum
+            # commentnum_readnum = time[-1]
+            # 评论(0)阅读(1)
+            pinglun = time[-1].lstrip('评论(').rstrip(')')[0]
+            read_num = time[-1].lstrip('评论(').rstrip(')').split('(')[-1]
+            print(pinglun)
+            print(read_num)
+            read_num = time[-1].strip('')
+            aut_href = item.select('div a[class="lightblue"]')[0].get('href')
+            # content 贴子内容简介
+            content = item.select('p[class="post_item_summary"]')[0].get_text().strip('\n').strip(' ')
+            # print(content)
 if __name__ == '__main__':
     page_num = int(input('请输入你想查询信息的页数:'))
     sdn = Sdn()
