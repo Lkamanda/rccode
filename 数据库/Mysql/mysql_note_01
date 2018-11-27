@@ -1,0 +1,6 @@
+# mysql 
+- 分表， 分库，
+## 数据库定义
+- 数据库：DB：DataBase:依照某种数据模型进行组织存放到存储器的数据集合
+- 数据库管理系统：DBMS: Data Base Management System: 用来操作和管理数据库的大型服务软件。
+ 

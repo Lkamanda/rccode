@@ -32,9 +32,12 @@ for mulu in soup.find_all(class_="mulu"):
             # split('') 指定字符串中指定字符进行切片
             # strip('') 吧字符串收尾指定字符切掉
             box_title = a.get('title').split(']')[-1].strip(' ')
+            print(box_title)
             list.append({'href': href, 'box_title': box_title})
         content.append({'title': h2_title, 'content': list})
         # print(content)
 with open('gcd.json', 'a', encoding='utf-8') as fp:
+    # json dump 序列化时对中文默认进行asc码编码
     json.dump(content, fp=fp, indent=4, ensure_ascii=False)
 
+# 把文件写入 text 文件，或word 文件
