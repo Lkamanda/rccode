@@ -4,7 +4,7 @@ LOG_FORMAT = "%(asctime)s=====%(levelname)s++++++%(message)s"
 
 
 # 设置存放日志路径,以及异常显示级别
-logging.basicConfig(filename="xiaolin2.log", level=logging.DEBUG,format=LOG_FORMAT)
+logging.basicConfig(filename="xiaolin2.log", level=logging.DEBUG, format=LOG_FORMAT)
 # format 格式
 # datefmt时间格式
 # level级别

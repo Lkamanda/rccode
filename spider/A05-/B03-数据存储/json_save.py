@@ -20,7 +20,7 @@ html = req.text
 soup = BeautifulSoup(html, 'lxml')
 content = []
 for mulu in soup.find_all(class_="mulu"):
-    list=[]
+    list = []
     h2 = mulu.find('h2')
     # print(h2)
     if h2 != None:
