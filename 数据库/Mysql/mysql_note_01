@@ -17,4 +17,23 @@
         - Neo4j： 存图
     - SQL
 ## MySQL
-- 适用于中小型、关系型数据库系统    
+- 适用于中小型、关系型数据库系统
+- 安装：
+    - sudo apt-get update
+    - sudo apt-get install mysql-server
+    - sudo apt-get install mysql-client
+    - sudo apt-get install libmysqlclient-dev
+- mysql 数据库远程连通
+    - 修改 my.conf
+        - bind-address 注释
+        - 将这一行改为：blind-address = 0.0.0.0
+    - 让root 用户远程链接数据库
+        - mysql -u root -p
+        - grant all privileges on*.*to root@'%' identified by 'password' with grant option;
+        - flush privilesgs
+    - chel7 中防火墙允许mysql 服务通过
+        firewall-cmd -- perment --add-service=mysql
+        重新加载防火墙规则
+        fire-cmd -- reload
+- python 操作mysql
+    - pip install mysql

@@ -1,0 +1,16 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+.huawei.com	TRUE	/	FALSE		accountid	www_13734294368
+.huawei.com	TRUE	/	FALSE		authmethod	77-22-F7-0E-84-9F-31-CD
+.huawei.com	TRUE	/	FALSE		firstlogin_www_13734294368	true
+.huawei.com	TRUE	/	FALSE		hwsso_uniportal	c3VHk9gzek6JdPkZHfHjJNmjX4z5LklorRtnkYObltnyzYo7U4p3Qec_a9p3RSMZwI8_aQYR1HTvoI7PBM2FT5sVWzEQHcFTwKkLKc52fsw2sU0qmFEF6bFMU7lscOV32pp8B0U31Gy_apIMXg7Otucl_bkeT9Tc9dFP_aFfj2EdbspbzPvesBsdbYoaBenckfVXaayMyd1PsKeTC4c4OuUdOHbPAjHPTEEPQOh29fzvHq3kNA7Ouz92dgqiTQW3HbChSkbkXECtFOY2d2gArokO9_bw4tJ3cBjL7PYrulR7kJVNqFBRbIXw_bcyVrln_aWe3UvbzQ9DLqvn5RMvnZ1CH0_ay3Q_c_c
+.huawei.com	TRUE	/	FALSE		hwssotinter	69-34-D7-1C-BE-2D-50-10-29-70-79-80-06-50-DC-7F
+.huawei.com	TRUE	/	FALSE		hwssotinter3	26340315744200
+.huawei.com	TRUE	/	FALSE		logFlag	in
+.huawei.com	TRUE	/	FALSE		per_loginuser	{"accountid":"www_13734294368","position":"","source":"cbg"}
+.huawei.com	TRUE	/	FALSE		sid	C0-FF-45-7A-6C-FC-06-CB-EB-35-52-4E-3B-AD-B4-45-C9-4D-CB-75-85-52-87-E6-40-C4-BB-BC-64-44-40-E5-8B-F7-6E-43-F8-84-25-01
+.huawei.com	TRUE	/	FALSE		sip	14-B9-DC-D1-2F-00-FE-70-3F-F3-7B-E6-06-C3-08-BE-DD-80-3A-2E-CE-AA-89-6B
+.huawei.com	TRUE	/	FALSE		uid	F7-8C-48-25-99-0E-4A-40-C8-8C-58-DB-BE-6E-D8-25
+www.huawei.com	FALSE	/	FALSE		cbg1#lang	en

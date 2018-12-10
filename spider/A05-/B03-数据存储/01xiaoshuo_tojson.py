@@ -20,7 +20,7 @@ req = requests.get(url, headers=headers)
 html = etree.HTML(req.text)
 div_mules = html.xpath('//*[@class="mulu"]')
 rows = []
-headers = ['标题', '小标题', '网址',]
+headers = ['标题', '小标题', '网址']
 for div_mule in div_mules:
     div_h2 = div_mule.xpath('.//div[@class="mulu-title"]/center/h2/text()')
 
