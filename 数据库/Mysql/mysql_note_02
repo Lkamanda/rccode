@@ -41,6 +41,7 @@ create TABLE db_admain(
 - [IGNORE] :可选项 ，表示如果出现重复关键的行只执行一行，其他重复的行被删除 
 - 数据库名：被修改的数据库名
 - alter_spec子句：用于定义修改内容，其语法格式如下;
+- ALTER TABLE
     - ADD [COLUMN] create_definition [FIRST |AFTER column_name]  // 添加新的字段
         - create_definition :定义数据的类型和属性 其语法和create table 一致
         - FIRST :新增字段前的字段
@@ -48,4 +49,30 @@ create TABLE db_admain(
     -  ADD INDEX[index_name](index_col_name)  // 添加索引名称
         - [index_name] : 可选项，用于指定索引名
         - （index_col_name）: 用于指定索引的列名
-    - 
+    - ADD PRIMARY KEY(index_col_name) // 添加主键名称
+    - ADD UNIQUE[index name](index_col_name)  //添加唯一索引名称
+    - ALTER [COLUMN] col_name{SET DEFAULT literal| DROP DEFAULT} //修改字段默认值
+        - column :表名
+        - col_name: 字段名
+        - SET DEFAULT 设置  literal 默认值
+        - DROP DEFAULT 删除 literal 默认值
+    - CHANGE [COLUMN] old_col_name create_definition // 修改字段名、类型
+    - MODIFY [COLUMN] create_definition // 修改子语句定义字段
+    - DROP [COLUMN] col_name // 删除字段名称
+    - DROP PRIMARY KEY 删除主键名称
+    - DROP INDEX index_name // 删除索引名称
+    - RENAME [AS] new_table_name // 修改表名称
+### 添加新字段以及修改字段定义
+- 添加一个新的字段：ADD [COLUMN] CREAT DEFINITION [FIRST|AFTER column_name]
+- 例子：向db_admian 中添加新字段 email, 类型为vachar(40) ,not null, 修改字段user类型为vachar(50)
+    - use db_admian:
+    - ALTER TABLE ADD email vachar(40) not null ,modify user vachar(50);
+    - DESC db_admian ; //显示表结构
+    
+- 例子：修改表db_ceshi 下的db_admain  user字段改为 username
+    - ALTER TABLE db_ceshi.db_admain ,CHANGE COLUMN USER USERNAME VACHAR(30) NULL DEFAULT NULL:
+    
+- 例子：删除db_ceshi库中db_admain 中email 字段
+   - USE db_ceshi:
+   - ALTER TABLE db_admain DROP email;
+   
