@@ -75,4 +75,20 @@ create TABLE db_admain(
 - 例子：删除db_ceshi库中db_admain 中email 字段
    - USE db_ceshi:
    - ALTER TABLE db_admain DROP email;
-   
+
+### 修改表名
+- ALTER TABLE old_tb_name RENAME AS new_tb_name
+### 重命名表名
+- RENAME TABLE 数据库1 to 数据库2 ，old_tb_name1 to new_tb_name2; // 支持多个数据库同时重命名
+
+### 复制一张表
+- 在一张已经存在的数据表的基础上创建一份该表的备份
+- CREATE TABLE [IF NOT EXISTS] 数据表名 {like 源数据表名}  // 这时复制表内是无数据的
+    - 在db_admain库中吧表db_user 备份成 db_user1
+        - USE db_admain :
+        - CREATE TABLE db_user1 like db_user;
+
+- CREATE TABLE 数据库名 as select * from 源数据库 // 这是复制即有表结构也有数据
+
+### 删除表
+- DROP TABLE [IF EXISTS] 数据库名：
