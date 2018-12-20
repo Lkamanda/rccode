@@ -33,4 +33,81 @@
 # 流程控制语句
 ## IF 语句：用来进行条件判断，根据不同的条件执行不同的语句
 - IF condition THEN ; [ELSE condition THEN] ; [ELSE] ... END IF 
+
+## case 语句为多分支结构
+- CASE value 
+    - WHEN value THEN 
+    - [WHEN value THEN]
+    - [ELSE]
+- END CASE 
+
+- CASE 
+    - WHEN value THEN 
+    - [WHEN value THEN]
+    - [ELSE]
+- END CASE
+- 列子:
+    - delimiter //                    - 定界符
+    - create procedure example_case(in x int)
+    - begin 
+    - case x
+    - when 1 then select 1;
+    - when 2 then select 2;
+    - else select 3;
+    - end case:
+    - end 
+    - //                        - 将delimiter // 释放
+    
+## WHILE 循环语句
+- WHILE循环语句首先判断condition条件是否为真，如果是则执行循环体，否则退出循环
+- WHILE condition DO
+- ...
+- END WHILE;
+
+## LOOP 循环语句
+- 允许特定语句或语句群的重复执行，退出循环换使用LEAVE
+- LEAVE lable :退出被标注的循环语句        // lable 标签
+- 例子：
+    - delimiter // 
+    - create procedure example_loop(out sum int)         // 创建一个名为 example_loop 的存储过程
+    - declare i int default 1;   // declare定义形参        定义形参 i 为整数 默认值为1 ；
+    - declare s int default 0:
+    - loop_label:loop 
+    - set s=s+i
+    - set i=i+1 
+    - if i>100 then 
+    - leave loop_lable;
+    - end if;
+    - end loop :
+    - set sum= s;
+    - end
+    //
+- 掉用example_loop 存储过程的方法：
+    - call example_loop(@s) 
+    - select @s
+## REPEAT 循环语句
+- 该语句先执行一次循环体，之后判断condition是否为真，为真退出循环，否则继续执行循环。
+- REPEAT 
+- ....
+- UNTIL condition 
+- END REPEAT 
+- 例子
+    - delimiter  //
+    - CREATE PROCEDURE example_repeat(out sum int)
+    - begin
+    - declare i int default 1:
+    - declare s int default 0;
+    - REPEAT
+    - s=s+i 
+    - i=i+1 
+    - UNTIL i>10
+    - END REPEAT;
+    - SET sum=s;
+    - END
+    - //
+    
+    - CALL example_repeat(@s)
+    - select @s
  
+ - ITERATE lable 重新开始一个循环
+ - 储存过程不存在FOR循环

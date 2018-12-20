@@ -23,7 +23,7 @@ try:
     db:连接使用的数据库名
     port:端口号,默认3306
     '''
-    db = pymysql.connect(host='132.232.229.27', user='root', password='zhoujialin123', db='db_ceshi', port='3306')
+    db = pymysql.connect(host='localhost', user='root', password='zhoujialin123', db='db_ceshi', port='3306')
     print(type(db))
     # 创建游标
     cursor = db.cursor()
