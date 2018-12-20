@@ -1,0 +1,12 @@
+# MogoDB
+- MongoDB是基于分布式文件存储的数据库，由C++编写，主要为web应用提供可扩展高性能的数据存储解决方案
+- 非关系型数据库
+
+## 概念说明
+- SQL:        MogoDB:                说明
+- database    database               数据库
+- table       collection             表/(集合)     
+- row         document               行/文档
+- colume      field                  字段/域
+- index       index                  索引
+- primary     primary                主键/_id为主键
