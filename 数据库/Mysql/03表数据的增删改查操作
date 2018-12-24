@@ -1,0 +1,31 @@
+# 插入数据
+## INSERT ..... VALUES 语句插入数据
+- INSERT [LOW_PRIORITY|DELAYED|HIGH_PRIORITY][IGNORE][INTO] 数据表名[字段...] VALUES({值|DEAFAULT,...},....),(...).,
+[ON DUPLICATE KEY UPDATE 字段名=表达式]
+- LOW_PRIORITY: 多用户访问数据访问数据库的情况下，用于指示MYSQL降低INSERT,DELETE或UPDATE操作优先级
+- DELAYED: 用于服务器插入韩数据放在一个缓冲器中，直到带插入数据的表空闲的时候，才能真正在表中插入数据行
+- HIGH_PRIORITY: 用于指定INSERT 或SELECT 操作优先执行
+- ON DUPLICATE KEY UPDATE :用于插入向表中插入行时，如果导致UNIQUE KEY 或 PRIMARY KEY 出现重复值，系统会根据UPDATE语句修改原有行数据
+
+### 插入完整数据 
+- insert into 数据表名VALUES ('V1','V2','V3',...)
+
+### 插入一部分数据
+insert into 数据表名('k1','k2',...) VALUES('V1','V2',...)
+
+### 插入多行数据
+- insert into  数据表名('k1','k2','k3',...) VALUES('V1','V2','V3'),('V4',(V5),(V6))
+
+### INSERT ...SET 语句插入数据：对于未指定值得字段采用默认值进行添加
+- insert [LOW_PRIORITY|DELAYED|HIGH_PRIORITY][IGNORE] [INTO]数据库名 SET 字段名={值|default}
+
+### 插入查询结果 insert into 数据库名1(k1,k2) select (k3,k4) from 数据库名2
+
+# 修改数据  UPDATE 语句
+- UPDATE [LOW_PRIORITY][IGNORE]数据库名 set 字段1=值1[,字段2=值2...][where 表达式][order by] [LIMIT 行数]
+
+# 删除数据 delete 
+- delete from 数据库名 where ='username';    
+- truncate [table] 数据表名；      清空表内所有数据，但表还在
+    - 删除整张表，并且无法恢复，但占用资源少
+ 
