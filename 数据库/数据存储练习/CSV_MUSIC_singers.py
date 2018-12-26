@@ -9,6 +9,7 @@ initial=[-1,65-90,0 ]//热门
 import requests
 import random
 from bs4 import BeautifulSoup
+import csv
 def get_artists(url):
     user_agent_list = [
         "Mozilla/4.0(compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
@@ -28,9 +29,16 @@ def get_artists(url):
         # 获取歌手名字
         artist_name = item.string.strip()
         # 歌手详情也得id 获取 ，后面还需处理 ，字符串切片
-        artist_id = item['href'].repleace('/artist?id=', '').strip()
-        print(artist_name, artist_id)
+        artist_id = item['href'].replace('/artist?id=', '').strip()
+        try:
+            writer.writerow((artist_name, artist_id))
+        except Exception as e :
+            print('写入失败')
+            print(e)
 if __name__ == '__main__':
+    csvfile = open('163_music_artist.csv', 'a')
+    writer = csv.writer(csvfile)
+    writer.writerow(('artist_name', 'artist_id'))
     id_list = [1001, 1002, 1003, 2001, 2002, 2003, 6001, 6002, 6003, 7001, 7002, 7003, 4001, 4002, 4003]
     initial_list = [-1, 0, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89]
     for i in id_list:
