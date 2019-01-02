@@ -32,11 +32,11 @@ def get_artists(url):
         artist_id = item['href'].replace('/artist?id=', '').strip()
         try:
             writer.writerow((artist_name, artist_id))
-        except Exception as e :
+        except Exception as e:
             print('写入失败')
             print(e)
 if __name__ == '__main__':
-    csvfile = open('163_music_artist.csv', 'a')
+    csvfile = open('163_music_artist.csv', 'a', encoding='utf-8-sig')
     writer = csv.writer(csvfile)
     writer.writerow(('artist_name', 'artist_id'))
     id_list = [1001, 1002, 1003, 2001, 2002, 2003, 6001, 6002, 6003, 7001, 7002, 7003, 4001, 4002, 4003]
