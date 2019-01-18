@@ -10,3 +10,10 @@
 - colume      field                  字段/域
 - index       index                  索引
 - primary     primary                主键/_id为主键
+
+## python 链接 mongo 默认端口好27017
+- mongo的三种连接方式
+- client = pymongo.MongoClient()
+- client = pymongo.MongoClient(' 172.22.106.110', 27017)
+- client = pymongo.MongoClient('mongodb://172.22.106.110:27017')
+

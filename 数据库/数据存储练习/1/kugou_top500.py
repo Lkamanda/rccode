@@ -3,8 +3,11 @@ https://www.kugou.com/yy/rank/home/1-8888.html?from=rank
 '''
 import requests
 from bs4 import BeautifulSoup
-import pandas
 import random
+import pymongo
+
+
+
 def get_dates(url, i):
     print("@@@@@{}!!!!!!".format(i))
     user_agent_list = [
@@ -27,7 +30,8 @@ def get_dates(url, i):
     for rank, sing_name, sing_time in zip(ranks, sing_names, sing_times):
         # 歌曲排名
         rank = rank.get_text().strip()
-        # print(rank)
+        #print(rank, type(rank))
+
         sing = sing_name.get_text()
         # 歌手姓名
         sing_name = sing.split('-')[-1].strip()
@@ -35,7 +39,10 @@ def get_dates(url, i):
         singer_name = sing.split('-')[-0].strip()
         # 歌曲时间
         sing_time = sing_time.get_text().strip()
-        print(rank, sing_name, singer_name, sing_time)
+        # print(rank, sing_name, singer_name, sing_time)
+        # my_set.insert({'rank': rank, 'sing_name': sing_name, 'sing_time': sing_time})
+        datas = {'rank': rank, 'sing_name': sing_name, 'sing_time': sing_time}
+        print(datas, type(datas))
 
 
 
