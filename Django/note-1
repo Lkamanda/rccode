@@ -1,0 +1,94 @@
+# 环境搭建
+## 版本：1.8
+- 参考：Django架栈的16堂客
+## 创建一个Django工程
+- django-admin startproject 工程名
+    - settings.py: 配置文件
+    - urls.py: 路由
+    - wsgi.py: 通用网关
+    - manage.py:参数处理
+- 启动django工程：
+    - 命令行启动：
+        - 进入django工程下：python manage.py runserver 
+    - pycharm下启动
+        - 需要在EDIT configurations里manage 的parameters:输入runserver
+- django 自带数据库db.sqlite3 // 关系型数据库可以直接移植mysql
+
+## 路由系统 urls
+- 创建app
+    - 负责一个具体的业务或一类具体的业务模块
+    - python manage.py startapp 业务模块名称
+    
+- 路由
+    - 按照具体的请求url，导入相应的业务处理模块的功能模块
+    - django的信息控制中枢
+    - 本质上是接受url和相应的处理模块的一个映射
+    - 在接受URL请求的匹配上使用了re
+- 需要注意的点
+    - 接受的url是什么，如何用re对接入的url进行匹配
+    - 已知url匹配哪些模块
+- URL匹配规则
+    - 重上往下一个一个比对
+    - url格式是分级格式，则按照格式一级一级往下比对，主要应对url包含子url的情况
+    - 子url一旦被调用不会返回主url
+        - /one/two/three
+    - 正则以r开头表示不需要转义，注意尖号（^）和美元($)符号
+        - 开头不需要/
+    - 如果从上到下没有找到，则报错
+        - '/one/two/three' 配对 r'^one/'  以one/开头
+        - '/one/two/three/  配对 r'three/$' 匹配以three/结尾的
+        
+## 创建views
+- 在创建的app下的views文件里
+    - 1.导包 from django.http import HttpResponse
+
+## 创建映射
+### 正常映射
+- 把一个符合RE的URL映射到事物处理函数中
+    - 举例:
+    在urls.py文件中
+    from app名 import views  as av 
+    urlpatterns = [
+    # Examples:
+    # url(r'^$', 'xl.views.home', name='home'),
+    # url(r'^blog/', include('blog.urls')),
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^nomalmap/', av.do_nomalmap)
+]
+### url 中带参数映射
+- 在事件处理代码中需要URL传入参数,形如/mysql/parm中的parm
+- 参数都是字符串格式,如需整数需要自行转换
+- 1.尖号表示以后面内容开头的表达式
+- 2.圆括号表示的是一个参数,里面的内容里面的内容作为参数传递给被调用的函数
+- 3.参数名称以问好+大写P开头,'<>'里面就是参数的名字
+- 4.尖括号后表示正则,[0-9]表示内容仅能由0-9的数字组成
+- 5.{}表示出现的次数,如{4}表示只能出现4个字符
+- 6.实例:
+    url patterns = [
+    
+    url(r'^withparam/(?P<year>[0-9]{4})/(?P<month>[0,1][0-9]'),sv.withparam)
+    ]
+### 二级路由
+- 在想创建二级路由的app下新建urls子文件，并将其在urls中导入
+    - 确保include应被导入
+    - 编写主路由
+    - 编写子路由
+    - 编写views函数
+### urls 中的嵌套参数
+- url/index/page-3 需要捕获数字3作为参数
+- 实例
+    urlpatterns = [
+    '''
+    
+    url(r'index_1/(page-(\d+))?$',tv.index_1)    / 不太好
+    
+    url(r'index_1/(?:page-(?P<page_number>\d+)/)$', tv.index_1)
+    '''
+    ]
+### urls额外的参数
+
+    
+
+    
+    
+    
