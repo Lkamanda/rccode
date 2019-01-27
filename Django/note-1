@@ -86,9 +86,42 @@
     '''
     ]
 ### urls额外的参数
+- 参数不仅仅来自与url，还可以引入自定义函数
+'''
+    url(r'extrem/$', tv.extremparam, {'name':'xiaolin'})
+'''
+- 想要引入额外参数需要添加一个参数，这个参数是字典形式，k是参数名， v是参数值
 
-    
+### url的反向解析
+- 防止硬编码
+- 本质上是对每个一url进行命名,在程序中使用的时候直接使用url的命名
+- 这就叫反向解析  
 
+## views 
+- 视图即视图函数,接受web请求,并返回web相应的事件处理函数
+- 返回指符合http协议要求的任何内容,包括json,string , html
+- 如何返回处理结果
+
+### 1.其他的简单视图
+- django http 给我们提供了很多HttpResponse 类似的简单视图,通过查看django.http可以进行查看
+- 此类视图使用方法基本相同,通过一个return语句直接反馈给浏览器
+- 特殊Http404为Exception的一个子类,所以需要raise使用
+
+### 2.如何设置debug
+- 主项目中settings.py文件下设置参数DEBUG = False/True
+- 如需关闭debug还需对ALLOWED_HOSTS字段进行设置, '*'任意机器,'localhost'本机
+### 3.HttpResponse详解
+- 方法:
+    - init:使页面信息实例化HttpResponse对象
+    - write(content) :以文件的方式写
+    - flush() : 以文件的方式写入缓存区
+    - set_cookie:(key, value='', max_age=None, expires=None):设置cookie
+        - key,value都是字符串
+        - max_age: 整数,指定多少秒内过期
+        - expires:是一个datetime和timedelta对象,会话将在这个指定的日期/时间过期
+        - max_age 和expires二选一
+        - 如果不指定则俩个星期后过期
+    - delete_cookie:删除指定键的cookie,如果key不存在则什么也不发生
     
     
     
