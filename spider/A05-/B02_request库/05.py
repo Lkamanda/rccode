@@ -6,7 +6,7 @@ headers ={
     "Referer": "https://www.mzitu.com/"
 }
 req = requests.get(url=url, headers=headers)
-path = 'meizi'
+path = 'GET_MD_5'
 if not os.path.exists(path):
     os.makedirs(path)
 with open(path + "\\x" + ".jpg", "wb") as f:

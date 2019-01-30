@@ -63,6 +63,7 @@ def get_fp(url, n):
         try:
             writer.writerow((names, movie_type, pf, c_jun_jia, c_jun_ren, country, movie_start_date, movie_href,
                              director_name))
+
         except Exception as e:
             print('数据写入失败')
             print(e)
