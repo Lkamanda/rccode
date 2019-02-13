@@ -20,7 +20,8 @@ import datetime
 def generate_data():
     generate_data = []
     for i in range(0, 3000):
-        max_date = datetime.date.today() + datetime.timedelta(days=7)
+        #max_date = datetime.date.today() + datetime.timedelta(days=7)
+        max_date = '2019-2-7'
         roomType_list = ['video', 'normal', 'normal', 'normal']
         roomType = random.choice(roomType_list)
         localtionId_list = [i for i in range(1, 10)]
@@ -40,7 +41,10 @@ def meeting_reserve():
     for n in range(0, 3000):
         boardroomId_list = [i for i in range(1, 10)]
         boardroomId = random.choice(boardroomId_list)
-        data = time.strftime("%Y-%m-%d", time.localtime())
+
+        # data = datetime.date.today() + datetime.timedelta(days=7)
+        data = '2019-2-7'
+        print(type(data))
         start_list = [i for i in range(8, 20)]
         for y in range(0, 3):
             for x in [10, 11, 13, 14, 15, 16, 17]:
@@ -51,7 +55,7 @@ def meeting_reserve():
 
         reserve_dict = {
             "boardroomId": boardroomId,
-            "data": data,
+            "date": data,
             "endtime": starttime,
             "starttime": endtime
         }
@@ -62,7 +66,7 @@ def meeting_reserve():
 if __name__ == '__main__':
     # data = generate_data()
     # pd = pandas.DataFrame(data)
-    # pd.to_excel('会议查询数据.xls')
+    # pd.to_csv('会议查询数据.csv')
     data = meeting_reserve()
     pd = pandas.DataFrame(data)
-    pd.to_excel('会议预定数据.xls')
+    pd.to_csv('会议预定数据.csv')

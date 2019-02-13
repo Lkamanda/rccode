@@ -31,13 +31,15 @@ def get_headers():
     return headers
 
 
-def get_soup(url, headers):
+def get_soup(url_list, headers):
+        html = requests.get(url=url, headers=headers)
+        soup_1 = BeautifulSoup(html.text, 'lxml')
+        return soup_1
+
+
+def get_data(url, headers):
     html = requests.get(url=url, headers=headers)
     soup = BeautifulSoup(html.text, 'lxml')
-    return soup
-
-
-def get_data(soup):
 
     movie_list_soup = soup.find('ol', {'class': 'grid_view'})
     movie_data = []
@@ -60,15 +62,27 @@ def get_data(soup):
 
 
 def getUrl_list(soup):
-    url_list = soup.find_all('span', {'class': 'prev'})
-    print(url_list)
+    url_list = []
+    first_url = "https://movie.douban.com/top250"
+    url_list.append(first_url)
+    incomplete_url_list = soup.find('div', {'class': 'paginator'}).find_all('a')
+    for href in incomplete_url_list:
+        h_href = href.get('href')
+        # print(h_href)
+        new_url = first_url + h_href
+        url_list.append(new_url)
+    return url_list
 
 
 if __name__ == '__main__':
     url = "https://movie.douban.com/top250?start=0&filter="
     headers = get_headers()
-    soup = get_soup(url, headers=headers)
-    getUrl_list(soup)
+    soup_1 = get_soup(url, headers=headers)
+    url_list = getUrl_list(soup_1)
+    for url in url_list:
+        get_data(url, headers=headers)
+
+
 
 
 
