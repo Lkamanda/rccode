@@ -9,6 +9,7 @@ import random
 import re
 import json
 from urllib import request
+import os
 
 
 def get_headers():
@@ -58,7 +59,7 @@ def get_albumId(html):
     for albumId in albumIds:
         # 构建下载地址
         download_url = 'https://www.ximalaya.com/revision/play/album?albumId={}' \
-                   '&pageNum=1&sort=-1&pageSize=30'.format(albumId)
+                       '&pageNum=1&sort=-1&pageSize=30'.format(albumId)
         # 获取json
         # print(download_url)
         # print(headers)
@@ -70,8 +71,6 @@ def get_albumId(html):
 def download_music(music_json):
     # 获取下载音乐标题
     music_json = json.loads(music_json)
-    #print(music_json)
-
     # 获取歌曲和下载链接
     titles = music_json['data']['tracksAudioPlay']
 
@@ -82,9 +81,18 @@ def download_music(music_json):
         title_url = title['src']
         if '/' in title_name:
             title_name = title_name.replace('/', '-')
-        filename = "/Users/dxm/PycharmProjects/rccode/spider/A06-ERERCISE/喜马拉雅music/" + title_name + '.mp4'
-        # 使用urllib库的request下载
-        request.urlretrieve(url=title_url, filename=filename)
+        try:
+            print('{}正在下载'.format(title_name))
+            path = "/Users/dxm/PycharmProjects/rccode/spider/A06-ERERCISE/喜马拉雅music/"
+            filename = path + title_name + '.mp4'
+            # 使用urllib库的request下载
+            if not os.path.isfile(path=filename):
+                request.urlretrieve(url=title_url, filename=filename)
+                print('{}下载完成'.format(title_name))
+
+        except Exception as e:
+            print(e)
+            print('{}下载失败'.format(title_name))
 
 
 def main():
@@ -93,11 +101,8 @@ def main():
     str1 = fanyi(music_type)
     html = start_spider(str1, headers)
     get_albumId(html)
+    print('程序结束')
 
 
 if __name__ == '__main__':
     main()
-
-
-
-
