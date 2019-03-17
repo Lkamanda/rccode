@@ -21,6 +21,7 @@ endTime
 @RequestParam(value = "timestamp") Long timestamp,
 @RequestParam(value = "code") String code
 '''
+import csv
 import pandas
 import time
 import random
@@ -29,19 +30,13 @@ import datetime
 def generate_data():
     generate_data = []
     for i in range(0, 3000):
-        #max_date = datetime.date.today() + datetime.timedelta(days=7)
-        max_date = '2019-2-7'
+        max_date = datetime.date.today() + datetime.timedelta(days=7)
         roomType_list = ['video', 'normal', 'normal', 'normal']
         roomType = random.choice(roomType_list)
         localtionId_list = [i for i in range(1, 10)]
         localtionId = random.choice(localtionId_list)
-        meeting_date = {
-            "date": max_date,
-            "roomType": roomType,
-            "localtionId": localtionId,
-        }
+        meeting_date = [max_date, roomType, localtionId]
         generate_data.append(meeting_date)
-
     return generate_data
 
 # 预定
@@ -67,29 +62,29 @@ def meeting_reserve():
         bookname = "1"
         timestamp = 1
         code = "code"
-        reserve_dict = {
-            "code": code,
-            "timestamp": timestamp,
-            "userName": userName,
-            "bookname": bookname,
-            "boardroomId": boardroomId,
-            "date": data,
-            "endTime": endtime,
-            "startTime": starttime
-        }
+        reserve_dict = [code, timestamp, userName, bookname, boardroomId, data, endtime, starttime]
         reserve_data.append(reserve_dict)
     return reserve_data
 
 
 def chaxu():
-    data = generate_data()
-    pd = pandas.DataFrame(data)
-    pd.to_csv('会议查询数据.csv')
+    datas = generate_data()
+    # pd = pandas.DataFrame(data)
+    # pd.to_csv('会议查询数据.csv')
+    with open("find.csv", 'w', newline='')as f:
+        writer = csv.writer(f)
+        for data in datas:
+            writer.writerow(data)
+
 
 def yuding():
-    data = meeting_reserve()
-    pd = pandas.DataFrame(data)
-    pd.to_csv('会议预定数据.csv')
+    datas = meeting_reserve()
+    # pd = pandas.DataFrame(data)
+    # pd.to_csv('会议预定数据.csv')
+    with open("order.csv", 'w', newline='')as f:
+        writer = csv.writer(f)
+        for data in datas:
+            writer.writerow(data)
 
 
 if __name__ == '__main__':

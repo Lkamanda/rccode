@@ -1,0 +1,23 @@
+# Unittest 
+- 1. 框架:
+    - testcase, testsuit, testfixture, run, report 
+- 2.每个testcase 继承unittest.TestCase类
+    通过unittest.main(verbosity=n) 
+        - n=0时:显示测试总数和全局结果
+        - n=1时:显示e(测试代码错误)和f(断言不符合预期)
+        - n=2时:执行所有测试用例
+- 3.类方法
+- 4.测试用例的执行顺序
+    - ord() 小的先执行
+- 5.把测试用例添加到测试集合中
+    - suit = unittest.TestSuite()  // 生成类实例
+      suit.addTest(F2('test_02'))
+      unittest.TextTestRunner(verbosity=2).run(suit)
+    - 先添加先执行
+    
+- 6.按测试类执行
+    suite = unittest.TestSuite(unittest.makeSuite(F3))
+    unittest.TextTestRunner(verbosity=2).run(suite)
+- 7.按模块执行(即执行整个文件的所有测试类)
+    suite=unittest.TestLoad().loadTestsFromModule('文件名')
+    unittest.TextTestRunner(verbosity=2).run(suite)
