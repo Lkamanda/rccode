@@ -1,3 +1,4 @@
+https://jspang.com/post/nginx.html
 # Unittest 
 - 1. 框架:
     - testcase, testsuit, testfixture, run, report 
@@ -21,3 +22,31 @@
 - 7.按模块执行(即执行整个文件的所有测试类)
     suite=unittest.TestLoad().loadTestsFromModule('文件名')
     unittest.TextTestRunner(verbosity=2).run(suite)
+- 8.1selenium常用操作
+    - set_windows_size(x,y)   //设置窗口大小
+    - set.back()              // 后退
+    - driver.forward()        // 前进
+    - driver.refresh()        // 刷新浏览器
+    - driver.定位元素.submit() //提交表单
+    - .size                   //返回元素的尺寸
+    - .text                   //获取元素文本
+    - .get_attribute(属性)    // 获取属性值, name,id
+    - .is_displayed()        //该元素是否可见
+- 8.2鼠标事件 ActionChains 类提供了鼠标操作方法
+    - perform() 执行所有ActionChains中存储的行为
+    - context_click() 右击
+    - double_click()  双击
+    - drag_and_drop()  拖动
+    - move_to_element() 悬停
+    
+    - 例子
+    from selenium.webdriver.common.action_chains import ActionChains
+    from selenium import webdriver
+    
+    driver = webdriver.Chrome()
+    driver.get('')
+    //定位到右击元素
+    right_element = driver.find_element_by("")
+    // 对定位元素进行右击操作
+    ActionChains(driver).context_click(right_click).perform()
+    
