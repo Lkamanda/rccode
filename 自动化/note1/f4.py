@@ -1,4 +1,4 @@
-from init import *
+from 自动化.note1.init import *
 import unittest
 
 

@@ -49,4 +49,20 @@ https://jspang.com/post/nginx.html
     right_element = driver.find_element_by("")
     // 对定位元素进行右击操作
     ActionChains(driver).context_click(right_click).perform()
+- 9.忽略该用例
+    - 使用装饰器:
+    @unittest.skip('备注信息')
+    - 预期测试用例失败:(该用例为error,输出ok)
+    @unittest.exceptedFailure
+- 10.异常的处理: 不要把if else try except放到测试层,对象层
+- 判断页面元素是否可编辑:
+    - 定位元素.is_enabled()
     
+- 11.各种断言的使用(带补全)
+    - assertIn()判断关键字是否在什么中
+- 12.如何执行所有测试用例:   discover 关键字 
+    suite = unittest.TestLoader().discover(
+        start_dir=os.path.dirname(__file__),
+        pattern='test_*.py',
+        top_level_dir=None
+    )
