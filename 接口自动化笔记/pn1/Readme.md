@@ -1,0 +1,8 @@
+# bin 总的执行目录
+# data 存放数据的目录
+- csv xml
+# config
+# page 对象层
+# tests 测试用例
+# utils 对文件操作
+# config 存放配置

@@ -35,4 +35,6 @@ data.sheet_loaded(sheet_name or index) # 检查摸个sheet 是否导入完毕
 - 对行的操作
     - 
     
-## 
+## 数据分离
+### 动态参数的处理
+- cookie session token
