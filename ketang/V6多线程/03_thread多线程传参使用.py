@@ -6,27 +6,31 @@
 import time
 import _thread as thread
 
-def loop1(in1):
-    print ('Start loop 1 ast :', time.ctime())
-    print('i am 参数',in1)
-    time.sleep(4)
-    print('End loop 2 at :',time.ctime())
 
-def loop2(in1,in2):
-    print ('Start loop 2 ast :', time.ctime())
-    print('i am 参数',in1, in2)
+def loop1(in1):
+    print('Start loop 1 ast :', time.ctime())
+    print('i am 参数', in1)
     time.sleep(4)
-    print('End loop 2 at :',time.ctime())
+    print('End loop 2 at :', time.ctime())
+
+
+def loop2(in1, in2):
+    print('Start loop 2 ast :', time.ctime())
+    print('i am 参数', in1, in2)
+    time.sleep(4)
+    print('End loop 2 at :', time.ctime())
+
 
 def main():
-    print ("Starting at:", time.ctime())
+    print("Starting at:", time.ctime())
 
     # 元组如果只有一个元素元素后加逗号
-    thread.start_new_thread(loop1,("小林",))
+    thread.start_new_thread(loop1, ("小林",))
 
     thread.start_new_thread(loop2,("小林","kamanda"))
 
-    print ("ALL DONE AT", time.ctime)
+    print("ALL DONE AT", time.ctime)
+
 
 if __name__ == '__main__':
     main()

@@ -66,3 +66,7 @@ https://jspang.com/post/nginx.html
         pattern='test_*.py',
         top_level_dir=None
     )
+- 13.使用代理:chrome_options.add_argument("--proxy-server=http://" + ip：port)
+- 14.自动生成HTML测试报告,python3以不支持HTMLTest,
+https://www.cnblogs.com/yjlch1016/p/8468038.html
+-

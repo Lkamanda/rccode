@@ -3,6 +3,8 @@
 """
 import unittest
 import os
+import sys
+import time
 
 
 def allTests():
@@ -20,8 +22,12 @@ def allTests():
 
 
 def run():
-    unittest.TextTestRunner(verbosity=2).run(allTests())
+    fp = os.path.join(os.path.dirname(__file__), 'report', 'TestReportHtml')
+    HTMLTestRunner.HTMLTestRunner(stream=open(fp, 'wb'), title='自动化测试报告', description='填写描述').run(allTests())
+    # unittest.TextTestRunner(verbosity=2).run(allTests())
 
 
 if __name__ == '__main__':
     run()
+    # 获取当前时间戳
+    # print(time.strftime('%Y-%m-%d %H_%M_%S', time.localtime(time.time())))
