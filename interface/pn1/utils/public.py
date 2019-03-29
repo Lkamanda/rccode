@@ -1,6 +1,6 @@
 import os
 
-def data_dir(data=None, fileName=None):
+def data_dir(data='data', fileName=None):
     # os.path.dirname(__file__) 获取当前目录下父类路径
     """
     对文件路径的查找

@@ -38,3 +38,26 @@ data.sheet_loaded(sheet_name or index) # 检查摸个sheet 是否导入完毕
 ## 数据分离
 ### 动态参数的处理
 - cookie session token
+# 版本间切换
+- 维护成本. 效率, 版本切换
+- 如何获取请求数据
+    - dump 将内置类型装换成json dict转str
+    - load 读取json中数据(把json变为python) str转dict
+    - loads 和 load 的区别 loads针对是对象,load针对的是文件. dump同理
+- 通过load读取json文件,返回字典. 通过excal中获取去对应位置的k,在从返回字典中拿到对应请求参数v
+- 对post请求进行2次封装
+- 编写测试用例
+- 断言
+    -协议状态码
+        - 1xx 临时响应
+        - 2xx 表示服务器处理乘成功
+        - 3xx 已重定向
+        - 4xx 请求错误
+        - 5xx 服务器遇到错误
+            - 500服务器内部
+            - 505服务器http版本不支持
+    - 业务状态码
+    - 针对具体业务来进行断言
+- 如何测试用例fiail其他测试用例继续执行在unittest中
+
+
