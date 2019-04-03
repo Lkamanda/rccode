@@ -46,6 +46,23 @@ class OperationExcal:
         """获取实际结果"""
         return self.get_row_cell(row, getResult())
 
+    def writeResult(self, row, content):
+        """将测试结果写入excal"""
+        """
+        1.获取结果参数在ezcal中的列
+        2.打开ecxal将之前的内容去除复制
+        3.在将测试结果content写入，保存
+        """
+        # 获取测试结果在excal中的列
+        col = getResult()
+        print(col)
+        # excal 文件内容修改
+        work = xlrd.open_workbook(data_dir(fileName='data1.xlsx'))
+        old_content = copy(work)
+        ws = old_content.get_sheet(0)
+        ws.write(row, col, content)
+        old_content.save(data_dir(fileName='data1.xlsx'))
+
 
 if __name__ == '__main__':
     opera = OperationExcal()
