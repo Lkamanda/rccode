@@ -11,4 +11,5 @@ def data_dir(data='data', fileName=None):
     return os.path.join(os.path.dirname(os.path.dirname(__file__)), data, fileName)
 
 
-
+if __name__ == '__main__':
+    data_dir(fileName='data1.xlsx')

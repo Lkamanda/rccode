@@ -4,7 +4,7 @@ class ExcelVariable:
     url = 2
     request_data = 3
     expect = 4
-    result: int = 5
+    result = 5
 
 
 def getCaseID():

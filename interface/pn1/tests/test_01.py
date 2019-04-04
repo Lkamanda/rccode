@@ -2,12 +2,14 @@ import unittest
 from interface.pn1.base.method import Method, IsAssert
 from interface.pn1.page.lagou import *
 from interface.pn1.utils.public import *
+from interface.pn1.utils.operationExcal import *
 
 
 class LaGou(unittest.TestCase):
     def setUp(self):
         self.obj = Method()
         self.p = IsAssert()
+        self.operation = OperationExcal()
 
     def statusCode(self, r):
         # 判断协议状态码是否为零
@@ -25,6 +27,7 @@ class LaGou(unittest.TestCase):
         # 执行excal中的第一条测试用例
         r = self.obj.post(1)
         self.isContent(r, row=1)
+        self.operation.writeResult(row=1, content='pass')
         # 获取请求状态码
         # print(r.status_code)
         # print(r.text)
