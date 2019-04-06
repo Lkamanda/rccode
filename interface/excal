@@ -84,6 +84,22 @@ data.sheet_loaded(sheet_name or index) # 检查摸个sheet 是否导入完毕
 
 -6 错误的测试用例结果写入excal文件
 
+-7 如何解决n个测试用例使用同一条测试数据的结果输出问题
+
+- 8 1)对请求参数按照key =value的格式,并按照参数名ASCII字典排序如下
+    2)在第一步结尾处拼接秘钥
+    3)md5加密
+
+    - 请求参数不确定
+    - 对字典k进行排序
+    - 字符拼接,md5加密
+    a.haslib 解决
+
+    {"name":"xiaolin","age":"23","address":"xian","sex":"boy"}
+    a.name=xiaolin&age=18&address=xian&sex=boy
+
+
+
 
 
 

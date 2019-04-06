@@ -64,7 +64,7 @@ class OperationExcal:
 
     def getAll(self):
         """获取所有的测试用例数"""
-        return self.get_rows() - 1
+        return int(self.get_rows() - 1)
 
     def run_success_result(self):
         """获取成功的测试用例数"""
@@ -78,14 +78,27 @@ class OperationExcal:
 
     def run_fail_result(self):
         """获取失败的测试列数"""
-        return int(self.getAll()-self.run_fail_result())
+        return int(self.getAll()-self.run_success_result())
+
+    def run_pass_rate(self):
+        """获取测试用例的通过率"""
+        rate = ' '
+        if self.run_fail_result() == 0:
+            rate = '100%'
+        elif self.run_fail_result() != 0:
+            rate = str(int(self.run_success_result()/self.getAll()*100)) + '%'
+        return rate
 
 
 if __name__ == '__main__':
     opera = OperationExcal()
     # print(opera.writeResult(row=1, content='pass'))
     # print(opera.getSuccess())
-    print(opera.run_success_result())
+    #print(opera.get_rows())
+    # print(opera.run_success_result())
+    # print(opera.run_pass_rate())
+    print(opera.run_pass_rate())
+
 
 
 
