@@ -12,11 +12,12 @@ class Baidu(unittest.TestCase):
     def setUp(cls):
         cls.driver = webdriver.Chrome()
         cls.driver.get('http://www.baidu.com')
+        print('1')
 
     @classmethod
     def tearDown(cls):
         cls.driver.quit()
-
+        print('2')
     @unittest.expectedFailure
     def test01(self):
         self.assertEqual(add(2-3), 1)

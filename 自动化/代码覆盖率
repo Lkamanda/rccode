@@ -1,0 +1,4 @@
+- pip install coverage
+
+coverage run (测试用例执行文件)
+- 对自动化测试代码执行率进行检查,并生成html报告
