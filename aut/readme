@@ -1,0 +1,5 @@
+- 1.环境搭建
+    - JavaSe，jdk，appium， 
+
+- 2
+ adb shell "dumpsys window w|grep \/|grep name=|sed 's/mSurface=Surface(name=//g'|sed 's/)//g'|sed 's/ //g'"
