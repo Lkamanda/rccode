@@ -4,10 +4,12 @@ from time import sleep
 
 desired_caps = {}
 desired_caps['platformName'] = 'Android'
-desired_caps['platformVersion'] = '9.0'
-desired_caps['deviceName'] = 'baa822b7'
+desired_caps['platformVersion'] = '5.1'
+desired_caps['deviceName'] = '127.0.0.1:62001' # baa822b7   a82ccd1d Q8JNNNGUOF8L4PON   127.0.0.1:62001
 desired_caps['appPackage'] = 'com.miui.calculator'
-desired_caps['appActivity'] = 'com.miui.calculator.cal.CalculatorActivity/@0xda50b9'
+desired_caps['appActivity'] = 'com.miui.calculator.cal.CalculatorActivity' #/@0xda50b9
+desired_caps['unicodKeyboard'] = 'True'
+desired_caps['resetKeyboard'] ='True'
 
 driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 sleep(20)
@@ -17,6 +19,7 @@ driver.find_element_by_name("9").click()
 driver.find_element_by_name("delete").click()
 driver.find_element_by_name("9").click()
 driver.find_element_by_name("5").click()
+sleep(5)
 driver.find_element_by_name("+").click()
 driver.find_element_by_name("6").click()
 driver.find_element_by_name("=").click()

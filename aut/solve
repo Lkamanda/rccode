@@ -1,0 +1,7 @@
+1.cannot import name 'InvalidArgumentException' from 'selenium.common.exceptions'
+在selenium.common.exceptions.py中直接定义了InvalidArgumentException，代码如下
+
+class InvalidArgumentException(WebDriverException):
+    """
+    """
+    pass

@@ -1,0 +1,82 @@
+> Checking if an update is available
+> Launching Appium server with command: D:\Appium\node.exe lib\server\main.js --address 127.0.0.1 --port 4723 --platform-name Android --platform-version 23 --automation-name Appium --device-name "Q8JNNNGUOF8L4PON" --log-no-color
+> Update not available
+> info: Welcome to Appium v1.4.16 (REV ae6877eff263066b26328d457bd285c0cc62430d)
+> info: Appium REST http interface listener started on 127.0.0.1:4723
+> info: [debug] Non-default server args: {"address":"127.0.0.1","logNoColors":true,"deviceName":"Q8JNNNGUOF8L4PON","platformName":"Android","platformVersion":"23","automationName":"Appium"}
+> info: Console LogLevel: debug
+> info: --> POST /wd/hub/session {"capabilities":{"firstMatch":[{"platformName":"Android","appium:platformVersion":"6.0","appium:deviceName":"Q8JNNNGUOF8L4PON","appium:appPackage":"com.miui.calculator","appium:appActivity":"com.miui.calculator.cal.CalculatorActivity"}]},"desiredCapabilities":{"platformName":"Android","platformVersion":"6.0","deviceName":"Q8JNNNGUOF8L4PON","appPackage":"com.miui.calculator","appActivity":"com.miui.calculator.cal.CalculatorActivity"}}
+> info: Client User-Agent string: appium/python 0.41 (selenium/3.141.0 (python windows))
+> info: [debug] Didn't get app but did get Android package, will attempt to launch it on the device
+> info: [debug] Creating new appium session e2bd3791-7eaa-463a-b435-7b840ff4bb05
+> info: Starting android appium
+> info: [debug] Getting Java version
+> info: Java version is: 1.8.0_151
+> info: [debug] Checking whether adb is present
+> info: [debug] Using adb from D:\adt\android-sdk-windows\platform-tools\adb.exe
+> warn: No app capability, can't parse package/activity
+> info: [debug] Using fast reset? true
+> info: [debug] Preparing device for session
+> info: [debug] Not checking whether app is present since we are assuming it's already on the device
+> info: Retrieving device
+> info: [debug] Trying to find a connected android device
+> info: [debug] Getting connected devices...
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe devices
+> info: [debug] 1 device(s) connected
+> info: Found device Q8JNNNGUOF8L4PON
+> info: [debug] Setting device id to Q8JNNNGUOF8L4PON
+> info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON wait-for-device
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON shell "echo 'ready'"
+> info: [debug] Starting logcat capture
+> info: [debug] Getting device API level
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON shell "getprop ro.build.version.sdk"
+> info: [debug] Device is at API Level 23
+> info: Device API level is: 23
+> info: [debug] Extracting strings for language: default
+> info: [debug] Apk doesn't exist locally
+> info: [debug] Could not get strings, but it looks like we had an old strings file anyway, so ignoring
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON shell "rm -rf /data/local/tmp/strings.json"
+> info: [debug] Not uninstalling app since server not started with --full-reset
+> info: [debug] Skipping install since we launched with a package instead of an app path
+> info: [debug] Forwarding system:4724 to device:4724
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON forward tcp:4724 tcp:4724
+> info: [debug] Pushing appium bootstrap to device...
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON push "D:\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+> info: [debug] Pushing settings apk to device...
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON install "D:\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+> info: [debug] Pushing unlock helper app to device...
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON install "D:\Appium\node_modules\appium\build\unlock_apk\unlock_apk-debug.apk"
+> info: Starting App
+> info: [debug] Attempting to kill all 'uiautomator' processes
+> info: [debug] Getting all processes with 'uiautomator'
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON shell "ps 'uiautomator'"
+> info: [debug] No matching processes found
+> info: [debug] Running bootstrap
+> info: [debug] spawning: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg com.miui.calculator -e disableAndroidWatchers false
+> info: [debug] UiAutomator exited
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON shell "echo 'ping'"
+> info: [debug] Attempting to uninstall app
+> info: [debug] Not uninstalling app since server not started with --full-reset
+> info: [debug] Cleaning up android objects
+> error: UiAutomator quit before it successfully launched
+> info: [debug] Cleaning up appium session
+> error: Failed to start an Appium session, err was: Error: UiAutomator quit before it successfully launched
+> info: [debug] Error: UiAutomator quit before it successfully launched
+>     at [object Object].<anonymous> (D:\Appium\node_modules\appium\lib\devices\android\android.js:205:23)
+>     at [object Object].<anonymous> (D:\Appium\node_modules\appium\lib\devices\android\android-hybrid.js:249:5)
+>     at Object.async.eachSeries (D:\Appium\node_modules\appium\node_modules\async\lib\async.js:142:20)
+>     at [object Object].androidHybrid.stopChromedriverProxies (D:\Appium\node_modules\appium\lib\devices\android\android-hybrid.js:233:9)
+>     at [object Object].<anonymous> (D:\Appium\node_modules\appium\lib\devices\android\android.js:200:10)
+>     at [object Object].<anonymous> (D:\Appium\node_modules\appium\lib\devices\android\android.js:222:9)
+>     at [object Object].androidCommon.uninstallApp (D:\Appium\node_modules\appium\lib\devices\android\android-common.js:478:5)
+>     at [object Object].<anonymous> (D:\Appium\node_modules\appium\lib\devices\android\android.js:220:12)
+>     at [object Object].<anonymous> (D:\Appium\node_modules\appium\lib\devices\android\android.js:229:11)
+>     at D:\Appium\node_modules\appium\node_modules\appium-adb\lib\adb.js:901:7
+>     at [object Object].<anonymous> (D:\Appium\node_modules\appium\node_modules\appium-adb\lib\adb.js:180:9)
+>     at ChildProcess.exithandler (child_process.js:742:7)
+>     at ChildProcess.emit (events.js:110:17)
+>     at maybeClose (child_process.js:1016:16)
+>     at Process.ChildProcess._handle.onexit (child_process.js:1088:5)
+> info: [debug] Responding to client with error: {"status":33,"value":{"message":"A new session could not be created. (Original error: UiAutomator quit before it successfully launched)","origValue":"UiAutomator quit before it successfully launched"},"sessionId":null}
+> info: <-- POST /wd/hub/session 500 3426.560 ms - 218
