@@ -19,6 +19,7 @@ desired_caps['app'] = r'D:\apk\boobuz.apk'
 # desired_caps['appActivity'] = 'com.miui.calculator.cal.CalculatorActivity' #/@0xda50b9
 desired_caps['unicodKeyboard'] = 'True'
 desired_caps['resetKeyboard'] = 'True'
+
 time.sleep(5)
 driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 time.sleep(10)
