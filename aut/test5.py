@@ -16,12 +16,12 @@
 
 import unittest
 
-#整个文件的开始和结束执行
-def setUpModule():
-    print("test module start >>>>>>>>>>>>>>")
-
-def tearDownModule():
-    print("test module end >>>>>>>>>>>>>>")
+# #整个文件的开始和结束执行
+# def setUpModule():
+#     print("test module start >>>>>>>>>>>>>>")
+#
+# def tearDownModule():
+#     print("test module end >>>>>>>>>>>>>>")
 
 class Test(unittest.TestCase):
 

@@ -56,3 +56,9 @@ from appium import webdriver
 # path = "/data/local/tmp/test.txt"
 # driver.push_file(path, data.encode('base64'))``
 
+def Screenshot1(driver):
+    rq = time.strftime('%Y-%m-%d_%H_%M_%S', time.localtime(time.time()))
+    # log文件的存放路径
+    imPath = filePath + '/result/image/' + rq + '.png'
+    driver.get_screenshot_as_file(imPath)
+
