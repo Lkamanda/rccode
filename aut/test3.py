@@ -25,5 +25,6 @@ class LT(unittest.TestCase):
         time.sleep(10)
         self.driver.quit()
 
+
 if __name__ == '__main__':
     unittest.main()

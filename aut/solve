@@ -5,3 +5,64 @@ class InvalidArgumentException(WebDriverException):
     """
     """
     pass
+
+2、# 使用装饰器设置测试用例预期失败
+    @unittest.expectedFailure
+
+3、退出登录按钮元素不在当屏的处理方法：先滑动后再用坐标定位，代码如下：
+
+x = self.driver.get_window_size()['width']
+y = self.driver.get_window_size()['height']
+
+self.driver.swipe(x / 2, y * 0.8, x / 2, y * 0.2, 200)
+time.sleep(3)
+
+os.popen("adb shell input tap " + str(659.0) + " " + str(1834.0))
+self.driver.find_element_by_class_name("android.view.View").click()
+os.popen("adb shell input tap " + str(945.0) + " " + str(1140.0))
+self.driver.find_element_by_id("com.autochina.p2p:id/btn_dialog_action").click()
+self.driver.quit()
+
+首先：获取当前手机屏幕的宽和高
+
+其次：在一定时间内按照相应的比例向上滑动
+
+再其次：使用定位工具定位到元素的坐标点
+
+最后：根据获取到的元素的属性值，进行点击操作，弹框元素的获取同此法
+
+4.判断页面元素是否存在
+if self.driver.find_elements_by_accessibility_id("xxxx") == []
+    #不存在xxx
+    B（）
+else:
+    #存在xxx
+    A（）
+
+5.页面滑动
+https://www.cnblogs.com/testhub/p/5949668.html
+系统按键事件
+press_keycode(AndroidKeyCode)//发送按键事件
+例如：点击home键，home键的KeyCode是3
+driver.press_keycode(3)
+键名                  描述       键值
+KEYCODE_CALL        拨号键     5
+KEYCODE_ENDCALL     挂机键     6
+KEYCODE_HOME        按键Home      3
+KEYCODE_MENU        菜单键     82
+KEYCODE_BACK        返回键     4
+KEYCODE_SEARCH      搜索键     84
+KEYCODE_CAMERA      拍照键     27
+KEYCODE_FOCUS       拍照对焦键   80
+KEYCODE_POWER       电源键     26
+KEYCODE_NOTIFICATION 通知键        83
+KEYCODE_MUTE        话筒静音键   91
+KEYCODE_VOLUME_MUTE 扬声器静音键  164
+KEYCODE_VOLUME_UP   音量增加键   24
+KEYCODE_VOLUME_DOWN 音量减小键   25
+
+6.appium 元素定位：
+https://blog.csdn.net/wkl106422/article/details/82112448
+7.获取页面元素属性值
+ele.text
+ele.get_attribute("text")

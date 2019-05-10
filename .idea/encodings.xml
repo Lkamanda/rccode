@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with NO BOM" />
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../LT/report/logs/2019-05-09 15-30-29logs.text" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../LT/report/logs/2019-05-09 16-04-26logs.text" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../LT/report/logs/2019-05-09 17-39-20logs.text" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../LT/report/logs/2019-05-09 17-54-51logs.text" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../LT/report/logs/2019-05-10 16-34-22logs.text" charset="GBK" />
+  </component>
 </project>
