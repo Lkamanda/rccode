@@ -6,7 +6,7 @@ cursor = db.cursor()
 
 # sql更新语句
 
-sql="UPDATE db_admain SET age=age+1 WHere username='%s'"%('xiaolin')
+sql="UPDATE db_admain SET age=age+ce1 WHere username='%s'"%('xiaolin')
 try:
     # 数据库提交命令
     cursor.execute(sql)

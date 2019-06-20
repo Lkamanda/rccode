@@ -1,6 +1,6 @@
 '''
 - Client 端流程
-            1.建立通信的socket
+            ce1.建立通信的socket
             2.发送内容到指定服务器
             3.接受服务器给定的反馈内容
 '''
@@ -16,7 +16,7 @@ def clientFunc():
     # 发送的数据必须是bytes格式
     data = Text.encode()
     # 发送
-    sock.sendto(data, ("127.0.0.1", 7852))
+    sock.sendto(data, ("127.0.0.ce1", 7852))
 
     data, addr = sock.recvfrom(200)
 

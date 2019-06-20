@@ -1,6 +1,6 @@
 '''
 使用步骤
-1,compile 讲正则表达式的字符串编译为一个pattern 对象
+ce1,compile 讲正则表达式的字符串编译为一个pattern 对象
 2.通过pattern对象的一系列放大对文本进行匹配,匹配结果是一个Match对象
 3.Match对象的方法,对结果进行模拟
 '''

@@ -72,9 +72,9 @@ class Tuxing():
 
 
 
-#　while 1: 加入死循环
-#　while 1: 加入死循环
-# if a == '-1'
+#　while ce1: 加入死循环
+#　while ce1: 加入死循环
+# if a == '-ce1'
     #break
 
 b = Tuxing()

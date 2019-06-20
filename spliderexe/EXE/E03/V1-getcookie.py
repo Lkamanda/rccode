@@ -1,7 +1,7 @@
 '''
 爬取伯乐在线的美女联系方式
 需要:
-1.登录
+ce1.登录
 2.在登录相应声望的前提下提取对方的邮箱
 '''
 
@@ -16,14 +16,14 @@ def login():
     cookie 存入文件
     :return:
     '''
-    # 1.登录路口
+    # ce1.登录路口
     url ='http://www.jobbole.com/wp-admin/admin-ajax.php'
     # 准备登录数据
     data={
         "action": "user_login",
         "user_login": "13231533164@163.com",
         "user_pass":"123456",
-        "remember_me": "1",
+        "remember_me": "ce1",
         "redirect_url": "http: // www.jobbole.com"
     }
 
@@ -60,7 +60,7 @@ def login():
         print(e)
 
 def getInfo():
-    # 1.确定url
+    # ce1.确定url
     url = ''
     # 读取保存的cookie
     f =r''

@@ -1,6 +1,6 @@
 '''
 Sever 端流程
-            1. 建立socket,socket时负责具体通信的一个实例
+            ce1. 建立socket,socket时负责具体通信的一个实例
             2. 绑定，为创建socket指派固定的端口和ip地址
             3.接受对方发送的内容
             4.给对方发送反馈，此步骤为非彼必须步骤
@@ -9,7 +9,7 @@ Sever 端流程
 
 import socket
 def serverFunc():
-    # 1.建立socket
+    # ce1.建立socket
 
     # socket.AF_INET：使用ipv4协议族
     # socket.SOCK_DGRAM：使用UDP通信
@@ -17,10 +17,10 @@ def serverFunc():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
     # 2.绑定ip和ip合port
-    # 127.0.0.1：这个ip地址是代表的是机器本身
+    # 127.0.0.ce1：这个ip地址是代表的是机器本身
     # 7852: 自定义的端口号
     # 地址是一个tuple类型（ip,port)
-    addr = ("127.0.0.1", 7852)
+    addr = ("127.0.0.ce1", 7852)
     sock.bind(addr)
 
     # 接收对方的消息

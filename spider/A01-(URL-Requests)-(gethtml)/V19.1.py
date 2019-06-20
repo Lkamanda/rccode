@@ -18,7 +18,7 @@ def yd(key):
         "salt": "1534814740723",
         "sign":"346b4c35320f93759adc912d4426e89f",
         "doctype": "json",
-        "version": "2.1",
+        "version": "2.ce1",
         "keyfrom": "fanyi.web",
         "action":"FY_BY_REALTIME",
         "typoResult": "false"

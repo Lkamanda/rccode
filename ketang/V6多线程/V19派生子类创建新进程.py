@@ -4,7 +4,7 @@ from  time import ctime, sleep
 class ClockProcess(multiprocessing.Process):
     '''
     俩个函数蹩脚重要
-    1.init 构造函数
+    ce1.init 构造函数
     2.run
     '''
 

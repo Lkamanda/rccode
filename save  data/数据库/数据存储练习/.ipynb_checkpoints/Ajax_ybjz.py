@@ -14,7 +14,7 @@ import re
 import lxml
 
 headers = {
-    "User-Agent": "Mozilla/4.0(compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727"
+    "User-Agent": "Mozilla/4.0(compatible; MSIE 6.0; Windows NT 5.ce1; SV1; AcooBrowser; .NET CLR ce1.ce1.4322; .NET CLR 2.0.50727"
 }
 urls = ['https://www.pexels.com/?dark=true&page={}'.format(str(i)) for i in range(1, 6)]
 photos = []

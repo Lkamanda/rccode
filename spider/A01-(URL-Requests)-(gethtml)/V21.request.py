@@ -2,7 +2,7 @@ import requests
 
 url = 'http://www.baidu.com'
 # 俩中请求方式
-# -1 使用get请求
+# -ce1 使用get请求
 rsp = requests.get(url)
 print(rsp.text)
 #filename = r'/home/tlxy/python/rccode/spliderexe/htmlcf/V21.html'

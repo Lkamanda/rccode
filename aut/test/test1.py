@@ -5,10 +5,10 @@ desired_caps = {}
 desired_caps['resetKeyboard'] = 'True'# 手机类型
 desired_caps['platformName'] = 'Android'
 # 被测试手机，版本
-desired_caps['platformVersion'] = '5.1.1'
-# baa822b7   a82ccd1d Q8JNNNGUOF8L4PON   127.0.0.1:62001 ，
+desired_caps['platformVersion'] = '5.ce1.ce1'
+# baa822b7   a82ccd1d Q8JNNNGUOF8L4PON   127.0.0.ce1:62001 ，
 #  设备名称， adb devices
-desired_caps['deviceName'] = '127.0.0.1:62001'
+desired_caps['deviceName'] = '127.0.0.ce1:62001'
 #\desired_caps['app'] = PATH('D:\\apk\\boobuz.apk')
 # desired_caps['app'] = r'D:\apk\boobuz.apk'
 desired_caps['appPackage'] = 'com.erlinyou.worldlist'

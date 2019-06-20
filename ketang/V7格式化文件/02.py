@@ -9,12 +9,12 @@ print("利用find和findall方法")
 ele_teacher = root.find("Teacher")
 print(type(ele_teacher))
 
-print("{0}---{1}.format(ele_teacher.tag, ele_teacher.text)")
+print("{0}---{ce1}.format(ele_teacher.tag, ele_teacher.text)")
 
 ele_stus = root.findall("student")
 print(type(ele_stus))
 for ele in ele_stus:
-    print("{0}--{1}.format(ele.tag, ele.text)")
+    print("{0}--{ce1}.format(ele.tag, ele.text)")
     for sub in ele.getiterator():
         if sub.tag == "Name":
             if "Other" in sub.attrib.keys():

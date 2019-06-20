@@ -3,7 +3,7 @@
 # '''
 # '''
 # 通过查看js,能找到js代码中
-# 1. 这个是计算salt 的公式
+# ce1. 这个是计算salt 的公式
 # r = "" + ((new Date).getTime() + parseInt(10 * Math.random(), 10)):
 # 2:sign
 # i = n.md5("fanyideskweb" + t + r + "ebSeFb%=XZ%T[KZ)c(sy!");
@@ -57,7 +57,7 @@ def yd(key):
         "salt": str(salt),
         "sign": getSign(key,salt),
         "doctype": "json",
-        "version": "2.1",
+        "version": "2.ce1",
         "keyfrom": "fanyi.web",
         "action":"FY_BY_REALTIME",
         "typoResult": "false"

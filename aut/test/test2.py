@@ -31,7 +31,7 @@ class LT(unittest.TestCase):
                         }
         # 手机类型
         # 被测试手机，版本
-        # baa822b7   a82ccd1d Q8JNNNGUOF8L4PON   127.0.0.1:62001 ，
+        # baa822b7   a82ccd1d Q8JNNNGUOF8L4PON   127.0.0.ce1:62001 ，
         #  设备名称， adb devices
         # \desired_caps['app'] = PATH('D:\\apk\\boobuz.apk')
         # desired_caps['appPackage'] = 'com.erlinyou.worldlist'
@@ -60,7 +60,7 @@ class LT(unittest.TestCase):
         self.driver.find_element_by_id("iv_other_login").click()
         self.driver.implicitly_wait(10)
         time.sleep(4)
-        self.driver.find_element_by_xpath("//android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.EditText").send_keys('1599200510')
+        self.driver.find_element_by_xpath("//android.widget.LinearLayout/android.widget.LinearLayout[ce1]/android.widget.EditText").send_keys('1599200510')
         self.driver.implicitly_wait(10)
         self.driver.find_element_by_xpath("//android.widget.FrameLayout[@content-desc='当前所在页面,登录微信']/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.View/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.EditText").send_keys("5211314zxy.")
         self.driver.implicitly_wait(10)

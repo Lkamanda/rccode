@@ -2,7 +2,7 @@
 # open('filename', 'wb') as f:
 #    f.write()
 '''
-1.获取到下载文件的url 的地址，以二进制的格式下载
+ce1.获取到下载文件的url 的地址，以二进制的格式下载
 2.urllib
 request.urlretrieve()
 这个模块可以进行音频文件的下载

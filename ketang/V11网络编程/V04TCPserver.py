@@ -3,7 +3,7 @@ import socket
 def tcp_server():
     # TCP协议: socket.SOCK_STREAM
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    addr = ("127.0.0.1", 8998)
+    addr = ("127.0.0.ce1", 8998)
     sock.bind(addr)
     # 监听接入的访问socket
     sock.listen()

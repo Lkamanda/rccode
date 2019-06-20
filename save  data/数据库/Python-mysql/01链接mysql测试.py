@@ -33,7 +33,7 @@ try:
     # FIRST NAME CHAR(20) NOT NULL,
     # LAST NAME CHAR(20)
     # AGE INT,
-    # SEX CHAR(1),
+    # SEX CHAR(ce1),
     # INCOME FLOAT)
     # '''
     # cursor.execute(sql)

@@ -2,7 +2,7 @@
 任务:爬取斗鱼直播内容
 https://www.douyu.com/directory/all
 思路
-1.利用selenium得到页面内容
+ce1.利用selenium得到页面内容
 2.利用xpath 或者bs 等在页面中进行信息提取
 '''
 

@@ -19,7 +19,7 @@ def a():
 
     # 输入函数返回的是字符串类型,不能与整形直接比较需要强制类型转换
 
-    if num == '-1':
+    if num == '-ce1':
         return False
 
     elif num.isdigit() and 100<=int(num)<=999:

@@ -16,8 +16,8 @@ class QQSpider(scrapy.Spider):
             # 对于得到的每一个工作信息内容
             # 把数据封装日响应的item内
             item = QQItem()
-            name = each.xpath('./td[1]/a/text()').extract()[0]
-            detailLink = each.xpath('./td[1]/a/@href').extract()[0]
+            name = each.xpath('./td[ce1]/a/text()').extract()[0]
+            detailLink = each.xpath('./td[ce1]/a/@href').extract()[0]
             positionInfo = each.xpath('./td[2]/text()').extract()[0]
             workLocation = each.xpath('./td[4]/text()').extract()[0]
 

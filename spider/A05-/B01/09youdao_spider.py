@@ -27,13 +27,13 @@ def yd_spidler(context):
         "salt": salt,
         "sign": getMd5(sign),
         "doctype": "json",
-        "version": "2.1"
+        "version": "2.ce1"
     }
 
     data = parse.urlencode(data)
     print(len(data))
     user_agent_list = [
-        "Mozilla/4.0(compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
+        "Mozilla/4.0(compatible; MSIE 6.0; Windows NT 5.ce1; SV1; AcooBrowser; .NET CLR ce1.ce1.4322; .NET CLR 2.0.50727)",
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
     ]
     user_agent = random.choice(user_agent_list)

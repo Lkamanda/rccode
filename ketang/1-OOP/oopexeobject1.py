@@ -23,7 +23,7 @@ class Game_num():
 
         str_num = Game_num.line(self)
         random_num = random.randrange(100, 1000)
-        if num == '-1' :
+        if num == '-ce1' :
             print('不玩了,退出')
 
 

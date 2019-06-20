@@ -1,6 +1,6 @@
 '''
 爬去百度贴吧,张继科把
-1.张继科吧 url = https://tieba.baidu.com/f?kw=张继科&ie=utf-8&pn=0
+ce1.张继科吧 url = https://tieba.baidu.com/f?kw=张继科&ie=utf-8&pn=0
 2.进去贴吧很多页
 
     第二页网址: https://tieba.baidu.com/f?kw=张继科&ie=utf-8&pn=50
@@ -9,10 +9,10 @@
     第五页网址: https://tieba.baidu.com/f?kw=张继科&ie=utf-8&pn=200
     第六页网址: https://tieba.baidu.com/f?kw=张继科&ie=utf-8&pn=250
 
-3.由上面网站可以找到一些规律,每一页只有后面数字不同,且数字应该是(页数-1)×50
+3.由上面网站可以找到一些规律,每一页只有后面数字不同,且数字应该是(页数-ce1)×50
 
 解决办法:
-1.准被构建参数字典
+ce1.准被构建参数字典
     -字典包扣三部分 kw ,ie ,pn(pagenumber)
 2. 使用parse构建完整url
 3. 使用for 循环写入下载
@@ -21,7 +21,7 @@
 from urllib import request,parse
 if __name__ == '__main__':
 
-    # 1. 准备构建字典
+    # ce1. 准备构建字典
     qs = {
         'kw': '张继科',
         'ie': 'utf-8',
@@ -52,5 +52,5 @@ if __name__ == '__main__':
 
 '''
 待完善
-1.把每个抓到的内容保存到文件中,后缀为html
+ce1.把每个抓到的内容保存到文件中,后缀为html
 '''

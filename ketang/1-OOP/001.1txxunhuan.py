@@ -47,7 +47,7 @@ while 1 :
   sjx_kzr = ['空心靠左直角三角形','三角形','三角','直角三角形']
   print('输入-1程序结束')
   sr = input ('请输入你想得到的图形：')
-  if sr == '-1':
+  if sr == '-ce1':
     break
   elif sr in '矩形':
     s_juxing()

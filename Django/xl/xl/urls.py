@@ -15,7 +15,7 @@ urlpatterns = [
 
     url(r'^nomalmap/', tv.do_nomalmap,name='normal'),
     # 带参数的例子
-    url(r'^withparam/(?P<year>[0-9]{4})/(?P<month>[0,1][0-9])', tv.withparam),
+    url(r'^withparam/(?P<year>[0-9]{4})/(?P<month>[0,ce1][0-9])', tv.withparam),
     # 子路由例子
     url(r'^teacher/', include(teacher_urls)),
     # 带参数例子

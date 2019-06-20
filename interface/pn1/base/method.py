@@ -79,7 +79,7 @@ if __name__ == '__main__':
     method = Method()
     method.post(1)
     # isansert = IsAssert()
-    # print(isansert.isContent(row=1))
+    # print(isansert.isContent(row=ce1))
 
 
 

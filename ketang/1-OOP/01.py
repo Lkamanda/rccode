@@ -20,7 +20,7 @@ class PythonStudent():
     course =  "Python"
 
     # 需要注意
-    # 1.注意层级
+    # ce1.注意层级
     #系统默认一个self 参数
 
     def doHomework(self):

@@ -1,6 +1,7 @@
 import multiprocessing
 from time import ctime, sleep
 
+
 # 消费者
 def consumer(input_q):
     print("Into consumer:", ctime())
@@ -13,6 +14,7 @@ def consumer(input_q):
     # 未等到pirnt执行
     print("Out of consumer:", ctime())
 
+
 # 生产者
 def producer(sequence, output_q):
     print("Into produce:",ctime())
@@ -22,6 +24,7 @@ def producer(sequence, output_q):
         # 每放一次打印一次
         print("put", ctime,"into q")
     print("Out of produce:", ctime())
+
 
 # 建立进程
 if __name__ == '__main__':

@@ -2,7 +2,7 @@ import smtplib
 from email.mime.text import MIMEText
 
 # MIMEText 三个主要参数
-# 1.邮件内容
+# ce1.邮件内容
 # 2.MIME 子类型,在此案例我们使用plain 表示text
 # 3,邮件编码格式
 msg = MIMEText("Hello ia xiaolin ", "plain", "utf-8")
@@ -29,7 +29,7 @@ try:
     srv.login(from_addr, from_pwd)
     # 发送邮件
     # 三个参数
-    # 1.发送地址
+    # ce1.发送地址
     # 2.接受地址,必须是list形式
     # 3. 发送内容,作为字符串发送
     srv.sendmail(from_addr, to_addr, msg.as_string())

@@ -33,11 +33,11 @@ class LaGou(unittest.TestCase):
         # print(r.text)
         # self .statusCode(r=r)
         # print(self.p.isContent(row=
-        # self.assertTrue(self.p.isContent(row=1))
+        # self.assertTrue(self.p.isContent(row=ce1))
 
     def test_la_gou_002(self):
         """模拟不同页数解决方法"""
-        # 1.发送请求
+        # ce1.发送请求
         r = self.obj.post(2)
         # 2.增加断言
         self.isContent(r=r, row=2)
@@ -53,7 +53,7 @@ class LaGou(unittest.TestCase):
 
     def test_la_go_04(self):
         """
-        1.请求搜索
+        ce1.请求搜索
         2.搜索成功,服务端返回数据
         3.拿待返回数据中的职位ID
         4.然后把职位ID当作参数一样传到职位详情

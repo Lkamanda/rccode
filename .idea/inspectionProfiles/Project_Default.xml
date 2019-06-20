@@ -23,6 +23,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="dict.encode" />
+          <option value="comm.webDriver.webDriver.driver" />
         </list>
       </option>
     </inspection_tool>

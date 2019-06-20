@@ -19,7 +19,7 @@ def youdao(key):
         'salt': '1534756089015' ,
         'sign': '984d21a000e0d4be4c5cf260521f1090',
         'doctype': 'json',
-        'version': '2.1',
+        'version': '2.ce1',
         'keyfrom': 'fanyi.web',
         'action': 'FY_BY_REALTIME',
         'typoResult': 'False'

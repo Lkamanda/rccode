@@ -2,7 +2,7 @@ import socket
 
 def serverFunc():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    addr = ("127.0.0.1", 7852)
+    addr = ("127.0.0.ce1", 7852)
     sock.bind(addr)
     data, addr = sock.recvfrom(500)
     text = data.decode()

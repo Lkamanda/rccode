@@ -48,7 +48,7 @@ class OperationExcal:
     def writeResult(self, row, content):
         """将测试结果写入excal"""
         """
-        1.获取结果参数在ezcal中的列
+        ce1.获取结果参数在ezcal中的列
         2.打开ecxal将之前的内容去除复制
         3.在将测试结果content写入，保存
         """
@@ -92,7 +92,7 @@ class OperationExcal:
 
 if __name__ == '__main__':
     opera = OperationExcal()
-    # print(opera.writeResult(row=1, content='pass'))
+    # print(opera.writeResult(row=ce1, content='pass'))
     # print(opera.getSuccess())
     #print(opera.get_rows())
     # print(opera.run_success_result())

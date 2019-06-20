@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
     i = 0
     while True:
-        print ("{0}********".format(i))
+        print("{0}********".format(i))
         time.sleep(3)
         i += 1
 

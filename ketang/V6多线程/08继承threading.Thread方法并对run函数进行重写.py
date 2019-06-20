@@ -1,6 +1,6 @@
 import threading
 import time
-# 1.需要集成threading.Thread
+# ce1.需要集成threading.Thread
 class Mythread(threading.Thread):
     def __init__(self, arg):
         super(Mythread, self).__init__()

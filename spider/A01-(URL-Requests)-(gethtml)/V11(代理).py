@@ -9,7 +9,7 @@ if __name__ == '__main__':
     url = 'https://www.baidu.com/'
 
     # 使用代理
-    # -1 设置代理
+    # -ce1 设置代理
     proxy = {'http': '140.205.222.3:80'}
 
     # -2 创建ProxyHandler

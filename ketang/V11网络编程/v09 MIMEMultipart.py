@@ -18,7 +18,7 @@ with open("02.html", "rb") as f:
     m = MIMEText(s, 'base64', "utf-8")
     m["Content-Type"] = "application/octet-stream"
     # 需要注意
-    # 1. attachment 后分为英文状态
+    # ce1. attachment 后分为英文状态
     # 2. filename 后面需要用引号包裹,注意与外面的一号错开
     m["Content-Disposition"] = "attachment:filename='02.html'"
     # 添加到MIMEMultipart

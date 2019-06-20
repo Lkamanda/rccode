@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../API_Automation_Test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../DataPresent" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../LT" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/aut/mobile_ui/LT" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/aut/mobile_ui/Mobile_UI" vcs="Git" />

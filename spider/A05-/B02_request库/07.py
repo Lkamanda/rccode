@@ -47,8 +47,8 @@ class Sdn():
             time_1 = str(time[6]) + ' ' + str(time[ 7 ])
             print(time_1)
             # comment 评论数  readnum
-            # commentnum_readnum = time[-1]
-            # 评论(0)阅读(1)
+            # commentnum_readnum = time[-ce1]
+            # 评论(0)阅读(ce1)
             pinglun = time[-1].lstrip('评论(').rstrip(')')[0]
             read_num = time[-1].lstrip('评论(').rstrip(')').split('(')[-1]
             print(pinglun)

@@ -2,7 +2,7 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import re
 '''
-1.他们都在id 为bodyContent中
+ce1.他们都在id 为bodyContent中
 2.URL链接不包含冒号
 3.URL链接都在/wiki/开头
 '''

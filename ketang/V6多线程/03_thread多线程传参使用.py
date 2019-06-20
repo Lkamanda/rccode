@@ -8,7 +8,7 @@ import _thread as thread
 
 
 def loop1(in1):
-    print('Start loop 1 ast :', time.ctime())
+    print('Start loop ce1 ast :', time.ctime())
     print('i am 参数', in1)
     time.sleep(4)
     print('End loop 2 at :', time.ctime())

@@ -9,10 +9,10 @@ import  threading
 
 def loop1():
     # ctime 得到当前时间点
-    print ('Start loop 1 at :', time.ctime())
+    print ('Start loop ce1 at :', time.ctime())
     #  睡眠多长时间,单位是秒
     time.sleep(4)
-    print('End loopr 1 at:', time.ctime())
+    print('End loopr ce1 at:', time.ctime())
 
 
 def loop2():

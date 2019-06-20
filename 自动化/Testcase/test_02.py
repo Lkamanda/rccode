@@ -12,7 +12,7 @@ class Baidu(unittest.TestCase):
     def setUp(cls):
         cls.driver = webdriver.Chrome()
         cls.driver.get('http://www.baidu.com')
-        print('1')
+        print('ce1')
 
     @classmethod
     def tearDown(cls):
@@ -36,3 +36,12 @@ class Baidu(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
+
+
+
+
+
+
+
+
+

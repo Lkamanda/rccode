@@ -9,7 +9,7 @@ c = Tuxing()
 a = input('请输入你想的得到的图形名：')
 print('当你输入-1时程序结束')
 while 1:
-  if c == '-1':
+  if c == '-ce1':
     break
 
   elif c == '矩形':

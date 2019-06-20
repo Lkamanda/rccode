@@ -6,10 +6,10 @@ import _thread as thread
 
 def loop1():
     # ctime 得到当前时间点
-    print('Start loop 1 at :', time.ctime())
+    print('Start loop ce1 at :', time.ctime())
     #  睡眠多长时间,单位是秒
     time.sleep(4)
-    print('End loop1 1 at:',time.ctime())
+    print('End loop1 ce1 at:',time.ctime())
 
 
 def loop2():

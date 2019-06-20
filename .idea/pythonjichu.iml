@@ -7,6 +7,8 @@
     <orderEntry type="jdk" jdkName="Python 3.7 (rccode)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="LT" />
+    <orderEntry type="module" module-name="LT" />
+    <orderEntry type="module" module-name="DataPresent" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

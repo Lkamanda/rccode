@@ -2,7 +2,7 @@
 利用parse模块模拟post请求
 分析百度翻译
 分析步骤
-1. f12
+ce1. f12
 2. 尝试输入girl,发现每敲一个单词都有请求
 3.请求地址:http://fanyi.baidu.com/sug
 4.利用NetWork-Hearders 查看,发现 FormData的值是 kw:girl
@@ -21,7 +21,7 @@ import json
 
 '''
 大致流程:
-1.利用data结构内容,然后urlopen打开
+ce1.利用data结构内容,然后urlopen打开
 2.返回一个json格式的结果
 3.返回结果就应该是girl的释义
 '''

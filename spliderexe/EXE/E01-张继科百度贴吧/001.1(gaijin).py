@@ -13,7 +13,7 @@ from urllib import request,error,parse
 
 if __name__ == '__main__':
     #使用代理
-    # 1.设置代理
+    # ce1.设置代理
     property = {'http':'140.250.222.3:80'}
     # 2.创建property_handle
     property_handle = request.ProxyHandler(property)

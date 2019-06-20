@@ -4,10 +4,10 @@ data = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 查询
 locationId 2-8
 date   2019-01-30
-roomType  video(1/4) normal,
+roomType  video(ce1/4) normal,
 
 预定
-boardroomId  range(1,10)
+boardroomId  range(ce1,10)
 date  2019-01-21
 startTime 08:00 - 20:00  / x = 8 - 20
 endTime
@@ -59,7 +59,7 @@ def meeting_reserve():
         username_list = [m for m in range(1, 11)]
         userName = random.choice(username_list)
         print(userName)
-        bookname = "1"
+        bookname = "ce1"
         timestamp = 1
         code = "code"
         reserve_dict = [code, timestamp, userName, bookname, boardroomId, data, endtime, starttime]

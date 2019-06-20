@@ -8,7 +8,7 @@ operationExcal = OperationExcal()
 def setSo(kd=None):
     """对搜索的数据重新赋值"""
     print(kd)
-    # operationJson.getRequstData(1) 得到的dict1为str ,需要反序列化
+    # operationJson.getRequstData(ce1) 得到的dict1为str ,需要反序列化
     dict1 = json.loads(operationJson.getRequstData(1))
     dict1['kd'] = kd
     return dict1
