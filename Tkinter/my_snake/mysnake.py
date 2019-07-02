@@ -54,4 +54,30 @@ class Snake():
         计算新的蛇头的位置
         """
         last_x , last_y = self.snake_postions[-1]
+        # direction 负责存储蛇的移动的方向
+        # 向上移动
+        if self.direction == "Up":
+            # 每次移动的跨度是10像素
+            new_snake_point = last_x, last_y - 10
+        elif self.direction == "Down":
+            new_snake_point = last_x, last_y + 10
+        elif self.direction == "Left":
+            new_snake_point = last_x -10 , last_y
+        elif self.direction == "Right":
+            new_snake_point = last_x + 10, last_y
+
+        return new_snake_point
+
+
+    def check_game_over(self, snake_point):
+        """判断的依据是适合有是否和墙相撞"""
+        x,y = snake_point[0], snake_point[1]
+        if not -5< x <
+
+
+
+
+
+
+
 
