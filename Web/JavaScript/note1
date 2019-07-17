@@ -1,0 +1,46 @@
+一。1.浏览器组成
+1）shell
+2) 内核部分
+- 渲染引擎（语法规则和渲染）
+- js 引擎
+- 其他模块
+2.chrome v8引擎直接将js翻译成机械码
+3.javascript ：
+- 解释型语言：翻译一行执行一行
+优点：跨平台
+不足：稍微慢
+- java：跨平台 javac -- > 编译 .class -- > jvm -- 解释执行 ock
+编译型语言：通篇翻译，生成文件，执行文件，c c++
+优点：快
+不足：不能跨平台
+
+1.javascript 引擎是单线程
+2.异步：同时
+3.ECMA标准
+
+4.JavaScript：解释型，单线程
+1）Dom
+2）Bom
+3）ecmascript : 原生的部分
+- 轮转事件片
+5.主流浏览器
+IE         trident
+Chrome     webkit/blink
+firefox    Gecko
+Opera      presto
+Ssfari     webkit
+6.js 使用
+1.直接在html 中使用
+    <script type="text/javascript">
+        document.write("hello world")
+</script>
+2. 引入外部文件, (除非特殊需求， js全部写入外部文件)
+   <script type="text/javascript"
+            src="note.js"></script>
+
+3. 结构，行为，样式 相分离
+HTML， js css
+
+二.js 基本语法：
+1.var a : 声明变量
+2.
