@@ -41,6 +41,23 @@ Ssfari     webkit
 3. 结构，行为，样式 相分离
 HTML， js css
 
-二.js 基本语法：
+二.js 基本语法：动态语言
 1.var a : 声明变量
-2.
+1）变量命名规则： （不能以数字开头， 不能有特殊字符）
+- 变量名必须以英文字母、_、 $  开头
+- 变量名可以包含英文字母、 _、 $、 数字
+- 不可以用系统的关键字、保留字作为变量名
+2）变量计算
+先运算在赋值
+3）数据类型：数据类型天生就是浮点型
+- 原始值: number boolean string undefined(未定义的) null（占位）
+- 引用值:array(数组类型)， object（对象类型），function... data regexp
+- 由值决定类型
+
+4）
+stack: 栈  原始值存放在栈中 first in last out 先进后出
+heap:  堆  初始值存放在堆中 
+
+
+
+
