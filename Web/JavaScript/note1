@@ -56,7 +56,7 @@ HTML， js css
 
 4）
 stack: 栈  原始值存放在栈中 first in last out 先进后出
-heap:  堆  初始值存放在堆中 
+heap:  堆  引用值存放在堆中
 
 
 
