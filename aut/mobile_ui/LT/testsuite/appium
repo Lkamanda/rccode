@@ -1,0 +1,160 @@
+> Checking if an update is available
+> Launching Appium server with command: D:\Appium\node.exe lib\server\main.js --address 127.0.0.1 --port 4723 --app D:\apk\boobuz.apk --device-ready-timeout 15 --no-reset --session-override --platform-name Android --platform-version 23 --automation-name Appium --device-name "Q8JNNNGUOF8L4PON" --log-no-color
+> info: Welcome to Appium v1.4.16 (REV ae6877eff263066b26328d457bd285c0cc62430d)
+> info: Appium REST http interface listener started on 127.0.0.1:4723
+> info: [debug] Non-default server args: {"app":"D:\\apk\\boobuz.apk","address":"127.0.0.1","sessionOverride":true,"noReset":true,"logNoColors":true,"androidDeviceReadyTimeout":"15","deviceName":"Q8JNNNGUOF8L4PON","platformName":"Android","platformVersion":"23","automationName":"Appium"}
+> info: Console LogLevel: debug
+> info: --> POST /wd/hub/session {"capabilities":{"firstMatch":[{"platformName":"Android","appium:platformVersion":"6.0","appium:deviceName":"Q8JNNNGUOF8L4PON","appium:app":"D:\\apk\\boobuz.apk","appium:unicodKeyboard":"True","appium:resetKeyboard":"True","appium:noReset":"True"}]},"desiredCapabilities":{"platformName":"Android","platformVersion":"6.0","deviceName":"Q8JNNNGUOF8L4PON","app":"D:\\apk\\boobuz.apk","unicodKeyboard":"True","resetKeyboard":"True","noReset":"True"}}
+> info: Client User-Agent string: Python http auth
+> warn: Converting cap unicodKeyboard from string to boolean. This might cause unexpected behavior.
+> warn: Converting cap resetKeyboard from string to boolean. This might cause unexpected behavior.
+> warn: Converting cap noReset from string to boolean. This might cause unexpected behavior.
+> info: [debug] The following desired capabilities were provided, but not recognized by appium. They will be passed on to any other services running on this server. : unicodKeyboard
+> info: [debug] No appActivity desired capability or server param. Parsing from apk.
+> info: [debug] No appPackage desired capability or server param. Parsing from apk.
+> info: [debug] Using local app from desired caps: D:\apk\boobuz.apk
+> info: [debug] Creating new appium session ba616ab9-b73f-41bd-8654-ee4fa125a971
+> info: Starting android appium
+> info: [debug] Getting Java version
+> info: Java version is: 1.8.0_151
+> info: [debug] Checking whether adb is present
+> info: [debug] Using adb from D:\adt\android-sdk-windows\platform-tools\adb.exe
+> info: [debug] Parsing package and activity from app manifest
+> info: [debug] Checking whether aapt is present
+> info: [debug] Using aapt from D:\adt\android-sdk-windows\build-tools\28.0.3\aapt.exe
+> info: [debug] Extracting package and launch activity from manifest.
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\build-tools\28.0.3\aapt.exe dump badging D:\apk\boobuz.apk
+> info: [debug] badging package: com.erlinyou.worldlist
+> info: [debug] badging act: com.erlinyou.map.Erlinyou
+> info: [debug] Parsed package and activity are: com.erlinyou.worldlist/com.erlinyou.map.Erlinyou
+> info: [debug] Using fast reset? false
+> info: [debug] Preparing device for session
+> info: [debug] Checking whether app is actually present
+> info: Retrieving device
+> info: [debug] Trying to find a connected android device
+> info: [debug] Getting connected devices...
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe devices
+> info: [debug] 1 device(s) connected
+> info: Found device Q8JNNNGUOF8L4PON
+> info: [debug] Setting device id to Q8JNNNGUOF8L4PON
+> info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 15)
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON wait-for-device
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON shell "echo 'ready'"
+> info: [debug] Starting logcat capture
+> info: [debug] Getting device API level
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON shell "getprop ro.build.version.sdk"
+> info: [debug] Device is at API Level 23
+> info: Device API level is: 23
+> info: [debug] Extracting strings for language: default
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON shell "getprop persist.sys.language"
+> info: [debug] Current device persist.sys.language:
+> info: [debug] java -jar "D:\Appium\node_modules\appium\node_modules\appium-adb\jars\appium_apk_tools.jar" "stringsFromApk" "D:\apk\boobuz.apk" "C:\Users\ZHOUJI~1\AppData\Local\Temp\com.erlinyou.worldlist"
+> info: [debug] Reading strings from converted strings.json
+> info: [debug] Setting language to default
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON push "C:\\Users\\ZHOUJI~1\\AppData\\Local\\Temp\\com.erlinyou.worldlist\\strings.json" /data/local/tmp
+> info: [debug] Checking whether aapt is present
+> info: [debug] Using aapt from D:\adt\android-sdk-windows\build-tools\28.0.3\aapt.exe
+> info: [debug] Retrieving process from manifest.
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\build-tools\28.0.3\aapt.exe dump xmltree D:\apk\boobuz.apk AndroidManifest.xml
+> info: [debug] Set app process to: com.erlinyou.worldlist
+> info: [debug] Not uninstalling app since server not started with --full-reset
+> info: [debug] Checking app cert for D:\apk\boobuz.apk.
+> info: [debug] executing cmd: java -jar D:\Appium\node_modules\appium\node_modules\appium-adb\jars\verify.jar D:\apk\boobuz.apk
+> info: [debug] App already signed.
+> info: [debug] Zip-aligning D:\apk\boobuz.apk
+> info: [debug] Checking whether zipalign is present
+> info: [debug] Using zipalign from D:\adt\android-sdk-windows\build-tools\28.0.3\zipalign.exe
+> info: [debug] Zip-aligning apk.
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\build-tools\28.0.3\zipalign.exe -f 4 D:\apk\boobuz.apk C:\Users\ZHOUJI~1\AppData\Local\Temp\119329-5236-oxzw9k\appium.tmp
+> info: [debug] MD5 for app is 06917758bb75c31af396ad9c1ae421b5
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON shell "ls /data/local/tmp/06917758bb75c31af396ad9c1ae421b5.apk"
+> info: [debug] Getting install status for com.erlinyou.worldlist
+> info: [debug] Getting device API level
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON shell "getprop ro.build.version.sdk"
+> info: [debug] Device is at API Level 23
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON shell "pm list packages -3 com.erlinyou.worldlist"
+> info: [debug] App is installed
+> info: [debug] Forwarding system:4724 to device:4724
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON forward tcp:4724 tcp:4724
+> info: [debug] Pushing appium bootstrap to device...
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON push "D:\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+> info: [debug] Pushing settings apk to device...
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON install "D:\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+> info: [debug] Pushing unlock helper app to device...
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON install "D:\Appium\node_modules\appium\build\unlock_apk\unlock_apk-debug.apk"
+> info: Starting App
+> info: [debug] Attempting to kill all 'uiautomator' processes
+> info: [debug] Getting all processes with 'uiautomator'
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON shell "ps 'uiautomator'"
+> info: [debug] No matching processes found
+> info: [debug] Running bootstrap
+> info: [debug] spawning: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg com.erlinyou.worldlist -e disableAndroidWatchers false
+> info: [debug] UiAutomator exited
+> info: [debug] executing cmd: D:\adt\android-sdk-windows\platform-tools\adb.exe -s Q8JNNNGUOF8L4PON shell "echo 'ping'"
+> info: [debug] Attempting to uninstall app
+> info: [debug] Not uninstalling app since server not started with --full-reset
+> info: [debug] Cleaning up android objects
+> info: [debug] Cleaning up appium session
+> error: UiAutomator quit before it successfully launched
+> error: Failed to start an Appium session, err was: Error: UiAutomator quit before it successfully launched
+> info: [debug] Error: UiAutomator quit before it successfully launched
+>     at [object Object].<anonymous> (D:\Appium\node_modules\appium\lib\devices\android\android.js:205:23)
+>     at [object Object].<anonymous> (D:\Appium\node_modules\appium\lib\devices\android\android-hybrid.js:249:5)
+>     at Object.async.eachSeries (D:\Appium\node_modules\appium\node_modules\async\lib\async.js:142:20)
+>     at [object Object].androidHybrid.stopChromedriverProxies (D:\Appium\node_modules\appium\lib\devices\android\android-hybrid.js:233:9)
+>     at [object Object].<anonymous> (D:\Appium\node_modules\appium\lib\devices\android\android.js:200:10)
+>     at [object Object].<anonymous> (D:\Appium\node_modules\appium\lib\devices\android\android.js:222:9)
+>     at [object Object].androidCommon.uninstallApp (D:\Appium\node_modules\appium\lib\devices\android\android-common.js:478:5)
+>     at [object Object].<anonymous> (D:\Appium\node_modules\appium\lib\devices\android\android.js:220:12)
+>     at [object Object].<anonymous> (D:\Appium\node_modules\appium\lib\devices\android\android.js:229:11)
+>     at D:\Appium\node_modules\appium\node_modules\appium-adb\lib\adb.js:901:7
+>     at [object Object].<anonymous> (D:\Appium\node_modules\appium\node_modules\appium-adb\lib\adb.js:180:9)
+>     at ChildProcess.exithandler (child_process.js:742:7)
+>     at ChildProcess.emit (events.js:110:17)
+>     at maybeClose (child_process.js:1016:16)
+>     at Process.ChildProcess._handle.onexit (child_process.js:1088:5)
+> info: [debug] Responding to client with error: {"status":33,"value":{"message":"A new session could not be created. (Original error: UiAutomator quit before it successfully launched)","origValue":"UiAutomator quit before it successfully launched"},"sessionId":null}
+> info: <-- POST /wd/hub/session 500 9964.086 ms - 218
+
+
+测试项	结果
+微信登录
+连wifi后，启动软件5分钟后自动开始下载基础包
+断开无线再连接，会自动恢复下载
+下载中退出软件。启动软件后会继续下载
+用4G不下载地图
+市区里，显示landmark，移动地图，旋转地图，2D、3D切换
+地图上显示头像，好友，动态，世界动态，景点照片
+直升机模式，左右滑动landmark列表，查看更多
+搜索街道，计算路径，导航
+搜索地点，计算路径，导航
+搜索门牌号，计算路径，导航
+汽车、公交、地铁、步行、自行车导航模式
+加入历史记录
+周边地点列表
+推荐地点，住宿、美食、游玩
+添加家并导航
+添加公司并导航
+添加收藏，重命名收藏
+添加我的行程
+发送一个带多张照片和视频的动态
+评论动态
+赞动态
+发送语音信息
+发送文字
+发送图片
+发送视频
+发送表情
+发送动态表情
+撤回，下拉刷新，看是否还显示撤回的消息
+撤回，后退页面再进入聊天页，看是否显示已撤回的消息
+语音通话
+视频通话
+共享位置
+分享联系人
+分享地点
+分享软件
+发送文件（安卓）
+
+appium android 元素定位
+https://www.cnblogs.com/meitian/p/6103391.html
