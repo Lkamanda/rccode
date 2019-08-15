@@ -182,7 +182,44 @@ do {
 如：输入456，输出654
 
 5.输入abc三个数字，打印出最大的
-
 6.打印出100 以内的质数
-（素数只能被1和自身整除的数：从1除的100有俩个数能被整除的数）
+
+（素数只能被1和自身整除的数：从1除的100）
+
+
+1.求一个数的开方数
+math.sqrt()
+2.标准的输出方法
+console.log()
+传输到控制台
+3.switch case
+
+        var n = 3;
+        switch(n){
+            case 1:
+                console.log("a");
+            case 2:
+                console.log('b');
+            case 3:
+                console.log("c");
+        }
+把switch（）中的内容与case 后的内容相比对，从那个case 开始执行。
+一般和break 连用
+
+
+continue 终止本次循环，执行下次循环
+
+数组：
+
+var a = [1,2,3,4,5,7]
+a.length  数组长度
+遍历数组：
+for (var i = 0; i < a.length; i++){
+    console.log(arr[i]);
+}
+
+
+
+
+
 
