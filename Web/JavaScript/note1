@@ -218,8 +218,41 @@ for (var i = 0; i < a.length; i++){
     console.log(arr[i]);
 }
 
+13)对象
+var a={
+    age:22,
+    son:"zhu",
+}
+获取对象属性值：
+a.age
+属性赋值 a.age = 10
 
+14) typeof 操作符
+typeof(12)
+typeof 12
+获取数据类型
+number string boolean object undefined function
 
+object : 范范的引用值，数组，null
 
+15)类型转换
+1.显示转换类型
+- Number() 将其中的内容转换成数字
+Number('123')
+Number(null) = 0
+Number(undefined) = NaN
+Number(a) = NaN
+Number(-123) = -123
+Number(123abc) = NaN
 
+- parseInt() 将其中的内容转换成整形， 从数字类开始往后看，到非数字类截止
+var num = parseInt(demo, radix);
+radix : 机理  (2  -  36)
+以目标机理为进制，转换成10进制
+parseInt(true) = NaN
+parseInt(123.9) = 123
+parseInt("a", 16) = 10
+parseInt('123abc') = 123
+parseInt('abc123') = NaN
 
+- parseFloat() 将数转换成一个浮点数
