@@ -256,3 +256,61 @@ parseInt('123abc') = 123
 parseInt('abc123') = NaN
 
 - parseFloat() 将数转换成一个浮点数
+
+- String() 转换成字符串
+
+- Boolean()转换成布尔值
+
+
+- toString()
+undefined null 不能使用
+var num = 123
+var a = num.toString()
+
+若想转换成字符串， 使用拼接空字符串方便
+
+toString(radix): 将目标内容转换成radix进制
+var a = 10;
+var num = a.toString(8);
+console.log(num);
+
+12
+
+2.隐式类型转换
+- isNaN() 判断内容是否为NaN，返回布尔值  -- > Number()
+
+原理：先 Number('abc') -- > NaN
+
+- ++ --  + / - (正负)   -- > Number()
+
+- + (加号) 当加号俩边 只要有一边是字符串，就将前后都变成字符串
+
+-  - * / %  (减乘除取余)  --> number
+
+- && || !  -- > Boolean (但是结果不是返回 Boolean)
+
+- > < >=  =<    字符串和字符串比较，asc码
+                字符串和数字 比 ， 字符串转换成数字
+
+- == !=
+
+3.
+2 > 3 < 1   true
+
+undefined == null  true
+
+NaN == NaN   false  (非数，连自己都不等于)
+
+
+3.不发生类型转换的
+===       ！==
+
+NaN === NaN   false
+
+
+13.未定义变量直接使用报错 not defined
+特例： typeof()  中   返回  undefined
+
+console.log(typeof(typeof(undefined)))
+
+string 
