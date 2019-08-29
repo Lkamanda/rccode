@@ -316,7 +316,7 @@ console.log(typeof(typeof(undefined)))
 string
 
 14.练习
-typeof(a)   undefined
+typeof(a)   string
 typeof(undefined)  undefined
 typeof(NaN)    number
 typeof(null)   object
@@ -334,6 +334,8 @@ alert (1==="1")  false
 
 alert(parseInt("123abc"));  123
 
+
+# 科学计数法，4折5入
 var num = 123123.345789;
 alert(num.toFixed(3)); 123123.346
 typeof(typeof(a)); string
@@ -342,3 +344,6 @@ typeof(typeof(a)); string
 1)请用css 和html写一个三角形
 2）父元素为一个div,宽高固定，子元素是一个块元素，宽高一直，
 如何父元素内水平，垂直，居中
+
+
+

@@ -1,0 +1,39 @@
+-.函数 高内聚，弱耦合
+1.定义
+函数或变量命名规则，小驼峰规则， 第一个首字母小写，其余的大写 theFirstName
+函数声明
+function theFirstName(){}
+
+函数表达式
+var test = function test(){
+    document.write('a');
+}
+test.name = test
+
+匿名函数表达式
+var test = function(){
+    document.write("a");
+}
+2.组成形式
+形式参数 -- 形参
+function sun(a, b){
+    var c = a + b;
+    document.write(c);
+}
+实际参数 -- 实参
+sum(1, 2)
+
+形参和实参的数量可以不等
+
+arguments -- [11,2,3] 实参列表：
+将所有的实际参数全部存放在实参列表中
+
+function sum(a){
+        for(var i = 0; i < arguments.length; i++){
+            console.log(arguments[i])
+        }
+     }
+sum(11, 2, 3);
+sum.length   形参的长度
+arguments.length  实参的长度
+
