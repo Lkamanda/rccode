@@ -7,19 +7,14 @@
 <body>
 
     <script type="text/javascript">
-     function sum(a, b, c, d){
-            if(sum.length > arguments.length){
-                console.log("形参多")
+        function sum(a,b){
+            var result = 0;
+            for (var i = 0;i < arguments.length ; i ++){
+                result += arguments[i];
             }
-            else if (sum.length < arguments.length){
-                console.log("实参多")
-            }
-            else{
-                console.log("一样多")
-            }
+            console.log(result);
         }
-g
-     sum(11, 2, 3);
+        sum(1, 3, 5, 7);
 
     </script>
 

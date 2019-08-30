@@ -37,3 +37,40 @@ sum(11, 2, 3);
 sum.length   形参的长度
 arguments.length  实参的长度
 
+2.1 实现任意数求和函数
+
+  function sum(){
+            var result = 0;
+            for(var i = 0; i < arguments.length(); i++ ){
+                result += arguments[i];
+            }
+            console.log(result);
+        }
+  sum(1,2,3)
+
+只有形参和实参数量相等的时候，形参和实参才能产生映射
+
+2.2 返回值  return
+
+2.3 习题
+1.写一个函数，功能是告知你所选定的小动物的叫声。
+  function animal(n){
+          if (n = "cat"){
+            return "cat"
+          }
+          else if (n = "dog"){
+            return "dog"
+          }
+          else if (n = "pig"){
+            return "pig"
+          }
+        }
+
+        var a = animal("cat");
+        console.log(a);
+
+2.写一个函数，实现加法基数器。
+
+3.定义一组函数，输入数字，逆转并输出汉字形式。
+4.写一个函数实现n 的阶乘。
+5.写一个函数，实现斐波那契数列。
