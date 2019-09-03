@@ -1,2 +1,167 @@
 1.递归俩点
 1）特点： 找规律，找出口
+
+递归实现阶乘
+function mul(n){
+    if (n == 1 || n == 0){
+        return 1;
+    }
+    return n * mul(n - 1);
+}
+
+递归实现斐波那契数列
+function fb(n){
+    if (n == 1 || n == 2){
+        return 1;
+    }
+    return   fb(n - 1) + fb(n - 2);
+}
+
+2.js 运行三部曲
+
+- 语法分析， 通篇扫描，检查有无语法错误，单步执行
+- 预编译
+    - 函数声明整体提升
+    - 变量 声明提升
+- 解释执行
+
+3.imply global
+- 暗示全局变量：即任何变量，如果未经声明就赋值，此变量为全局所有
+- 一切声明的全局变量，全是window的属性
+eg: var a = 123; ====> window.a = 123;
+
+赋值自右向左的
+
+eg:
+function test(){
+    var a = b = 123;
+}
+
+window.a = undefined ;
+window.b = 123;
+
+其中b 就是未经声明就赋值，其为全局变量window 所有
+
+4.预编译:
+
+- 函数的预编译
+发生在函数执行的前一刻
+1）创建AO对象， Activation Object 创建活跃对象（执行期上下文）
+2）找形参和变量声明，将变量和形参名作为AO属性名，值为undefined
+3）将实参值和形参统一
+4）在函数体里找函数声明，值赋予函数体
+
+     function fn(a){
+            console.log(a);
+            var a = 123;
+            console.log(a);
+            function a(){}
+            console.log(a);
+
+            var b = function(){}
+            console.log(b);
+            function d(){}
+        }
+        fn(1)
+        function a(){}
+        123
+        123
+        function b(){}
+
+     function test(a, b){
+            console.log(a);
+            c = 0;
+            var c;
+            a = 3;
+            b = 2;
+            console.log(b);
+            function b(){}
+            function d(){}
+            console.log(b);
+        }
+     test(1)
+
+     1,
+     2,
+     2,
+
+- 全局预编译
+1）生成一个GO对象 Global Object
+2）找形参和变量声明
+3）函数声明
+
+先生成 GO, 再生成AO
+
+AO 上有就使用 AO, 没有在使用GO
+eg:
+console.log(test);
+    function test(){
+        console.log(test)
+        var test = 234;
+        console.log(test);
+        function test(){}
+    }
+test(1);
+var test = 123;
+
+        eg:
+        function bar(){
+            return foo;
+            foo = 10;
+            function foo(){
+            }
+            var foo = 11;
+        }
+        console.log(bar());
+
+        eg:
+        console.log(bar());
+        function bar(){
+            foo = 10;
+            function foo(){
+            }
+            var foo = 11;
+            return foo;
+        }
+
+    eg:
+      a = 100;
+        function demo(e){
+            function e(){}
+            arguments[0] = 2;
+            document.write(e);
+            if(a){
+                var b = 123;
+                function c(){
+                    //猪都能做出来
+                }
+            }
+
+            var c;
+            a = 10;
+            var a;
+            console.log(b);
+            f = 123;
+            console.log(c);
+            document.write(a);
+        }
+        var a;
+        demo(1);
+        document.write(a);
+        document.write(f);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
