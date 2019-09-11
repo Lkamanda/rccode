@@ -301,7 +301,6 @@ undefined == null  true
 
 NaN == NaN   false  (非数，连自己都不等于)
 
-
 3.不发生类型转换的
 ===       ！==
 
@@ -344,6 +343,9 @@ typeof(typeof(a)); string
 1)请用css 和html写一个三角形
 2）父元素为一个div,宽高固定，子元素是一个块元素，宽高一直，
 如何父元素内水平，垂直，居中
+
+
+   document.write(typeof(a) && - true + (undefined)+ "");
 
 
 

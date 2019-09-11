@@ -124,31 +124,35 @@ var test = 123;
             return foo;
         }
 
-    eg:
-      a = 100;
-        function demo(e){
-            function e(){}
-            arguments[0] = 2;
-            document.write(e);
-            if(a){
-                var b = 123;
-                function c(){
-                    //猪都能做出来
-                }
-            }
+     var str = false + 1;
+        document.write(str);
+        1
 
-            var c;
-            a = 10;
-            var a;
-            console.log(b);
-            f = 123;
-            console.log(c);
-            document.write(a);
+
+        var demo = false == 1;
+        document.write(demo);
+        false
+
+
+        if(typeof(a) && - true + (undefined) + ""){
+            document.write("基础扎实")
         }
-        var a;
-        demo(1);
-        document.write(a);
-        document.write(f);
+        NaN
+
+
+
+        if (11 + "11" * 2 == 33){
+            document.write('基础扎实');
+        }
+
+        !!" " + !!"" - !!false ||document.write('你觉得能打印，就是猪')
+
+
+
+
+
+
+
 
 
 

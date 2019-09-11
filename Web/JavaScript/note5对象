@@ -1,0 +1,214 @@
+对象
+var mrDeng = {
+            name:"MrDeng",
+            age:40,
+            sex:"male",
+            somke: function(){
+                console('i am smoking! cool')
+                mrDeng.health ++;
+            },
+            drink: function(){
+                console.log("i am drink");
+                this.health --;
+            }
+         }
+
+this.health --  (this 表示第一人称)
+- 增删改查
+    - 增
+    mrDeng.wife = '小刘'
+    - 删除
+    delete mrDeng.wife
+
+- 对象的创建方法
+    - 1. var obj = {}  plainObject 对象字面量/对象直接量
+    - 2.构造函数
+        - 2,1系统自带的构造函数 Object()
+            var obj = new Object();
+        - 2.2自定义
+
+        大驼峰式命名规则  TheFirstName
+
+- 构造函数内部原理
+new
+    - 在内部最上方，生成一个var this = {}
+    AO{
+        name:''
+    }
+    - 最后：隐式返回 this
+
+new 存在不可能返回原始值，入编写返回原始值，失效
+
+undefined,null 不能设置属性信息
+
+
+- 包装类 new String()  new Boolean()  new Number()
+var num = 4;
+
+num.len = 3;
+//new Number(4).len = 3; 新建了一个数字对象
+// delete
+
+console.log(num.len) ; 访问 num.len
+
+
+// 系统重新创建一个数字对象 new Number(4).len
+        var str = 'abcdef';
+        str.length = 2;
+        console.log(str);         // abcdef
+        console.log(str.length)   // 6
+
+    - 原始值赋值，调用包装类，无效
+        var str = 1;
+        str += 1;
+        console.log(typeof(str));
+        var test = typeof(str);
+        if (test.length == 6){
+            test.sign = "typeoof的返回结果可能为String";
+            // new String(test.sign)= 'xxx';  然后delete
+
+        }
+        // 这时调用test.sign 时重新 生成 new String(test.sign)= 'xxx';  然后delete
+        document.write(test.sign);
+
+        // undefined;
+
+typeof number string boolean undefined object function
+
+原型
+1.定义：原型是function 对象的一个属性，他定义了过早函数制造出的对象的公共祖先。通过该构造函数产生的对象
+可以继承该原型的属性和方法，原型也是对象
+
+    - 构造函数.prototype -- 原型
+    // Person.prototype）-- 原型
+    // Person.prototype = {} 是祖先
+     function Prototype(){}
+     var person = new Person();
+
+    - 自己构造函数本身存在该属性，就不去原型上获取
+2. 利用原型特点和概念，可以提取共有属性
+       Car.prototype = {
+            height:"1400";
+            lang:"4900";
+            name:'BMW';
+       }
+
+       Car.prototype.height = 1400;
+       Car.prototype.lang = 4900;
+       Car.prototype.carName = "BMW";
+       function Car(color, owner){
+            this.owner = owner;
+            this.color = color;
+       }
+3. 对象如何查看原型 -> 隐式属性 __proto__   -> 存放原型
+4. 对象如何查看对象的构造函数 —> constructor
+
+5. 原型的增删改查
+    - Person.prototype.lastName = "James";
+
+6.构造函数通过 __proto__  -> 原型
+
+    function Person(){
+         }
+
+    var obj = {
+        name: "sunny"
+    }
+
+    var person = new Person();
+    person.__proto__ = obj;
+
+
+eg:
+     Person.prototype.name = "sunny";
+         function Person(){
+         }
+         var person = new Person();
+         Person.prototype.name = 'cherry';
+         var person = new Person();
+            - .此时是 cherry
+
+     Person.prototype.name = {
+        name: "cherry";
+     }
+
+     //相当于换房
+     person.name = "sunny"
+
+    var a = b = {name:a}
+    b = {name:b}
+    此时
+    a = {name:a}
+
+- object.prototype 是所有对象的最终原型
+- 原型链
+    - 一般情况下子链上不可以修改父链上的属性
+      只有当，父链上的为引用值， 子链通过调用引用值，并对他的属性进行修改
+    function Father(){
+        this.name = {
+            id:1
+        }
+    }
+
+    function Son(){
+    }
+
+    var son = new Son();
+    son.name.id1 = 2;
+
+    - sayName() sayName里面的this指向是，谁调用的这个方法，指向的就是谁
+
+         Person.prototype = {
+            name:"a",
+            sayName: function(){
+                console.log(this.name);
+            }
+        }
+        function Person(){
+            this.name = "b";
+        }
+        var person = new Person();
+        person.sayName()
+        // b
+
+7.创建对象
+var obj = Object.create(原型/null)
+    -
+        var obj = {name:"sunny", age:123};
+        var obj1 = Object.create(obj);
+
+
+8.绝大多数的对象的最终都会继承自Object.prototype
+    - var obj = Object.create(null)
+
+9.undefined  null 不能调用toString()
+undefined，null  没有原型
+
+123.toString()  此时 点识别为浮点型
+应为 var num = 123;
+    num.toString()
+
+10. var num  = 123
+num.toString(); -- > new Number(num).toString();
+
+Number.prototype.__proto__ = Object.prototype
+
+11. 方法的重写
+Object.prototype.toString = function(){}
+
+Test.prototype = {}
+function Test(){
+    toString: function a(){
+        console.log('a')
+    }
+}
+var test = new Test()
+
+12.
+document.write() 本质
+var obj = Object.create(null);
+obj.toString = function(){
+    return 'xiaolin';
+}
+
+document.write(obj)

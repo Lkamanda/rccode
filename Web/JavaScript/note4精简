@@ -1,0 +1,216 @@
+<script type="text/javascript">
+
+</script>
+1.作用域：
+每个javascrpt函数都是一个对象，对象中有些属性我们可以访问，但有些不可以，这些属性进攻javascript
+引擎存取，{[scope]}就是其中一个。
+scope 指定就是我们所说的作用域，其中存储了运行期上下文的集合
+
+作用域链：[[scope]]中所存储点的执行期上下文对象的集合。这个集合成链式链接叫做作用域
+
+2.
+内部的函数被保存到了外部必然产生闭包
+
+   function a(){
+            var num = 100;
+            function b(){
+                num ++;
+                console.log(num);
+            }
+            return b;
+        }
+        var demo = a();
+        demo();
+        demo();
+
+        101
+        102
+
+3. 当内部函数被保存到外部时，将会申城闭包，闭包回导致
+原有作用域链不释放，造成内存泄漏。
+
+内存泄漏，过多的占用系统资源
+
+1） 实现公有变量
+- 使用闭包实现累加器
+
+function a(){
+    var aaa = 0;
+    function b(){
+        aaa ++;
+        console.log(aaa);
+    }
+    return b
+}
+
+var add = a()
+
+2)可以做缓存（存储结构）
+
+       function test(){
+            var num = 100;
+            function a(){
+                num ++;
+                console.log(num);
+            }
+            function b(){
+                num --;
+                console.log(num);
+            }
+            return [a,b]
+        }
+
+        var r = test()
+        r[0]();
+        r[1]();
+
+        101
+        100
+
+      function eater(){
+                var food = "";
+                var obj = {
+                    eat : function (myFood){
+                        console.log("i am eating" + food);
+                    },
+                    push : function (myFood){
+                        food = myFood;
+                    }
+                }
+                 return obj;
+            }
+            var eater1 = eater();
+            eater1.push('banana');
+            eater1.eat();
+
+3）可以实现封装，属性私有化
+4）模块化开发，防止污染全局变量
+
+
+4.立即执行函数 （执行完函数立即释放）
+针对初始化功能的函数，可以有参数，返回值，函数名，和正常函数基本无差别
+
+var num = (function (a, b, c){
+    var d = a + b + c ;
+}(1, 2, 3));
+
+- (function(){}()); w3c建议第一种
+- (function(){})();
+- 只有表达式才能被执行符号执行
+- 能被执行符号执行的表达式名字都会被忽略
+
+var test = function (){
+    console.log("a");
+}();
+
+
++ - !
+正 负 叹号
+- function test(){
+    console.log("a");
+}();
+
+执行
+
+
+   function test(a, b, c, d){
+            console.log(a + b + c + d);
+        }(1,2,3,4);
+
+   不执行
+
+- 把里面的函数保存到了外部，必然会产生闭包
+
+  里面函数，在外面被调用的时候，一定能使用原来环境里面的变量
+
+里面的函数比外面的函数活的时间还长
+
+- 实现公有变量
+不依赖外部变量，并能反复执行的函数累加器
+
+
+        function test(){
+            var arr = [];
+            for (var i = 0; i < 10;i++){
+                (function(j){
+                    arr[j] = function(){
+                    console.log(j);
+                    }
+                }(i))
+            }
+            return arr;
+        }
+
+        var myArr = test();
+        for (var j = 0; j < 10; j++){
+            myArr[j]();
+        }
+
+- 写一个方法，求一个字符串的字节长度，提示字符串有一个方法charCodeAt(), 一个中文字节占俩个字节，一个英文占一个字节
+定义和用法
+
+charCodeAt()
+方法可返回指定位置的字符串的unicode编码，这个返回值是0-65535 之间的整数。(当返回值是<=255时， 为英文)
+
+        function retByteslen(target){
+            var count,
+                len;
+                count = len = target.length;
+            for(var i=0; i < target.length; i++){
+                if (target.charCodeAt(i) > 255){
+                    count ++;
+                }
+            }
+            console.log(count);
+        }
+
+        retByteslen('z周')
+
+- 逗号运算符
+    var a = (2, 3);
+    先看前面的表达式，如果前面的表达式需要计算，就计算，然后返回后面的表达式
+
+
+var f = (
+    function f(){
+        return "1";
+    },
+    function g(){
+        return 2;
+    }
+    }
+    )();
+    typeof f;
+
+
+var x = 1;
+        if (function f(){}){
+            x += typeof f;
+        }
+        console.log(x);
+
+1undefined
+
+1 + undefined = NaN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
