@@ -8,10 +8,19 @@
 </head>
 <body>
      <script type="text/javascript">
-<!--        function Test(){}-->
-<!--        var test = Test()-->
-<!--        var obj = Object.create(test.prototype());-->
-<!--        document.write(obj);-->
+     var a = 5;
+     function test(){
+        a = 0;
+        alert(a);
+        alert(this.a);
+        var a ;
+        alert(a);
+     }
+     var b = new test();
+
+<!--     test（） 0 , 5 , 0-->
+<!-- test() -- 0 undefined 0 >
+
     </script>
 </body>
 </html>

@@ -212,3 +212,40 @@ obj.toString = function(){
 }
 
 document.write(obj)
+
+13,javascript 精度不准 可正常计算范围 前 16位，后 16位
+Math.ceil() 向上取整，不是4舍5入
+Math.floor() 向下取整
+Math.random() 随机返回一个 （0 - 1） 开区间的小数
+
+14.call. call/apply 改变 this 指向
+
+      function Person(name, age){
+            this.name = name;
+            this.age = age;
+        }
+      var person = new Person('deng', 100);
+      var obj ={}
+
+
+      Person.call(obj,'xiaolin', '19');
+      // 此时call 会让Person中所有的this 指向obj
+      // call 的参数，第一位改变this的指向，第二位往后传参
+
+    - 借用别人的工厂够造自己的函数
+
+        function Person(name, age, sex, tel, grade){
+            Person.call(this, name, age, sex);
+            this.tel = tel;
+            this.grade = grade;
+        }
+        var student = new Student('sunny', 123. 'male', 139, 2017)
+
+    - call 需要把实参按照形参的个数传进去
+    - apply 需要传一个arguments
+        - Person.apply(this, [name, age, sex])
+
+    - 区别传参列表不同
+
+
+
