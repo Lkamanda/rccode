@@ -84,6 +84,25 @@ var add = a()
             eater1.eat();
 
 3）可以实现封装，属性私有化
+- 闭包构建私有化变量，只能自己使用，不允许外部调用
+    function Deng(name, wife){
+            var prepareWife = 'xiaoming'
+            this.name = name;
+            this.wife = wife;
+            this.divorce = function(){
+                this.wife = prepareWife;
+            }
+            this.changePrepareWife = function(target){
+                prepareWife = target;
+            }
+            this.sayPraparewife = function(){
+                console.log(prepareWife);
+            }
+        }
+
+    var deng = new Deng('deng', 'xiaoliu');
+
+
 4）模块化开发，防止污染全局变量
 
 

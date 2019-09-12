@@ -248,4 +248,17 @@ Math.random() 随机返回一个 （0 - 1） 开区间的小数
     - 区别传参列表不同
 
 
+- 原型是构造函数构造对象们的公有祖先
 
+     var a = 5;
+     function test(){
+        a = 0;
+        alert(a);
+        alert(this.a);
+        var a ;
+        alert(a);
+     }
+     var b = new test();
+
+<!-- test（） 0 , 5 , 0-->
+<!-- test() -- 0 undefined 0

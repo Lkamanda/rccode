@@ -1,0 +1,146 @@
+1.继承发展史
+- 传统形式 - > 原型链模式
+    - 过多的继承了没用的属性
+
+- 借用构造函数
+    - 不能借用构造函数的原型
+    - 每次构造函数都要多个函数
+
+            function Person(name, age, sex){
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+        }
+
+        function Student(name, age, sex, grade){
+            Person.call(this,name, age, sex);
+
+            this.grade = grade;
+        }
+
+        function Student(name, age, sex, grade){
+            Person.call(this,name, age, sex);
+            Person.apply(this,[name, age, sex]);
+            this.grade = grade;
+        }
+
+        var student = new Student();
+- 共享原型
+   - 使俩个构造函数原型相同
+        Father.prototype.lastName ="Deng";
+        function Father(){
+        }
+        function Son(){}
+        Son.prototype = Father.prototype
+
+2.继承
+function inherit extend
+
+在css中，凡是文字类属性，color，front-size，传递特性（如果子元素没设置，就默认继承父元素的属性）
+front-size : inherit （我没有我就继承父亲的）
+
+     Father.prototype.lastName = 'Deng';
+     function Father(){}
+     function Son(){}
+     function inherit(Target, Origin){
+        Target .prototype = Orign.prototype;
+     }
+     inherit(Son, Father);
+
+     Father.prototype
+                     function F(){}
+                     F.prototype = Father.prototype
+                     son.prototype = new F();
+                     son
+
+
+    - 圣杯模式
+           function inherit(Target, Origin){
+            var F = function (){};
+            F.prototype = Origin.prototype;
+            Target.prototype = new F();
+            Target.prototype.constuctor = Target;
+            Target.prototype.uber = Origin.prototype;
+        }
+
+        Father.prototype.LastName = "xiaoming";
+        function Father (){};
+        function Son(){};
+        inherit(Son, Father)
+        var son = new Son();
+        var father = new Father();
+
+    - YUI3
+    var inherit = (function(){
+        var F = function(){}
+        return function(Target, Origin){
+            F.prototype = Origin.prototype;
+            Target.prototype = new F();
+            Target.prototype.constuctor = Target;
+            Target.prototype.uber = Origin.prototype;
+        }
+    }());
+
+     Father.prototype.lastName = "xiaoming";
+     function Father(){};
+     function Son(){};
+     inherit(Son, Father);
+     var son = new Son();
+     var father = new Father();
+
+
+
+3.命名空间
+- 管理变量，防止污染全局，适用于模块化开发
+  总js中  var org = {
+    dapartment1:{
+        jicheng:{
+            name:"abc",
+            age:123
+        },
+        xuming:{}
+    },
+    department2:{
+        zhangsan:{},
+        lisi:{},
+    }
+  }
+
+  var jicheng = org.department.jicheng;
+  jicheng.name
+
+- init 为程序入口
+     var name = 'abc'
+        var initLin = (function(){
+            var name = 'xl';
+            function callName(){
+                console.log(name);
+            }
+            return function(){
+                callName();
+            }
+        }())
+
+        var initZhao = (function(){
+            var name = 'zhao';
+            function callName(){
+                console.log(name);
+            }
+            return function(){
+                callName();
+            }
+        }())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
