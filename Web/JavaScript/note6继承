@@ -131,16 +131,70 @@ front-size : inherit （我没有我就继承父亲的）
             }
         }())
 
+- jQuery 能连续函数执行解析
+<script type="text/javascript" src='jQuery.js'></script>
+每个函数，return this
 
 
+4.属性的查看方法
+内部原理：
+obj.name --> obj['name']
+    属性拼接  obj['name']
+   var deng = {
+            wife1:{name:'xiaolin'},
+            wife2:{name:'xiaofei'},
+            wife3:{name:'xiaochong'},
+            sayWife: function(num){
+                return this['wife' + num]
+            }
+        }
 
 
+5.对象的枚举  enumeration 遍历
+    - obj[key]
+
+for (var prop in obj){
+    console.log(prop + "" + typeof(prop));
+}
+    var obj = {
+    a:123,
+    b:124,
+    c:143
+    }
+    var key;
+    for (key in obj){
+        console.log(obj[key]);
+    }
+
+    - 该方法会带出变量原型上的属性，原型链上的属性，系统上设置的截止（Object.prototype）
+    - hasOwnProperty(属性)  过滤属性，只返回该变量自己的属性，不返回原型上的
+
+       var obj = {
+        a:123,
+        b:124,
+        c:143,
+        __proto__:{
+            lastName:"deng"
+        }
+       }
+       var key;
+       for (key in obj){
+            if (obj.hasOwnProperty(key)){
+                 console.log(obj[key]);
+            }
+       }
 
 
+    - A 对象 是不是B 构造函数构造出来的
+      A instanceof B
 
+     function Person(){}
+     var person = new Person();
 
+    看A的原型链上，有没有B的原型
 
-
+6.数组和变量的区分
+[] || {}
 
 
 
