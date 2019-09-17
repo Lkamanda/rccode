@@ -1,0 +1,147 @@
+1.下面这段js代码执行完毕后，xyz的值分别是多少
+var x = 1. y = z = 0 ;
+function add(n){
+    return n = n+ 1;
+}
+y = add(x);
+function add(n){
+    return n = n + 3 ;
+}
+
+z = add(x)
+
+console.log(x, y, z);
+
+1,4,4
+
+预编译函数提升
+
+2.
+function foo(x){
+            console.log(arguments)
+            return x
+        }(1,2,3,4,5)
+函数未能调用
+
+3. 文本水平垂直居中
+text-aline : center
+
+4.parseInt(3,8)
+parm1: 被转换的数
+parm2;基底
+以基底将被转换的数转换成10进制
+5. js typeof 返回结果
+number string object boolean undefined function
+6.哪些值可以转换成false
+0 , NaN ,'',null ,undefined
+7.
+    var f = (
+            function f(){
+                return "1";
+            },
+            function g(){
+                return 2;
+            }
+        )();
+    console.log(typeof f);
+
+    number
+
+1, 2  返回 2
+8.
+        var x = 1;
+        if (function f(){}){
+            x += typeof f;
+        }
+        console.log(x);
+
+    1undefined
+
+    (function f(){})   括号的作用将里面的function 转换成表达式，其命名被忽略
+9. == 和 ===
+当进行双等号操作时候，先检查俩个操作数数据类型，如果相同，则进行 === 比较，如果不想
+同愿意为你进行一次类型转换，转换成相同类型后再进行比较，而 === 比较是，如果类型不同，直接false
+
+isNaN("100")   false    经过Number 转换后是否为NaN
+
+parseInt('1a')  == 1
+
+10.引用值 比较的是地址， 原始值是值
+{} == {} --> false
+
+        var foo ='123';
+        function print(){
+            var foo = '456';
+            this.foo = '789';
+            console.log(foo);
+        }
+        print();
+        456
+11.this
+- 1.函数预编译过程中指向的是window
+       function test(c){
+            //new test()时
+            // var this = object.create(test.prototype);
+            var a = 123;
+            function b(){}
+        }
+
+       预编译时
+       AO{
+            this: window,
+            arguments: [1],
+            c: 1,
+            a;undefined,
+            b;function(){}
+       }
+       test(1);
+       new test();
+- 2.全局作用域里 this--> window
+- 3.call/apply 可以改变函数运行时this 指向
+- 4.obj.func(); func() 里面的this指向obj
+谁调用的方法，这个方法里面的this指向的就是谁
+
+
+       var name = '222';
+       var a = {
+            name:'111',
+            say:function(){
+                console.info(this.name);
+            }
+       }
+       var fun  = a.say;
+       fun();  // 全局执行，this指向window  222
+
+       a.say();this // 指向a  111
+
+       var b ={
+            name:'333',
+            say:function(fun){
+                fun();
+            }
+       }
+       b.say(a.say); 222
+       b.say = a.say;
+       b.say();   this 指向b 333
+
+12.arguments.callee 指向函数的自身引用
+
+        function test(){
+            console.log(arguments.callee===test);
+        }
+        test();
+
+        arguments.callee = test
+
+        立即执行函数，递归时使用
+        var num = (function(n){
+            if(n == 1){
+                return 1;
+            }
+            return n * arguments.callee(n-1);
+       }(100))
+   - caller
+        demo.caller 指的是demo.caller,在哪个环境下被调用
+
+
+   - 

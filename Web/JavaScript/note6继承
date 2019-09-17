@@ -195,6 +195,24 @@ for (var prop in obj){
 
 6.数组和变量的区分
 [] || {}
+    - constructor
+        - var obj = {}
+          console.log(obj.constructor) --> Object
+
+        - [].constructor   -->Array
+
+    - instance of
+        - [] instanceof Arry
+
+    - toString
+        Object.prototype.toString.call([]) --> object Array
+        Object.prototype.toString.call({}) --> object object
+
+
+
+
+
+
 
 
 

@@ -8,11 +8,15 @@
 </head>
 <body>
     <script type="text/javascript">
-    var obj = {}
-    console.log(obj.constructor)
+<!--        "use strict"-->
+        function test(){
+            demo();
+        }
+        function demo(){
+            console.log(demo.caller);
+        }
 
-    
-
+        test();
     </script>
 </body>
 </html>
