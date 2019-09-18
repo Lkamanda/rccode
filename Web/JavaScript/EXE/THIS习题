@@ -33,7 +33,7 @@ parm2;基底
 5. js typeof 返回结果
 number string object boolean undefined function
 6.哪些值可以转换成false
-0 , NaN ,'',null ,undefined
+0 , NaN ,'',null ,undefined, false
 7.
     var f = (
             function f(){
@@ -69,14 +69,7 @@ parseInt('1a')  == 1
 10.引用值 比较的是地址， 原始值是值
 {} == {} --> false
 
-        var foo ='123';
-        function print(){
-            var foo = '456';
-            this.foo = '789';
-            console.log(foo);
-        }
-        print();
-        456
+
 11.this
 - 1.函数预编译过程中指向的是window
        function test(c){
@@ -124,6 +117,55 @@ parseInt('1a')  == 1
        b.say = a.say;
        b.say();   this 指向b 333
 
+
+    - EG1:
+     var foo ='123';
+        function print(){
+            var foo = '456';
+            this.foo = '789';
+            console.log(foo);
+        }
+        print();
+        456
+     此时this指向的是window
+
+     - EG2
+        var foo = 123;
+        function print(){
+
+            this.foo = 234;
+            console.log(foo);
+        }
+        print();
+
+        -- > 234
+
+     - EG3
+        var foo = 123;
+        function print(){
+            this.foo = 234;
+            console.log(foo);
+        }
+       new print();
+
+       -->123
+
+    - EG4
+    var a = 5;
+    function test(){
+        a = 0;
+        alert(a);
+        alert(this.b);
+        var a;
+        alert(a);
+    }
+    test();
+    0 , 5, 0
+    new test();
+    0   undefined 0
+
+
+
 12.arguments.callee 指向函数的自身引用
 
         function test(){
@@ -143,5 +185,23 @@ parseInt('1a')  == 1
    - caller
         demo.caller 指的是demo.caller,在哪个环境下被调用
 
+13.克隆
+- 浅层克隆：原始值拷贝值，引用拷贝房间
 
-   - 
+     function clone(origin, target){
+            var target  = target || {};
+            for(var prop in origin){
+                target[prop] = origin[prop];
+            }
+            return target;
+        }
+
+- instanceof 父子域存在异常
+子[] instanceof Arry  false
+
+- 深度拷贝
+    1.遍历所有对象  for （var prop in obj）
+    2.判断是不是原始值  typeof()  object
+
+    3.引用值判断是数组还是对象       / instanceof  / toString / constructor
+    4.建立相应的数组或对象

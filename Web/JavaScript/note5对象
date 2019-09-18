@@ -80,7 +80,7 @@ typeof number string boolean undefined object function
 可以继承该原型的属性和方法，原型也是对象
 
     - 构造函数.prototype -- 原型
-    // Person.prototype）-- 原型
+    // Person.prototype -- 原型
     // Person.prototype = {} 是祖先
      function Prototype(){}
      var person = new Person();
