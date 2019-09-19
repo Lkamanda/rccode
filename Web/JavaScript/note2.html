@@ -3,15 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>函数</title>
-<!--    <style type="text/css">-->
-<!--    </style>-->
-    <script type="text/javascript" src='jQuery.js'></script>
 </head>
 <body>
-     <div></div>
-     <script type="text/javascript">
-         $('div').css('background-color', 'red').width(100).height(100);
 
+     <script type="text/javascript">
+         var obj = {
+            name: 'abc',
+            list: ['visa', 'master'],
+            wife:{
+                name:'bcd',
+                son:{
+                    name:"aa"
+                }
+            }
+        }
+        var obj1 = {};
+
+        function deepClone(origin, target){
+            var target = target ||{},
+                toStr = Object.prototype.toString,
+                toArry = "[object Array]";
+
+            <!--            遍历-->
+            for (var prop in origin){
+            <!--            进行过滤防止，原型链上的属性污染-->
+                if (origin.hasOwnProperty(prop)){
+                        if (origin[prop]=="object"){
+
+                        }else{
+                            target[prop] == origin[prop];
+                        }
+
+                    }
+            }
+        }
+     deepClone(obj, obj1);
 
 
     </script>
