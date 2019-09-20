@@ -8,49 +8,10 @@
 </head>
 <body>
     <script type="text/javascript">
-        var obj = {
-            name: 'abc',
-            list: ['visa', 'master'],
-            wife:{
-                name:'bcd',
-                son:{
-                    name:"aa"
-                }
-            }
-        }
-        var obj1 = {};
+        var num = 1 > 0? ('10' > 9 ?  1:0) : 2;
+        console.log(num);
 
-        function deepClone(origin, target){
-            var target = target || {},
-            toStr = Object.prototype.toString,
-            arrStr = "[object Array]";
-
-            for(var prop in origin){
-<!--                过滤属性，只返回对象自身的属性-->
-                if (origin.hasOwnProperty(prop)){
-
-<!--                    判断是不是引用值-->
-                    if（typeof(origin[prop] == 'object'){
-
-<!--                        判断数组还是对象-->
-                       if (toStr.call(origin[prop]) == arrStr){
-                            target[prop] = [];
-                       }else{
-                            target[prop] = {};
-                       }
-
-
-                        deepClone(origin[prop], target[prop]);
-
-
-                    }else{
-<!--                        原有值直接赋值-->
-                        target[prop] = origin[prop];
-                    }
-                }
-            }
-
-        }
+        target[prop] = toStr.call(origin[prop])
     </script>
 </body>
 </html>

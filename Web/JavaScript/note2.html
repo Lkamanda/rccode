@@ -28,7 +28,16 @@
             for (var prop in origin){
             <!--            进行过滤防止，原型链上的属性污染-->
                 if (origin.hasOwnProperty(prop)){
+                        console.log(typeof origin[prop]);
                         if (origin[prop]=="object"){
+
+                            if (toStr.call(origin[prop]) == arrStr){
+                                target[prop] = [];
+                            }
+                            else{
+                                target[prop] = {};
+                            }
+                            deepClone(origin[pro[, target[prop]);
 
                         }else{
                             target[prop] == origin[prop];

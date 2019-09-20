@@ -200,8 +200,71 @@ parseInt('1a')  == 1
 子[] instanceof Arry  false
 
 - 深度拷贝
-    1.遍历所有对象  for （var prop in obj）
-    2.判断是不是原始值  typeof()  object
-
+    1.遍历所有对象  for （var prop in obj）  (数组也可以使用for in)
+    2.判断是不是原始值 / 引用值   typeof()  object  / instanceof  / toString
+          - 原始值
+                origin[prop]  = target [prop]
+          - 引用值
+                - 判断数组/ 对象
+                    - 数组
+                        - 建立新数组
+                    - 对象
+                        - 建立新对象
     3.引用值判断是数组还是对象       / instanceof  / toString / constructor
     4.建立相应的数组或对象
+
+            var obj = {
+            name: 123,
+            address: ['dfsd','sdfsd'],
+            wife:{
+                name:'bad',
+                son:{
+                    name:'aa',
+                }
+            }
+        }
+        var obj1 = {};
+
+        function deepClone(origin, target){
+            var target = target || {},
+                toStr = Object.prototype.toString,
+                arrStr = "[Object Array]";
+
+            for (var prop in origin){
+                if (origin.hasOwnProperty(prop)){
+
+                    if (origin[prop] !== "null" && typeof(origin[prop])== 'object'){
+                        if (toStr.call(origin[prop])== arrStr){
+                            target[prop] = [];
+                        }else{
+                            target[prop] = {};
+                        }
+                        deepClone(origin[prop], target[prop]);
+
+                    }else{
+                        target[prop] = origin[prop];
+                    }
+                }
+            }
+            return target;
+        }
+
+        deepClone(obj, obj1);
+
+
+    -
+    var a  = new Array();
+    alert (a instanceof Array);
+
+    - a instanceof Array
+
+14.三目运算符
+
+？:
+
+条件判断 ? 是: 否 并且会返回值
+
+1 > 0 ? 2 + 1
+
+- '10' > '9'  false
+字符串比较 逐位asc码比较
