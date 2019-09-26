@@ -59,7 +59,7 @@ front-size : inherit （我没有我就继承父亲的）
             var F = function (){};
             F.prototype = Origin.prototype;
             Target.prototype = new F();
-            Target.prototype.constuctor = Target;
+            Target.prototype.constructor = Target;
             Target.prototype.uber = Origin.prototype;
         }
 
@@ -207,7 +207,6 @@ for (var prop in obj){
     - toString
         Object.prototype.toString.call([]) --> object Array
         Object.prototype.toString.call({}) --> object object
-
 
 
 

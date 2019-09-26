@@ -1,0 +1,123 @@
+- ECMAScript DOM BOM
+es3.0
+- 对象
+    - 定义方式
+        - var
+        - 系统自定义构造函数
+        - 自定义构造函数
+        - Object.create()
+- 数组
+    - 定义方式
+        - var arr = []  字面量
+        - var arr = new Array();
+    - 数组的所有方法来源于 Array.prototype
+    - 当 var arr = new Array(10) 里只有1位参数时 arr 为一个长度为 10的稀松数组
+        值为undefined
+
+
+    - 数组常用的方法
+        - 改变原数组
+            - push pop shift unshift sort reverse
+            - splice
+
+            - push 在数组的最后一位添加数据，不限位数添加
+                - 模拟push
+                    var arr = [];
+                    Array.prototype.push = function(){
+                    for(var i = 0; i < arguments.length; i++){a
+                    this[this.length] = arguments[i];
+                    }
+                    }
+
+            - pop 把数组的最后一位弹出
+                - 无需添加参数，
+
+            - shift:把数组的第一个元素从其中删除，并返回第一个原数组的值
+            - unshift在数组前添加元素，和push方向相反,可以对个同时添加
+            - reverse:把原数组返回并翻转
+            - splice:从第几为前开始，截取多少长度，在切口处添加新的数据
+            - sort : 在元素组上对数组进行排序，并返回
+                - 1.必须写俩个形参
+                - 2.看返回值
+                     - 当返回值为负数时，那么前面的数放在前面
+                     - 为正数，那么后面的数在前
+                     - 为0， 不动
+                - arr.sort() 是asc码排序
+
+                    var arr = [20,2,19,13,7,8,9]
+                    arr.sort(function(a, b){
+                        return a -b;  升序
+                        return b - a; 降序
+                    })
+
+
+
+                    # 如果系统中是负数
+                    splice = function(pos){
+                    pos += pos > 0 ? 0: this.length;
+                    }
+
+                    负数的处理实现：如果是负数，加上长度就是位置
+
+
+                    - 随机打乱一个数组，乱序
+                    Math.random(); （0,1）之间的数
+
+                    var arr = [1,2,3,4,5,6];
+                    arr.sort(function(a, b){
+                        return Math.random() - 0.5;
+                    })
+
+                    - 通过对象的age属性给对象排序
+
+                    - 按字符串长度排序
+                    arr.sort(function(a, b){
+                        return a.length - b.length;
+                    })
+
+                    - 按字节长度排序
+                    function retBytes(str){
+                    var num = str.length;
+                    for(var i=0; i < str.length; i ++){
+                        if (str.charCodeAt(i) > 255){
+                            console.log(num)
+                            num++ ;
+                        }
+                    return num;
+                    }
+                    }
+
+                    arr.sort(function(a,b){
+                        return retBytes(a) - retBytes(b);
+                    })
+
+        - 不改变原数组
+            - concat: 数组拼接，把arr1内容插入到arr后方
+                - arr.concat(arr1);
+
+            - toString：
+                - 将数组中每个值取出并以字符串的形式返回
+            - slice
+                - 0个参数
+                    - 整个截取
+                - 1个参数
+                    - 从该位开始，一直截取到最后结束
+                - 2个参数
+                    - 从该位开始截取，截取到该位      [)
+
+            - join() 不传是以逗号连接
+                - arr.join("")
+                    将数组中的每一个元素以join内传入字符串参数进行拼接
+
+                - 与join互逆  str.split()
+                    str.split('')
+                    将字符串还原成数组
+
+
+
+
+
+
+
+
+

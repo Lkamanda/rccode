@@ -6,8 +6,20 @@
 </head>
 <body>
     <script type="text/javascript">
-        var num = 123123.345789;
-        alert(num.toFixed(3));
+    function Person(name){
+        var money = 100;
+        this.name = name;
+        this.makeMoney = function(){
+            money ++;
+        }
+        this.saveMoney = function(){
+            money -- ;
+        }
+    }
+    var person = new Person();
+
+
+
 
     </script>
 </body>

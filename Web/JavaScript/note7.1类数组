@@ -1,0 +1,92 @@
+类数组
+    - 类数组成
+        - 属性要为索引(数字)属性，必须有length，最好加上push
+        - splice
+        - EG:
+            obj={
+                "0":'a',
+                "1":'b',
+                "2":'c',
+                "length":3,
+                "push":Array.prototype.push,
+                "splice":Array.prototype.splice
+            }
+
+            - Arry.prototype.push =
+            function(target){
+                obj[obj.length] = target;
+                obj.length ++ ;
+            }
+
+- 封装type
+    识别：[].  --> array
+     {}, --> object
+      function , -- >
+      new Number()  -- > number Object        (Object.prototype.toString)
+      123    --> number
+     - 步骤：
+        1. 分俩类 原始值， 引用值
+        2.区分引用值
+
+
+- 数组去重
+    - 要求在原型链上编程
+    Array.prototype.unique = function(){}
+
+
+引用值
+    - 数组，对象，函数
+原始值
+区别：存储地址不一样，原始值没有属性和方法
+
+- 原始值调用属性
+    str.length()
+    new String(str).length  ,再将结果返回
+        - 这个隐式的过程叫做包装类
+
+    eg：
+    var num = 133;
+    num.abc = 'abc';
+    // 过程： new Number(num).abc = 'abc' ; 然后 -->delete
+    当下面在此调用 num.abc 时 ，会返回undefined ，因为指点的 num.abc = 'abc' 已经 delete
+
+- 原型
+    - 原型是基于构造函数的， 任何一个函数都会有一个属性prototype，这个prototype是所有这个构造函数
+    构造的函数的共有祖先
+    Person.prototype.lastName = 'deng';
+    function Person(){}
+    var person = new Person()  // 使用构造函数Person构造一个新函数person
+    此时person可以使用Person.prototype上的所有方法
+
+- object.create();
+var obj = Object.create(创建对象的原型)
+Object.create(prototype, definedProperty)
+    - prototype 原型
+    - definedProperty 特性
+
+一 旦经历了var的操作，所得出的属性，window，这种属性叫做不可配置属性
+   不可配置的属性 delete不掉
+
+
+
+- this
+    - 预编译 this -- > window
+    - 谁调用的 this 指向谁
+    - call apply改变this指向
+    - 全局this -- > window
+
+- 通过构造函数实现私有化属性功能的实现
+    function Person(name){
+        var money = 100;
+        this.name = name;
+        this.makeMoney = function(){
+            money ++;
+        }
+        this.saveMoney = function(){
+            money -- ;
+        }
+    }
+
+    var person = new Person();
+    此时 var this ={}  此时的this指向person
+    此时的money就是Person的私有化属性，person无法调用

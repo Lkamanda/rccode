@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+    <script type="text/javascript">
+       var obj = {
+            name:123,
+            address:['xiao', 'ab'],
+            wife : {
+                name:'bad',
+                son:{
+                    name:'aa',
+                }
+            }
+       }
+
+       var obj1 = {};
+
+       function deepClone(origin, target){
+            var target = target || {},
+                toStr  = Object.prototype.toString,
+                arrayStr = "[object Array]";
+
+            for(var prop in origin){
+                if(origin.hasOwmProper(prop)){
+                    if(origin[prop] !== "null" && typeof(orgin[prop])== 'object'){
+                        target[prop] = toStr.call(origin[prop]) == arrStr ? [] : {};
+                        deepClone(origin[prop], target[prop]);
+                    }else{
+                        target[prop] = origin[prop];
+                    }
+                }
+            }
+            return target;
+        }
+    </script>
+</body>
+</html>
