@@ -12,15 +12,14 @@
                 "splice":Array.prototype.splice
             }
 
-            - Arry.prototype.push =
+            - Array.prototype.push =
             function(target){
                 obj[obj.length] = target;
                 obj.length ++ ;
             }
-
 - 封装type
-    识别：[].  --> array
-     {}, --> object
+      识别：[].  --> array
+      {}, --> object
       function , -- >
       new Number()  -- > number Object        (Object.prototype.toString)
       123    --> number
@@ -58,7 +57,7 @@
     var person = new Person()  // 使用构造函数Person构造一个新函数person
     此时person可以使用Person.prototype上的所有方法
 
-- object.create();
+- object.cre       ate();
 var obj = Object.create(创建对象的原型)
 Object.create(prototype, definedProperty)
     - prototype 原型
@@ -66,8 +65,6 @@ Object.create(prototype, definedProperty)
 
 一 旦经历了var的操作，所得出的属性，window，这种属性叫做不可配置属性
    不可配置的属性 delete不掉
-
-
 
 - this
     - 预编译 this -- > window
@@ -90,3 +87,4 @@ Object.create(prototype, definedProperty)
     var person = new Person();
     此时 var this ={}  此时的this指向person
     此时的money就是Person的私有化属性，person无法调用
+

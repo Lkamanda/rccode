@@ -202,16 +202,10 @@ for (var prop in obj){
         - [].constructor   -->Array
 
     - instance of
-        - [] instanceof Arry
+        - [] instanceof Array
 
     - toString
         Object.prototype.toString.call([]) --> object Array
         Object.prototype.toString.call({}) --> object object
 
-
-
-
-
-
-
-
+    -
