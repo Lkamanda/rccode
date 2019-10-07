@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+    {   //设置chrome启动网页文件
+        "name": "谷歌浏览器", 
+        "type": "chrome",
+        "request": "launch",
+        "url": "${file}",
+        "sourceMaps": true,
+        "webRoot": "${workspaceRoot}"
+    },
+    {
+        //设置直接启动node程序
+        "name": "node", 
+        "type": "node",
+        "request": "launch",
+        "program": "${file}", 
+        "stopOnEntry": false,
+        "args": [],
+        "cwd": "${workspaceRoot}",
+        "runtimeExecutable": null,
+        "runtimeArgs": [
+            "--nolazy"
+        ],
+        "env": {
+            "NODE_ENV": "development"
+        },
+        "console": "internalConsole",
+        "preLaunchTask": "",
+        "sourceMaps": false,
+    }
+]
+}

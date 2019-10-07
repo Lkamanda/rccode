@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>继承</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var inherit = (function(){
+            var F = function(){};
+            return function (Target, Origin){
+                F.prototype = Origin.prototype;
+                Target.prototype = new F();
+                Target.prototype.constructor = Target;
+                Target.prototype.uber = Origin.prototype;
+            }
+
+        }())
+
+        Father.prototype.lastName = 'xiaoming';
+        function Father(){};
+        function Son(){};
+        inherit(Son, Father);
+        var son = new Son();
+        var father = new Father();
+
+
+    </script>
+
+</body>
+</html>

@@ -27,7 +27,7 @@
                 arrayStr = "[object Array]";
 
             for(var prop in origin){
-                if(origin.hasOwmProper(prop)){
+                if(origin.hasOwmProperty(prop)){
                     if(origin[prop] !== "null" && typeof(orgin[prop])== 'object'){
                         target[prop] = toStr.call(origin[prop]) == arrStr ? [] : {};
                         deepClone(origin[prop], target[prop]);
