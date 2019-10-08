@@ -21,22 +21,28 @@
 
        var obj1 = {};
 
-       function deepClone(origin, target){
+        function deepClone(origin, target){
             var target = target || {},
-                toStr  = Object.prototype.toString,
-                arrayStr = "[object Array]";
-
-            for(var prop in origin){
-                if(origin.hasOwmProperty(prop)){
-                    if(origin[prop] !== "null" && typeof(orgin[prop])== 'object'){
-                        target[prop] = toStr.call(origin[prop]) == arrStr ? [] : {};
+                toStr = Object.prototype.toString,
+                arrStr = "[object Array]";
+            for (var prop in origin){
+                if (origin.hasOwnProperty(prop)){
+                    if(typeof(origin[prop])=='object'){
+                        if (toStr.call(origin[prop]) == arrStr){
+                            target[prop] =[];
+                        }else{
+                            target[prop] = {};
+                        }
                         deepClone(origin[prop], target[prop]);
-                    }else{
-                        target[prop] = origin[prop];
+                    }
+                    else{
+                    target[prop] = origin[prop];
+
                     }
                 }
             }
-            return target;
+            return target
+
         }
     </script>
 </body>
