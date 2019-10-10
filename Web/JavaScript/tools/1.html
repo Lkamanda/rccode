@@ -6,36 +6,37 @@
 </head>
 <body>
     <script type="text/javascript">
-        function deepClone(origin, target) {
-            var target = target || {},
-                toStr = Object.prototype.toString,
-                arrStr = "[object Array]";
-
-            for (var prop in origin){
-                if(origin.hasOwnProperty(prop)){
-                    if(origin[prop] !== "null" && typeof(origin[prop])=='object'){
-                        target[prop] = toStr.call(origin[prop]) == arrStr ? []:{};
-                        deepClone(origin[prop], target[prop]);
-                    }else{
-                        target[prop] = origin[prop]
-                    }
-                }
+        function Person(name, age, sex){
+            var a = 0;
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+            function sss(){
+                a ++;
+                document.write(a);
             }
-            return target;
+            this.say = sss;
         }
 
-        var obj = {
-            name:123,
-            address:['xiao', 'ab'],
-            wife : {
-                name:'bad',
-                son:{
-                    name:'aa',
-                }
-            }
-       }
+        var oPerson = new Person ();
+        oPerson.say();
+        oPerson.say();
+        var oPerson1 = new Person();
+        oPerson1.say();
 
-       var obj1 = {};
+        function test(){
+            console.log(arguments);
+            console.log(typeof(arguments));
+        }
+
+        var arr = [1,2,3,4,5];
+        var a = function(a,b){
+            return Math.random() - 0.5;
+        }
+
+        
+
+
 
     </script>
 
