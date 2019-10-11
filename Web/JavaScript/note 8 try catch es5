@@ -1,0 +1,56 @@
+- arguments.caller 返回的是函数名
+  arguments.callee 返回的是被调用的正文
+
+- try catch
+    try{
+        document.write('a');
+        console.log(c);
+        console.log("b");
+     }catch(e){
+        alert(a.name + " " + e.message);
+     }
+
+     console.log('即使try catch中存在问题，下方代码依然正常运行')
+     - 如果c出现问题， b 不执行
+
+- Error.name 的6中对应信息
+    - 1.EvalError: eval()的使用与定义不一致
+    - 2.RangError:数值越界
+    - 3.ReferenceError:非法或不能识别的引用（未定义就使用）
+    - 4.SyntaxError：发生语法解析错误
+    - 5.TypeError：操作数据类型错误
+    - 6.URIError:url处理函数使用不当
+
+- 基于es3.0的 + es5.0的新增方法
+    - es3.0 和es5.0产生冲突的部分  （es5.0严格模式）那么es3.0 和es5.0 产生冲突的部分就是es5.0,否则使用es3.0
+    - 启用严格模式：
+        "use strict";
+            - 不再兼容es3的一些不规则语法，使用全新的es5规范。
+            - 俩种方法：
+                - 全局严格模式
+                - 局部函数严格模式（推荐）
+            - 就是一行字符串，不会对不兼容严格模式的浏览器产生影响
+            - 不支持，with,arguments,callee,func,caller,
+               变量赋值前必须声明，
+               局部this必须被赋值（Person.call(null/undefined)）赋值什么就是什么，
+                (在严格模式下预编译this不指向windows)
+               拒绝重复属性和参数
+
+        - 也可以写到函数的顶部（局部）使某个函数启动es5严格模式
+
+    - with(对象){}
+        - with会把（）里的对象，将其放在要执行代码体的原型链的最顶端
+
+            with(document){
+                write('a');
+            }
+        - 消耗效率
+
+    - eval()
+        -  将字符串当代码来使用
+           var a = 123;
+           eval('console.log(a)');
+        - es3.0都不能eval();
+        - eval 是魔鬼 改变作用域
+
+

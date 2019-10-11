@@ -44,6 +44,52 @@
             return target
 
         }
+
+
+
+
+        _______________________________________
+                 var obj = {
+            name: 'abc',
+            list: ['visa', 'master'],
+            wife:{
+                name:'bcd',
+                son:{
+                    name:"aa"
+                }
+            }
+        }
+        var obj1 = {};
+
+        function deepClone(origin, target){
+            var target = target ||{},
+                toStr = Object.prototype.toString,
+                toArry = "[object Array]";
+
+            <!--            遍历-->
+            for (var prop in origin){
+            <!--            进行过滤防止，原型链上的属性污染-->
+                if (origin.hasOwnProperty(prop)){
+                        console.log(typeof origin[prop]);
+                        if (origin[prop]=="object"){
+
+                            if (toStr.call(origin[prop]) == arrStr){
+                                target[prop] = [];
+                            }
+                            else{
+                                target[prop] = {};
+                            }
+                            deepClone(origin[pro[, target[prop]);
+
+                        }else{
+                            target[prop] == origin[prop];
+                        }
+
+                    }
+            }
+        }
+     deepClone(obj, obj1);
+
     </script>
 </body>
 </html>

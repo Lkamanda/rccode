@@ -26,14 +26,14 @@ es3.0
                     Array.prototype.push = function(){
                     for(var i = 0; i < arguments.length; i++){a
                     this[this.length] = arguments[i];
-                    }
+                        }
                     }
 
             - pop 把数组的最后一位弹出
-                - 无需添加参数，
+                - 无需添加参数。
 
             - shift:把数组的第一个元素从其中删除，并返回第一个原数组的值
-            - unshift在数组前添加元素，和push方向相反,可以对个同时添加
+            - unshift:在数组前添加元素，和push方向相反,可以对个同时添加
             - reverse:把原数组返回并翻转
             - splice:从第几为前开始，截取多少长度，在切口处添加新的数据
             - sort : 在元素组上对数组进行排序，并返回
@@ -84,7 +84,7 @@ es3.0
                             num++ ;
                         }
                     return num;
-                    }
+                        }
                     }
 
                     arr.sort(function(a,b){
