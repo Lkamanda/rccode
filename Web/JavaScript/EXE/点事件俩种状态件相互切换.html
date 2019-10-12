@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div></div>
+    使用计数器
+    <script>
+        var div = document.getElementsByTagName('div')[0];
+        div.style.width = '100px';
+        div.style.height = '100px';
+        div.style.backgroundColor = 'red';
+        var count = 0;
+        div.onclick = function(){
+
+
+            count ++;
+            if(count % 2 == 1){
+                this.style.backgroundColor = 'green';
+                this.style.width = "400px";
+                this.style.height = "50px";
+                this.style.borderRadius = '50%';
+
+            }else{
+                this.style.backgroundColor = 'red';
+                this.style.width = '200px';
+                this.style.height = '200px';
+                this.style.borderRadius = '0%';
+            }
+        }
+    </script>
+</body>
+</html>

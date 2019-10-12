@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+    <!--        创建一个标签-->
+        var div = document.createElement('div');
+<!--            将js中的标签放到html中-->
+        document.body.appendChild(div);
+        div.style.width = "100px";
+        div.style.height = "100px";
+        div.style.backgroundColor = "red";
+        div.style.position = "absolute";
+        div.style.left = "0";
+        div.style.top = "0";
+<!--    每隔100（参数）毫秒执行一次 -->
+        var speed = 1;
+        var timer = setInterval(function(){
+            speed += speed/7;
+            div.style.left = parseInt(div.style.left) + 4 + "px";
+            div.style.top = parseInt(div.style.top) + 5+"px";
+            if(parseInt(div.style.top) > 200 && parseInt(div.style.left)> 200){
+                clearInterval(timer);
+            }
+        }, 10);
+
+    </script>
+</body>
+</html>

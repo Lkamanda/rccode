@@ -1,1 +1,9 @@
-水电费
+- 选中页面标签方法方法
+    - document.getElementByTagName('div')[0]
+    - div.onclick = function(){
+        this,style.backgroundColor = 'green';
+        this.style.width = '400px';
+        this.style.height = '400px';
+    }
+
+    -
