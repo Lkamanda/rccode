@@ -1,0 +1,33 @@
+/*div{
+	width: 100px;
+	height: 100px;
+	border-radius:50%;
+	background-color:black;
+}*/
+
+/*id选择器*/
+#only{
+	background-color:red;
+}
+
+/*class*/
+.demo{
+	background-color:green;
+}
+
+.demo1{
+	color:#f40;
+}
+
+/*标签选择器*/
+div{
+	background-color:red;
+}
+
+span{
+	background-color:green;
+}
+
+*{
+	background-color:red;
+}

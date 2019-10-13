@@ -1,0 +1,63 @@
+/*分组选择器*/
+/*div ,
+em,
+span{
+	background-color: red;
+}
+div{
+	font-weight:bolder；
+}
+*/
+
+div{
+	font-size:20;
+	border:1px solid black;
+	text-align:center;
+	line-height: 1.2em;
+	height:200px;
+	text-indent:1em;
+	text-decoration: line-through;
+}
+
+/*
+span{
+	text-decoration:underline;
+	color:rgb(0 , 0, 258);
+	cursor:help;
+}*/
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+	color:f40;
+	font-weight:bold;
+	font-family: arial;
+	background-color:fff;
+	font-size:20;
+
+}
+
+/*span:hover{
+	background-color:red;
+}
+*/
+
+/*div{
+	height:100px;
+	width:100;
+	background-color: f40;
+}
+*/
+
+
+img{
+
+	width:100;
+	margin-left:-6;
+}
+
+
+

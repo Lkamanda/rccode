@@ -1,0 +1,62 @@
+<!-- 实现新浪搜索样式
+1.输入框默认显示：请输入关键字
+2.鼠标聚焦，默认关键字消失， 鼠标失去聚焦，关键字重现
+3.输入框输入除：默认关键字 鼠标失去聚焦不消失
+4.用户输入关键字和默认关键字：字体·不一样 -->
+<html>
+<head>
+	<title>lesson1 exe</title>
+	<meta charset='utf-8'>
+</head>
+<body>
+	<h1>
+		chose your favorite fruit
+	</h1>
+	<form method='get' action=''>
+		1.apple<input type='radio' name='fruit' value='apple'>
+		2.banana<input type='radio' name='fruit' value='banana'>
+		3.orange<input type='radio' name='fruit' value='orange'>
+		<input type='submit'>
+	</form>
+
+	<form method='get' action=''>
+		1.apple<input type='checkbox' name='fruit' value='apple'>
+		2.banana<input type='checkbox' name='fruit' value='banana'>
+		3.orange<input type='checkbox' name='fruit' value='orange'>
+		<input type='submit'>
+	</form>
+	
+
+	<form method='get' action=''>
+
+		搜索<input type='text' name='username'  style='color:#999'value=请输入关键字 onfocus="if(this.value=='请输入关键字'){this.value='';this.style.color='#424242'}" onblur="if(this.value==''){this.value='请输入关键字';this.style.color='#999'}">
+		
+		<!-- <p>
+		<input type='text' name='password'>
+		</p> -->
+		<input type='submit'>
+	</form>
+	chose your sex!
+	<form method='get' action=''>
+		male:<input type='radio' name='sex' value='male' checked='checked'>
+		famale:<input type='radio' name='sex' value='famel'>
+		<input type='submit'>
+	</form>
+
+	
+	<form method='get' action=''>
+		<h2>choice you province</h2>
+		<select name='province'>
+			<option>黑龙江</option>
+			<option>北京</option>
+			<option>天津</option>
+		</select>
+		<input type="submit">
+	</form>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+.ceshi{
+	background-color: green;
+}
+
+span{
+	background-color:red;
+}
+
+/*
+*{
+	background-color:green;
+}*/
+
+div{
+	background-color:red!important;
+}

@@ -1,0 +1,207 @@
+结构 样式 行为  相分离
+cascading style sheet 层叠样式表
+引入css
+
+1.行间样式
+<div style="
+	width:100px;
+	height:100px;
+	background-color:red;
+
+"></div>
+2.页面级别
+<head>
+	<meta charset="UTF-8">
+	<title>document</title>
+	<style type='text/css'>
+	div{
+		width:100px;
+		height:100px;
+		background-color:red;
+	}
+	</style>
+</head>
+
+3.外部文件引入
+4.选择器
+1）id 选择器  #id值
+2）class 选择器 .class值
+3）标签选择器
+div{
+	background-color:red;
+}
+4)通配符选择器  适用于整片文档
+*{
+	background-color:red;
+}
+5)行间样式
+<div style=""></div>
+6）属性选择器
+[id="only"]{
+
+}
+
+5.选择器优先级
+
+！important > 行间样式 > id > class | 属性 > 标签 > 通配符 
+
+在优先级相同时，谁先出现，谁生效
+
+
+6.css 权重
+!important          infinity
+行间样式             1000
+id                  100
+class | 属性值 | 伪类  10
+标签  | 伪元素         1
+通配符                0
+
+
+256 进制
+
+7.父子选择器，派生选择器   
+可以多层，没有特指一类的选择器，只要父子关系成立即可
+
+子孙也可以
+div span{
+	background-color:red;
+}
+
+
+div 下所有子span都可作用
+
+.demo div [id="123"]{
+	background-color:red;
+}
+
+
+8.直接子元素选择器   div > span 
+
+div > span {
+	background-color:red;
+}
+
+9.浏览器选择器顺序自右向左选
+10.并列选择器
+
+<div>1</div>
+<div class='demo'>2</div>
+<p class='demo'>3</p>
+
+只想将 <div class='demo'>2</div> 添加样式
+
+适用并列选择器
+div.demo{
+	background-color:red;
+}
+
+在权重相同的情况下，后来的先到，（即后定义的生效）
+
+11.分组选择器
+公用一个代码块
+
+div , .demo, #id{
+	background-color:red;
+}
+
+12.
+font-size ：16px	设置字体高
+
+font-weight：bold   字体加粗  <strong></strong>
+lighter normal bold bolder 100 - 900
+
+font-style: italic ;  <em></em>  斜体
+
+font-size: arail;     设置字体
+
+color 设置字体颜色
+
+- 字体颜色设置
+1） color：red
+2）颜色代码
+光学三原色
+r 		g		b
+# 00-ff 
+#000000 正黑 #ff0000 正红 #00ff00 正黑 #0000ff 正蓝
+如果每俩位都是相同的可以简写
+color:#f40; 
+3）颜色函数
+color:rgb(0-255, 0-255, 0-255)
+
+border 给容器增加一个盒子，添加外边框
+- 参数
+	border-width 1px 粗细
+	border-style soild  实心
+	border-color black 颜色   
+
+border: 1px soild black; 
+
+border-width 1px 粗细
+border-style soild  实心 dotted 点状虚线 dash 条状虚线
+border-color:  颜色
+
+transparent 透明色
+
+div{
+	font-style:italic;
+	color:#f40;
+	border:100px solid;
+	width:0px;
+	height:0px;
+	border-left-color:#f40;
+	border-top-color:transparent;
+}
+
+
+/*三角形*/
+div{
+	border:100px solid #f40;
+	width:0px;
+	height:0px;
+	border-left-color:#f40;
+	border-top-color:transparent;
+	border-right-color:transparent;
+}
+
+6)属性文本
+- 对其方式 
+text-align
+	- 参数 left center right 
+
+- line-height 单行文本所占高度
+
+- 单行文本水平垂直居中
+	text-algin :algin 
+	然后让单行文本高度等于容器高度
+
+div{
+	border: 1px solid black;
+	text-align:center;
+	height: 200px;
+	line-height:200px;
+}
+- 首行缩进  text-indent:2em
+首行缩进2个字符
+
+- em 相对
+1 em = 1 * front-size
+
+- 文本装饰 
+	- 中华线
+	text-decoration: line-through
+
+	- 无线
+	<del style='text-decoration:none'>原价50</del>
+
+	- 下划线
+	text-decoration: underline
+
+
+
+
+
+
+
+
+
+

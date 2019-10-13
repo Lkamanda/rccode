@@ -1,0 +1,105 @@
+HTML 
+super text markup language 超文本编辑语言
+<html></html> 跟标签 
+<head></hea> <body></body>结构化标签
+lang =""是告诉互联网爬虫该网站是关于什么的
+<p></p>paragraph 段落标签 使内容成段展示
+<h1></h1> 标题标签:独成一段，更改字体大小，字粗字体
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+
+
+<strong>字体加粗标签</strong>
+<em>斜体显示</em>
+<strong><em>斜体加粗</em></strong>标签嵌套
+<del>在文本上加横线 表示删除<del>
+<address></address>成段展示斜体
+
+<div></div>独占一行
+<span></span>
+分块展示，充当容器，可以绑定操作
+color:f40淘宝红
+
+html编码
+&nbsp; 空格文本
+&lt;  表示< less than 
+&gt; 表示> great than
+
+单标签
+换行符号 <br>
+水平线 <hr>
+
+- 有序列表 order list 
+		<ol type="1">   或a A i
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>	
+
+	- 逆序： reversed="reversed"
+	- 从第几开始排 start="1"
+- 无序列表. unorder list 
+		<ul type=""> discircle 实心圆  square circle 实心空心圆
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>	
+
+
+
+图片:标签
+<img scr=“”> 存放图片地址 
+	- url， 绝对/相对路径
+	- atl :图片报错时展示的信息
+	- tutle：鼠标悬停在图片上的提示信息
+	
+超文本引用 hyper text reference
+- 在本标签页打开
+1)anchor 锚  记录位置回到锚点位置
+<a href="https://baidu.com">www.baidu.com</a>
+- 使用 target="_blank" 实现新的标签跳转链接
+<a href="https://baidu.com" target=“—blank”>www.baidu.com</a>
+- style = "postion:fixed" 定点的方式
+2)- 打电话 tel：18612463553
+3)- 发邮件 maito：邮箱地址
+4)- 协议限制符：
+<a href="javascript:">点击链接强制运行javascript代码</a>
+
+
+form 表单  <from></form>
+
+单选框：
+<input type='radio' 统一name ，设置值
+	- onfucus : 聚焦
+	- onblur: 失去焦点
+
+默认选中： <input type='' checked="checked"	
+
+复选框	<input type='checkbox' name='', value=''>
+<form method='get' action=''>
+		1.apple<input type='checkbox' name='fruit' value='apple'>
+		2.banana<input type='checkbox' name='fruit' value='banana'>
+		3.orange<input type='checkbox' name='fruit' value='orange'>
+		<input type='submit'>
+</form>
+
+下拉框
+<select name=“下拉框名称”>
+	<option>内填value值</option>
+	<option>内填value值</option>
+	<option>内填value值</option>
+
+</select>
+
+主流浏览器及其内核
+IE             tridend
+fire fox 	   Gecko
+Google chrome  webkite/blink
+Safari         webkite
+Opera          presto
+
+
+
