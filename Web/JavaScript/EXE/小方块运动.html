@@ -5,6 +5,11 @@
     <title>Title</title>
 </head>
 <body>
+    <button style="width:100px;height:50px;background:linear-gradient(
+        to left, #999, #000, #432, #fcc);position:fixed;right:0;top:50%;text-align:center;line-height:50px;color:#fff;
+font-size:25px;font-family:arial;"
+    >按钮</button>
+
     <script type="text/javascript">
     <!--        创建一个标签-->
         var div = document.createElement('div');
@@ -16,16 +21,52 @@
         div.style.position = "absolute";
         div.style.left = "0";
         div.style.top = "0";
+
 <!--    每隔100（参数）毫秒执行一次 -->
-        var speed = 1;
-        var timer = setInterval(function(){
-            speed += speed/7;
-            div.style.left = parseInt(div.style.left) + 4 + "px";
-            div.style.top = parseInt(div.style.top) + 5+"px";
-            if(parseInt(div.style.top) > 200 && parseInt(div.style.left)> 200){
-                clearInterval(timer);
+<!--        var speed = 1;-->
+<!--        var timer = setInterval(function(){-->
+<!--            speed += speed/7;-->
+<!--            div.style.left = parseInt(div.style.left) + 4 + "px";-->
+<!--            div.style.top = parseInt(div.style.top) + 5+"px";-->
+<!--            if(parseInt(div.style.top) > 200 && parseInt(div.style.left)> 200){-->
+<!--                clearInterval(timer);-->
+<!--            }-->
+<!--        }, 10);-->
+
+<!--        会传递过来一个事件对象，这个时间对象包裹着这个事件发生时候的所有信息-->
+
+        var btn = document.getElementsByTagName('button')[0];
+
+        var time = new Date().getTime();
+
+        var speed = 5;
+
+        document.onkeydown = function(e){
+            switch(e.which){
+<!--                上-->
+                case 38:
+                    div.style.top = parseInt(div.style.top) - speed + "px";
+                    break;
+<!--                 下-->
+                case 40:
+                    div.style.top = parseInt(div.style.top) + speed + "px";
+                    break;
+<!--                    左-->
+                case 37:
+                    div.style.left = parseInt(div.style.left) - speed +"px";
+                    break;
+<!--                    右-->
+                case 39:
+                    div.style.left= parseInt(div.style.left)  + speed + "px";
+                    break;
             }
-        }, 10);
+        }
+
+        btn.onclick = function(){
+            speed += 10;
+            console.log(speed);
+        }
+
 
     </script>
 </body>
