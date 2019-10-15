@@ -34,9 +34,9 @@ html编码
 
 - 有序列表 order list 
 		<ol type="1">   或a A i
-			<li></li>
-			<li></li>
-			<li></li>
+			<li img-data="0"><li>
+			<li img-data="0"><li>
+			<li img-data="0"><li>
 		</ol>	
 
 	- 逆序： reversed="reversed"
