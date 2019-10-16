@@ -1,7 +1,47 @@
-- XML XHTML  html4.0
+- sublime
+    - package control
+    - install package
+    - emmet
+    - Jsprettify
+
+ XML XHTML  html4.0
 - setInterval(function(){},time)
     - 每间隔多少秒执行一次function中的代码
+
+
 - DOM - > Document Object Model
     - Dom 定义了表示和修改文档所需的方法dom对象即为宿主对象，有浏览器厂商定义，用来操作html和xml功能的一类对象集合
       Dom 是对HTML以及XML的编程接口
     - 操作不了css样式表，但可以通过改变html行间样式间接改变
+
+    1.对节点增删改查
+        - 查 （查看元素节点）
+            - document 代表整个文档
+            - document.getElementById('')  //元素在Ie8以下的浏览器，不区分大小写，而且返回的内容也会和name名相匹配(如果这个元素没有id，name值等于id也会被选出)
+            - document.getElementsByTagName('')  // 标签名 返回的是一个类数组
+            - document.getElementsClassName('')  // 类名 i9以下的浏览器没有
+            - document.getElementsByName('')  // 只有部分标签可生效（表单，表单元素（input），img，iframe）
+
+            querySelector() 得到的是实时的
+            - querySelector() // css选择器 在ie7和ie7以下的版本中没有
+                - var div = document.querySelector('div > span > strong.demo1');
+            - querySelectorAll() // css选择器在ie7 和ie7以下的版本没有 (选一组)
+
+        - 遍历节点树:（所有浏览器都兼容）
+            - parentNode -> 父节点（最顶端的parentNode 为document）;
+            - childNodes ->子节点们
+            - firstChild - >第一个子节点
+            - lastChild - > 最后一个子节点
+            - nextSibling - > 后一个兄弟节点
+            - previousSibling -> 前一个兄弟节点
+
+        - 遍历元素节点树（除了chidren ，ie9一下都不兼容）
+            - parentElement -> 返回当前元素的父元素节点（IE不兼容）
+            - children - >  只返回当前元素的元素子节点
+            - node.childElementCount == node.children.length 当前子元素节点的个数
+            - firstElementChild  -> 返回第一个元素节点（IE不兼容）
+            - lastElementChild - > 返回最后一个元素节点
+            - nextElementSibling - > 返回下一个兄弟元素节点
+            - previousElementSibling -> 返回前一个兄弟元素节点
+
+
