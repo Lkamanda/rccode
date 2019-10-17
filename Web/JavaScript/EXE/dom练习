@@ -1,0 +1,42 @@
+1.遍历元素节点树（在原型链上编程）
+2.封装函数返回元素e的第n层祖先元素节点
+3.封装函数，返回元素e的第n个兄弟元素节点，n为后面的兄弟元素节点，n为负，返回前面，n为
+0，返回自己的
+4.编辑函数，封装myChildren功能,解决以前部分浏览器的兼容问题
+5.自己封装hasChildren()方法，不可用children属性
+- 新浪，58，淘宝
+
+
+
+1.
+        var div = document.getElementsByClassName('demo')[0],
+            temp = {
+                length: 0,
+                push: Array.prototype.push,
+                splice:Array.prototype.splice,
+            }
+
+        var test = function(e){
+            for (var i=0;i< e.childNodes.length; i++){
+               if(e.childNodes[i].nodeType === 1){
+                    console.log(e.childNodes[i]);
+                    temp.push(e.childNodes[i]);
+               }
+            }
+            console.log(temp);
+            return temp;
+        }
+
+2.
+           var retParent = function(e, n){
+            for(var i = 0; i < n; i++)
+                e = e.parentElement;
+            }
+            return e;
+        }
+
+3.
+
+
+
+

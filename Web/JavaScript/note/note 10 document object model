@@ -44,4 +44,36 @@
             - nextElementSibling - > 返回下一个兄弟元素节点
             - previousElementSibling -> 返回前一个兄弟元素节点
 
+        - 节点的四个属性
+            - nodeName
+                - 元素的标签名，以大写形式标识，只读
+
+            - nodeValue
+                - Text节点或Comment(注释)节点的文本内容，可读写
+
+            - nodeType
+                - 该节点的类型，只读
+
+            - attributes
+                - Element 节点的属性集合
+                    <div id="only" class="demo"></div>
+
+                    var div = document.getElementsByNameTagName('div')[0];
+
+                    console.log(div.attributes)
+                    {0: id, 1: class, id: id, class: class, length: 2}
+
+
+        - 节点的一个方法 Node.hasChildNodes(); 判断该节点是否有子节点
+
+        - 节点的类型
+            - 元素节点 -1
+            - 属性节点 -2
+            - 文本节点 -3
+            - 注释节点 -8
+            - document -9
+            - DocumentFragment - 11
+
+
+
 
