@@ -35,8 +35,50 @@
             return e;
         }
 
+
+          function retParent(elem, n){
+            while(elem && n){
+                elem = elem.parentElement;
+                n --;
+            }
+            return elem;
+        }
+
+
 3.
 
+    var div = document.getElementsByClassName('demo')[0];
+        var strong = document.getElementsByTagName('strong')[0]
+        var retSibling = function(e, n){
+            num = Math.abs(n);
+            console.log(num);
+            if(n>0){
+                for (var i = 0;i<num; i++){
 
+                    e = e.nextElementSibling;
+                }
+            }else if(n<0){
+                for(var i = 0; i<num; i++){
 
+                    e = e.previousElementSibling;
+                }
+            }else{
+                e = e;
+            }
+            return e;
+        }
 
+4.
+
+<!--    children 方法的实现-->
+        Element.prototype.myChildren = function(){
+            var child = this.childNodes;
+            var len = child.length;
+            var arr = [];
+            for (var i = 0; i < len; i++){
+                if (child.nodeType == 1){
+                    arr.push(child[i]);
+                }
+            }
+            return arr;
+        }

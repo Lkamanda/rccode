@@ -5,41 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-
-    <div id="only" class="demo">
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
-        <div></div>
-        <strong></strong>
-            <div>
-                <p></p>
-            </div>
-            <span></span>
+    <div>
+        <span>
+            <strong>
+                <em></em>
+            </strong>
+        </span>
+    </div>
+    <div>
         <p></p>
     </div>
     <script type="text/javascript">
-        var div = document.getElementsByClassName('demo')[0];
-        var strong = document.getElementsByTagName('strong')[0]
-        var retSibling = function(e, n){
-            num = Math.abs(n);
-            console.log(num);
-            if(n>0){
-                for (var i = 0;i<num; i++){
+        var retNode = function(e){
+            var arr = [],
+                child = e.childNodes
 
-                    e = e.nextElementSibling;
-                }
-            }else if(n<0){
-                for(var i = 0; i<num; i++){
 
-                    e = e.previousElementSibling;
-                }
-            }else{
-                e = e;
-            }
-            return e;
         }
     </script>
-
 </body>
 </html>

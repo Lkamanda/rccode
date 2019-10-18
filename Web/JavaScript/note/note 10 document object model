@@ -74,6 +74,61 @@
             - document -9
             - DocumentFragment - 11
 
+        - 节点的四个属性
+            - nodeName
+                - 元素的标签名，以大写形式表示，只读
+            - nodeValue
+                - Text节点或comment节点的文本内容，可读写
+            - nodeType（常用）
+                - 该节点的类型，只读
+            - attributes
+                - Element节点的属性集合
+
+            - 节点的一个方法Node.hasChildNodes();
+
+- Dom结构树
+Node: Document - HTMLDocument
+               - XMLDocument
+      CharacterData - Text
+                    - Comment - HTMLHeadElement
+                              - HTMLBodyElement
+                              - HTMLTitleElement
+                              - HTMLParagraphElement
+                              - HTMLInputElement
+                              - HTMLTableElement
+
+      Element - HTMLElement
+      Attr
+
+-
+document --> HTMLDocument.prototype --> Document.prototype
+
+    -1.getElementById方法定义在Document.prototype上
+    -2.getElementsByName方法定义在HTMLDocument.prototype上，即非html中document不能使用
+    -3.getElementsByTagName方法定义在Document.prototype和Element.prototype上
+    -4.HTMLDocument.prototype定义了一些常用的属性，body，head分别指代html中的<body><head>标签
+         - document.body  --> <body>
+         - document.head --> <head>
+    -5.Document.prototype上定义了documentElement属性，指代文档的根元素，在Html文
+    档中，他总是指代<html>元素
+        - document.documentElement --> <html></html>
+
+    -6.getElementsByClassName, querySelectorAll,querySelector 在Document.prototype,
+    Element.prototype
 
 
 
+- 如果想取div下的span
+    <div>
+        <span></span>
+    </div>
+    <span></span>
+
+
+    <script>
+        div = document.getElementsByTagName('div')[0];
+        span = div.getElementsByTagName('span')[0];
+    </script>
+
+- 选择所有标签
+var div = document.getElementsByTagName('*');
