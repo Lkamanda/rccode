@@ -47,26 +47,23 @@
 
 3.
 
-    var div = document.getElementsByClassName('demo')[0];
-        var strong = document.getElementsByTagName('strong')[0]
-        var retSibling = function(e, n){
-            num = Math.abs(n);
-            console.log(num);
-            if(n>0){
-                for (var i = 0;i<num; i++){
-
+        function retSibling(e, n){
+            while(e && n){
+                if(n>0){
                     e = e.nextElementSibling;
-                }
-            }else if(n<0){
-                for(var i = 0; i<num; i++){
-
+                    n --;
+                }else{
                     e = e.previousElementSibling;
+                    n ++;
                 }
-            }else{
-                e = e;
+
             }
             return e;
         }
+
+        var strong = document.getElementsByTagName("strong")[0];
+
+
 
 4.
 
