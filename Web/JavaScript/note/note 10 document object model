@@ -132,3 +132,48 @@ document --> HTMLDocument.prototype --> Document.prototype
 
 - 选择所有标签
 var div = document.getElementsByTagName('*');
+
+
+    - 2.创建dom节点
+        - var div = document.createElement('div'); 创建元素节点
+        - var text = document.createTextNode('邓哥'); 创建文本节点
+        - var comment.createComment('');  创建注释节点
+        - document.createDocumentFragment(); 创建碎片节点
+    -3.插入节点
+        - PARENTNODE.appendChild  插入元素节点(push) 剪切操作
+        - PARENTNODE.insertBefore(a, b);
+            在b的上方插入a insert a before b
+
+    - 删除节点：
+        - parent.removeChild();通过父节点
+        - child.remove();   节点自身删除
+    - 替换
+        - parent.replaceChild(new, origin)
+
+
+    - 3.div.innerHTML 改变/获取标签的HTML内容
+            <div>
+                <span>123</span>
+                <strong>234</strong>
+            </div>
+        div.innerHTML  ->
+        "
+        <span>123</span>
+        <strong>234</strong>
+        "
+
+        div.innerHTML = '123' 赋值 的话是覆盖
+
+    - 4.div.innerText 直接取文本
+        div.innerText  -> 123 234
+        innerText 里有其他层级结构，小心，会覆盖
+        不兼容fireFox / textContent(老版本ie不兼容)
+
+
+    - Element 节点的一些方法
+        - ele.setAttribute('class', 'demo')
+                            属性名， 属性值
+            - 给标签设置行间属性
+
+        - ele.getAttribute()
+

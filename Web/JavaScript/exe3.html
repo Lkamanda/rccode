@@ -3,37 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+<!--    <link rel="stylesheet" type="text/css" href="xl.css">-->
 </head>
 <body>
     <div>
-        <span></span>
-        <p></p>
-        <strong></strong>
-        <i></i>
-        <address></address>
+        <span>123</span>
+        <strong>234</strong>
     </div>
+
     <script type="text/javascript">
-        function retSibling(e, n){
-            while(e && n){
-                if(n>0){
-                    if(0 && e.nextElementSibling){
-                        e = e.nextElementSibling;
-
-                    }else{
-                        for(e = e.nextSibling; e && e.nodeType!= 1;e = e.nextSibling);
-                    }
-                    n --;
-                }else{
-                    e = e.previousElementSibling;
-                    n ++;
-                }
-
-            }
-            return e;
-        }
-
-        var strong = document.getElementsByTagName("strong")[0];
-
+        var div = document.getElementsByTagName('div')[0];
+        div.setAttribute('class', 'demo')
     </script>
+
 </body>
 </html>

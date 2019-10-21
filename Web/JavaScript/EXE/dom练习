@@ -1,4 +1,4 @@
-1.遍历元素节点树（在原型链上编程）
+z1.遍历元素节点树（在原型链上编程）
 2.封装函数返回元素e的第n层祖先元素节点
 3.封装函数，返回元素e的第n个兄弟元素节点，n为后面的兄弟元素节点，n为负，返回前面，n为
 0，返回自己的
@@ -64,6 +64,31 @@
         var strong = document.getElementsByTagName("strong")[0];
 
 
+
+        function retSibling(e, n){
+            while(e && n){
+                if(n>0){
+                    if(0 && e.nextElementSibling){
+                        e = e.nextElementSibling;
+
+                    }else{
+                        for(e = e.nextSibling; e && e.nodeType!= 1;e = e.nextSibling);
+                    }
+                    n --;
+                }else{
+                    if(e.previousElementSibling){
+                        e = e.previousElementSibling;
+                    }else{
+                        for(e = e.previousSibling; e && e.nodeType != 1;e = e.nextSibling);
+                    }
+                    n ++;
+                }
+
+            }
+            return e;
+        }
+
+        var strong = document.getElementsByTagName("strong")[0];
 
 4.
 
