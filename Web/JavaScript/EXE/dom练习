@@ -104,3 +104,18 @@ z1.遍历元素节点树（在原型链上编程）
             }
             return arr;
         }
+
+5.请编写一段javascript脚本，申城轩面这段dom结构吗，要求使用标准的dom方法火属性
+<div class="exmple">
+    <p class='slogan'>小林</p>
+</div>
+
+
+       var div = document.createElement('div');
+       var p = document.createElement('p');
+       var text = document.createTextNode('小林');
+       document.body.appendChild(div);
+       div.appendChild(p);
+       div.setAttribute('class', 'example');
+       p.setAttribute('class', 'sdf');
+       p.appendChild(text);

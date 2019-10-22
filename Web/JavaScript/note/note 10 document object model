@@ -175,5 +175,8 @@ var div = document.getElementsByTagName('*');
                             属性名， 属性值
             - 给标签设置行间属性
 
-        - ele.getAttribute()
+        - ele.getAttribute('class')
+            - 获取标签属性值
+
+
 
