@@ -119,3 +119,37 @@ z1.遍历元素节点树（在原型链上编程）
        div.setAttribute('class', 'example');
        p.setAttribute('class', 'sdf');
        p.appendChild(text);
+
+6.封装insertAfter():功能类似insertBefore
+    - 可以忽略老版浏览器，直接在Element.prototype上编程
+
+       insertBefore(a,b) insertBefore a Before b
+
+       insertAfter(a, b) insert a after b
+
+       Element.prototype.insertAfter = function(a, b){
+            b = document.getElementByTagName(b)[0];
+            b.appendChild(a);
+       }
+
+
+7.将目标节点内部的节点顺序逆序
+eg:<div><a></a><em></em></div>
+   <div><em></em><a></a></div>
+
+
+   var revNodes = function(){
+   var div = document.getElementsByTagName('div')[0];
+
+       console.log(div.childNodes);
+       console.log(div.childNodes.length);
+       for(var i = 0; i < div.childNodes.length; i++){
+       if(div.childNodes[i].nodeType == 1){
+       console.log(div.childNodes[i]);
+                }
+            }
+        }
+
+
+
+

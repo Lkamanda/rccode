@@ -10,11 +10,26 @@
 
 </head>
 <body>
-    <div class="小林" id="123"></div>
+    <div class="小林" id="123">
+        <span></span>
+        <p></p>
+        <strong></strong>
+    </div>
     <script type="text/javascript">
-       var div = document.getElementsByTagName('div')[0];
-       div.className = 'xl';
-       div.id = '1234';
+        Element.prototype.insertAfter = function(targetNode, afterNode){
+            var beforeNode = afterNode.nextElementSibling;
+            if(beforeNode == null){
+                afterNode.appendChild(targetNode);
+            }else{
+                this.insertNode = insertBefore(targetNode, beforeNode)
+            }
+        }
+        var div = document.getElementsByTagName('div')[0];
+        var b = document.getElementsByTagName('b')[0];
+        var p = document.createElement('p');
+        var span = document.getElementsByTagName('span')[0];
+        var strong = document.getElementsByTagName('strong')[0];
+
     </script>
 </body>
 </html>
