@@ -1,0 +1,26 @@
+- 日期对象，是系统提供好的
+    - 使用内置构造函数Date()构造日期对象
+    var date = new Date();
+    - getDate
+        date.getDate()
+        24 返回一个月的某一天（1-31）
+    - getDay()
+        - 返回星期几（零的时候是星期天）（0-6）
+    - getFullYear()
+        以四位数字返回年份
+    - getHours()
+        - 返回（0-23）
+    - getMinutes()
+        - 返回（0-59）
+    - getSeconds()
+        - 返回秒数
+
+    - date()
+        - 实例记录的是其从var 那一个刻的时间信息截取，不是实时的
+    - getMilliseconds()
+        - 返回对象的毫秒（0-9999）
+
+    - getTime()
+        - 返回1970年1月1日至今的毫秒数 纪元时间
+
+
