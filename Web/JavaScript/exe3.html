@@ -18,6 +18,19 @@
     </div>
     <script type="text/javascript">
         var date = new Date();
+        date.setMinutes(36);
+        date.setSeconds(10);
+        setInterval(function(){
+            console.log(new Date().getTime());
+            console.log(date.getTime());
+            var newDate = new Date();
+            if(newDate.getTime() - date.getTime() > 1000 && newDate.getTime() - date.getTime()< 10000){
+
+                console.log('到时间了')
+            }
+        },1000);
+
+
     </script>
 </body>
 </html>
