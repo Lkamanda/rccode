@@ -14,22 +14,17 @@
         <span></span>
         <b></b>
         <strong></strong>
-
     </div>
     <script type="text/javascript">
-        var date = new Date();
-        date.setMinutes(36);
-        date.setSeconds(10);
-        setInterval(function(){
-            console.log(new Date().getTime());
-            console.log(date.getTime());
-            var newDate = new Date();
-            if(newDate.getTime() - date.getTime() > 1000 && newDate.getTime() - date.getTime()< 10000){
+        var i = 0;
+        var timer = setInterval(function(){
 
-                console.log('到时间了')
+            console.log(i ++);
+            if(i>10){
+                clearInterval(timer);
             }
-        },1000);
-
+        }, 10);
+        var timer2 = setInterval(function(){},1000);
 
     </script>
 </body>

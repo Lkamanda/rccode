@@ -39,7 +39,46 @@
         - setSeconds()
             - 设置秒（0-59）
 
+        - setTime()
+            - 以毫秒设置时间
 
+    - 时间对象.toString
 
+    - 练习：
+        - 定时器
+        var date = new Date();
+        date.setMinutes(36);
+        date.setSeconds(10);
+        setInterval(function(){
+            console.log(new Date().getTime());
+            console.log(date.getTime());
+            var newDate = new Date();
+            if(newDate.getTime() - date.getTime() > 1000 && newDate.getTime() - date.getTime()< 10000){
 
+                console.log('到时间了')
+            }
+        },1000);
 
+        - 封装函数，打印当前年月日时分秒
+
+    - setInterval 定时器 (window上的方法)        定时循环器
+        - 每个setInterval 都会返回一个他的唯一标识（数字）
+        - 每隔time时间执行一次setInterval内的函数（不可以通过给变time来控制function的执行快慢）
+        var time = 1000;
+        setInterval(function(){
+            console.log('a');
+        }, time);
+
+    - clearInterval(setInterval的返回的唯一标识)
+        -  清楚定时器的方法
+                var i = 0;
+                var timer = setInterval(function(){
+
+                    console.log(i ++);
+                    if(i>10){
+                        clearInterval(timer);
+                    }
+                }, 10);
+
+    - setTimeout 隔了多timer执行
+        - setTimer(function(){}, timer)
