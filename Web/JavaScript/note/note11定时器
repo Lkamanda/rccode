@@ -80,5 +80,14 @@
                     }
                 }, 10);
 
-    - setTimeout 隔了多timer执行
-        - setTimer(function(){}, timer)
+    - setTimeout 推迟timer执行
+        - setTimeout(function(){}, timer)
+
+    - clearTimeout 清除setTimeout任务
+        timer = setTimeout(function(){
+            console.log(1);
+        },1000)
+
+
+
+
