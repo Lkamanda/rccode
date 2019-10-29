@@ -1,0 +1,59 @@
+/*div{
+    border:1px solid black;
+    text-align:left;
+    height:200px;
+    line-height: 20px;
+    text-indent:2em;
+}*/
+
+/*中华线*/
+em{
+    text-decoration:line-through;
+}
+
+/*文本装饰器：将斜线去掉*/
+del{
+	text-decoration:none;
+}
+
+/*模拟p标签*/
+span{
+	text-decoration:underline;
+	color:rgb(0, 0, 238);
+	cursor:pointer;
+}
+
+/*a{	
+	border:1px solid black;
+	font-height:100;
+}
+
+a:hover{
+	border:1px solid black;
+	font-height:100;
+	background-color: #f40;
+	color:#fff;
+	line-height: 100;
+	text-align:center;
+}*/
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+	background-color:f40;
+	color:#fff;
+	font-size:20px;
+	/*设置字体粗细*/
+	font-weight:bold;
+	/*设置段落字体*/
+	font-family:arial;
+	/*圆角*/
+	border-radius:10px;	
+}
+
+img{
+	height:100px;
+}

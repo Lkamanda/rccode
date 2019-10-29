@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-<!--    <link rel="stylesheet" type="text/css" href="xl.css">-->
+    <link rel="stylesheet" type="text/css" href="xl.css">
     <style type="text/css">
-        input{
-            border: 1px solid rgba(0,0,0,0.8);
-<!--            右对齐-->
-            text-align:right;
-            font-size: 20px;
-        }
+
     </style>
 
 </head>
@@ -18,17 +13,7 @@
     minutes:<input type="text" value="0">
     seconds:<input type="text" value="0">
     <script type="text/javascript">
-<!--        1.想让seconds显示 0-59每一次归零minutes加1-->
-    var minutes = document.getElementsByTagName('input')[0];
-    var seconds = document.getElementsByTagName("input")[0];
-    console.log(minutes.attributes["value"].value)
-    var minutesNum = 0;
-    var secondsNum = 0;
 
-    secondsTimer = setInterval(function(){
-        minutesNum ++;
-
-    },1000)
 
 
 

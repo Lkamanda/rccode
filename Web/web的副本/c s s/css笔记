@@ -23,6 +23,7 @@ cascading style sheet 层叠样式表
 </head>
 
 3.外部文件引入
+ <link rel="stylesheet" type="text/css" href="xl.css">
 4.选择器
 1）id 选择器  #id值
 2）class 选择器 .class值
@@ -166,7 +167,7 @@ div{
 6)属性文本
 - 对其方式 
 text-align
-	- 参数 left center right 
+	- 参数 left center right (左 中 右)
 
 - line-height 单行文本所占高度
 

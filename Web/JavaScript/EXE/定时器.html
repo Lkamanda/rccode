@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <link rel="stylesheet" type="text/css" href="xl.css">-->
+    <style type="text/css">
+        input{
+            border: 1px solid rgba(0,0,0,0.8);
+<!--            右对齐-->
+            text-align:right;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    minutes:<input type="text" value="0">
+    seconds:<input type="text" value="0">
+    <script type="text/javascript">
+<!--        1.想让seconds显示 0-59每一次归零minutes加1-->
+    var minutesNode = document.getElementsByTagName('input')[0];
+    var secondsNode = document.getElementsByTagName("input")[1];
+
+    var minutes = 0;
+    var seconds = 0;
+
+    var timer = setInterval(function(){
+        seconds ++;
+        if(seconds == 60){
+            minutes ++;
+            seconds = 0;
+        }
+        secondsNode.value = seconds;
+        minutesNode.value = minutes;
+        if(minutes == 3){
+            clearInterval(timer);
+        }
+    },10)
+
+
+
+
+    </script>
+</body>
+</html>
