@@ -56,4 +56,19 @@ a:hover{
 
 img{
 	height:100px;
+	margin-left:-6px;
 }
+
+/*# 初始化标签*/
+em{
+	font-style:normal;
+	text-decoration:none;
+	color:#c00;
+}
+
+ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+

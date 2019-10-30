@@ -1,0 +1,51 @@
+/*想让一个盒子在另一个盒子居中显示：设置俩个盒子宽高相等，外面的盒子设置一定padding*/
+/*.wrapper{
+	width:100px;
+	height:100px;
+	background-color:red;
+	border:10px solid green;
+	padding:100px 50px;
+	margin:10px;
+}
+
+.content{
+	width:100px;
+	height:100px;
+	background-color:black;
+}
+*/
+
+/*计算和模型height weight*/
+/*div{
+	width:100px;
+	height:100px;
+	background-color:red;
+	border:10px solid black;
+	padding:10px 20px 30px;
+	margin:10px 20px;
+}
+*/
+
+body{
+	margin:0;
+}
+
+#my-defined{
+	width:100px;
+	height:100px;
+	padding:0 100px;
+	margin:10px 20px 30px 40px;
+	
+	border:1px solid orange;
+	background-color:orange;
+}
+
+
+
+
+
+
+
+
+
+
