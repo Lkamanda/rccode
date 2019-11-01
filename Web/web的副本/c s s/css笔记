@@ -181,10 +181,13 @@ div{
 	height: 200px;
 	line-height:200px;
 }
+
+(水平垂直居中的实现：1.text-align:center;容器高度=单行文本高度 line-height)
+
 - 首行缩进  text-indent:2em
 首行缩进2个字符
 
-- em 相对
+- em 相对字体的尺寸
 1 em = 1 * front-size
 
 - 文本装饰 
@@ -198,11 +201,118 @@ div{
 	text-decoration: underline
 
 
+总结：
+1.行级元素、内联 inLine (display:line)
+	- 内容决定元素所占位置
+	- feature：内容决定所占位置
+			   不可以通过css改变宽高
+	span strong em a del 
+
+2.块级元素 (display:block)
+	- feature：独占一行
+			   可以通过css改变宽高
+	div p ul li ol form address 
+
+3.行级块元素 (display:inline-block)
+feature：内容决定大小
+		 可以改宽高
+
+## 凡是带有inline的元素，都有文字特性
+
+- 先定义功能在选配功能
+- 标签选择器一般用来用来初始化元素
+
+- *{}通配符选择器
+	- 初始化所有标签
+	*{
+		padding:0;
+		margin:0;
+		list-style:noone;
+		text-decoration:none;
+	}
+
+- 盒子模型
+	- 盒子壁 border 
+	- 盒子内边距 padding
+	- 盒子内容 width + height;
+
+盒子模型：margin + border + padding + (content = width + height)
+		  外边距
+
+ 	- padding(上 右 下 左) 
+ 		- 三个值的时候() 左右相等
+ 		- 俩个值的时候() 上下相等，左右相等
+
+- /*透明度设置*/
+	opacity:0.5;
+
+- 定位
+	-position:absolute;  
+		- 1. 脱离原来位置进行定位
+		相对与最近的有定位的父级进行定位，如果没有相对与文档进行定位
+	- position:relative;       
+		- 2.保留原来位置进行定位
+		相对于原来位置的位置进行定位
+
+    - position:fixed 
+    	广告定位
+
+   	- z-index:0 默认值为0，级别越高优先显示，只在有position的情况下生效
 
 
+	-left:100px  左边线距离左边框的距离  / right 右边线距离右边框的距离
+	-top:100px   距离上边距的距离  / bottom 下边线距离下边框的距离
 
+	- 一般使用relative当做参照物，absolute进行定位
 
+	- 屏幕固定居中
+	.juzhong{
+		position:fixed;
+		height:200px;
+		width:200px;
+		left:50%;
+		top:50%;
+		/*盒子一半的值*/
+		margin-left:-100px;
+		margin-top:-100px;
+		background-color:red;
+	}
 
+	- 圆
+	.circular{
+	width:200px;
+	height:200px;
+	border:10px solid black;
+	border-radius:50%;
+	}
 
+- 垂直方向的margin-top父级和子集是连在一起的,取最大的值
+	- margin顶部塌陷
+	- 解决方法 bfc 
+	block format content  块级格式化上下文
+	特定的盒子会遵循另一套语法规则
+	- 如何触发一个盒子的bfc
+	1)positon:absolute;
+	2)display:inline-block;
+	3)float:left/right;  浮动
+	4)overflow:hidden; 溢出部分隐藏
 
+- 兄弟节点垂直方向的margin合并
+	- 将兄弟节点放到bfc环境中
+	- 忽略，默认其存在
 
+- 浮动模型
+	float:left/right;
+	1.浮动元素产生了浮动流
+	所有产生了浮动流的元素，块级元素看不到
+	他们，产生bfc的元素和文本类属性的元素以
+	及文本都能看到的浮动元素
+	能看到(inline, bfc)       (块级元素看不到)
+
+	2.清楚浮动流
+	父级包住浮动元素
+	clear：both
+	p{
+	border-top:0px solid green;
+	clear:both;
+    }

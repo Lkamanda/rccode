@@ -176,6 +176,6 @@ div.wrapper{
 .circular{
 	width:100px;
 	height:100px;
-	boeder:10px solid black;
+	border:10px solid black;
 	border-radius:50%;
 }

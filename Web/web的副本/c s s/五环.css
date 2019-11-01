@@ -1,0 +1,58 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.plat{
+	position:fixed;
+	left:50%;
+	top:50%;
+	border:5px solid black;
+	height:186px;
+	width:380px;
+	margin-left:-93px;
+	margin-top:-190px;
+
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5{
+	position:absolute;
+	width:100px;
+	height:100px;
+	border:10px solid black;
+	border-radius:50%;
+}
+
+.circle1{
+	border-color:red;
+	left:0;
+	top:0;
+}
+
+.circle2{
+	border-color:green;
+	left:130;
+	top:0;
+}
+
+.circle3{
+	border-color: yellow;
+	left:260;
+	top:0;
+}
+
+.circle4{
+	border-color:black;
+	left:65;
+	top:70;
+}
+
+.circle5{
+	border-color:purple;
+	left:195;
+	top:70;
+}
