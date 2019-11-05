@@ -312,7 +312,50 @@ feature：内容决定大小
 	2.清楚浮动流
 	父级包住浮动元素
 	clear：both
+
+	在浮动元素下添加：
 	p{
-	border-top:0px solid green;
 	clear:both;
     }
+
+- 伪元素：伪元素存在于任意一个元素里，俩个特殊 伪元素 before after 
+	在一个标签生成时：在标签内容前后就存在，俩个伪元素
+
+	1.可以当元素操作，但是没有元素结构
+	2.天生是行级元素，若想改成块级元素 display:inline-block;
+	3
+
+	<span>小林</span>
+
+	通过css选择器选中伪元素
+
+	span::before{
+	content:"成哥";
+    }
+
+	span::after{
+	content:"结尾";
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

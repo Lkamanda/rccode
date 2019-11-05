@@ -1,9 +1,16 @@
 /*浮动*/
 
 .wrapper2{
-
 	border:10px solid black;
 }
+
+/*将clear：both： 在伪元素中使用来解决清楚浮动流*/
+.wrapper2::after{
+	content:"";
+	clear:both;
+	display: block;
+}
+
 
 .content{
 	float:left;
@@ -18,8 +25,7 @@
 
 
 /*清楚浮动流*/
-p{
-	border-top:0px solid green;
+.clear{
 	clear:both;
 }
 
@@ -34,4 +40,11 @@ p{
 	width:150px;
 	height:150px;
 	background-color:green;
+}
+
+span{
+	width:100px;
+	height:100px;
+	display:inline-block;
+	background-color: red;
 }

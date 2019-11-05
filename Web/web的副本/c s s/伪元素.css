@@ -1,0 +1,11 @@
+span::before{
+	content:"成哥";
+	display:inline-block;
+	width:100px;
+	height: 100px;
+	background-color: red;
+}
+
+span::after{
+	content:"结尾";
+}
