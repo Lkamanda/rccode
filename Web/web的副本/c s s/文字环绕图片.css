@@ -1,0 +1,18 @@
+.img1{
+	width:100px;
+	height:100px;
+	float:left;
+	margin-right: 10px;
+}
+.img2{
+	width:100px;
+	height:100px;
+	float:right;
+	margin-right:10px;
+}
+
+.tex{
+	/*首行缩进*/
+	text-indent:2em;
+}
+
