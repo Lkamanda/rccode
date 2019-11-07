@@ -1,0 +1,55 @@
+*{
+	padding:0;
+	margin:0;
+	/*标准黑色*/
+	color:#424242;
+	/*字体*/
+	font-family:arial;
+}
+
+a{
+	/*去掉下划线*/
+	text-decoration:none;
+}
+
+.nav{
+	/*去掉ul。*/
+	list-style: none;
+/*	height:60px;
+	width:1000px;
+	border:2px solid red;*/
+}
+
+.nav .list-iterm{
+	float:left;
+	margin:0 10px;
+	height:30px;
+/*	width:100px;*/
+	text-align:center;
+	line-height: 30px;
+/*	border:1px solid black ;*/
+
+}
+
+.nav .list-iterm a{
+	font-weight: bold;
+	color:#f40;
+	/*将a标签改成行级块元素*/
+	display:inline-block;
+	height:30;
+	padding:0 5px;
+	border-radius:15px;
+}
+
+/*清楚浮动流*/
+.nav::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.nav .list-iterm a:hover{
+	cursor:pointer;
+	background-color: #f40;
+	color:#fff;
+}
