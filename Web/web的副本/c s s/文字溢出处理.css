@@ -5,10 +5,50 @@
 	font-family: arial;
 }
 
-
-p{
+.oneLine{
 	width:300px;
 	height:20px;
 	line-height: 20px;
-	border:2px solid black;
+	/*	border:2px solid black;*/
+
+	/*文字溢出不换行*/
+	white-space: nowrap;
+
+	/*溢出部分隐藏*/
+	overflow:hidden;
+
+	/*ellipsis: 省略号*/
+	text-overflow:ellipsis;
 }
+
+
+.twoLine{
+	width:300px;
+	height:40px;
+	line-height: 20px;
+	border:2px solid black;
+
+}
+
+.dog{
+	width:400px;
+	height:200px;
+	border:2px solid red;
+	margin: 30px 0;
+	background-image:url(../resoure/dog.jpg);
+	background-size:100px 200px;
+	background-repeat:no-repeat;
+}
+
+.tmall{
+	height:400px;
+	width:400px;
+	background-repeat:no-repeat;
+	background-image:url(../resoure/TMALL.png);
+/*	background-size:30px 190px;*/
+	display:inline-block;
+}
+
+
+
+

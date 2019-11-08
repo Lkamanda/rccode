@@ -338,8 +338,27 @@ feature：内容决定大小
     }
 
 
+- 溢出容器，要打点展示
+	1.单行文本
+		/*文字溢出不换行*/
+		white-space: nowrap;
 
+		/*溢出部分隐藏*/
+		overflow:hidden;
 
+		/*ellipsis: 省略号*/
+		text-overflow:ellipsis;
+
+	2.多行文本
+		- 多行只做截断
+		overflow:hidden;
+
+- 背景图片
+	- background-image:url(dog.jpg)
+	  background-image:url(../resoure/dog.jpg)
+
+	设置背景图片大小
+	- background-size:100px 100px;(宽 高)
 
 
 
