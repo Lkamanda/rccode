@@ -130,3 +130,47 @@ ul{
 .cover_top_ul_2_li_7{
 	width:70px;
 }
+
+
+.navigation_2{
+	height:100px;
+	width:1190px;
+	/*background-image:url(Resources/back_ground_navigation_2.png);*/
+}
+
+.navigation_2 .a{
+	display:block;
+	float:left;
+}
+
+.navigation_2.a::after{
+	content:"";
+	clear:both;
+}
+
+
+.list_fl_n2{
+	float: left;
+	width:1085px;
+	margin-top:15px;
+	border:10px solid green;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
