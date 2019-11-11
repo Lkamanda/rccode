@@ -40,15 +40,37 @@
 	background-repeat:no-repeat;
 }
 
-.tmall{
-	height:400px;
-	width:400px;
+.a a{
+	height:90px;
+	width:190px;
 	background-repeat:no-repeat;
 	background-image:url(../resoure/TMALL.png);
-/*	background-size:30px 190px;*/
 	display:inline-block;
+	border:1px solid black;
+	background-size: 190px 90px;
+
+	/*首行缩进190px 使文字溢出边框*/
+	text-indent:190px;
+
+	/*文字溢出：不换行*/
+	white-space: nowrap;
+
+	/*文字溢出隐藏*/
+	overflow:hidden;
+
 }
 
+.a1 a{
+	height:0px;
+	width:190px;
+	padding-top:90px;
+	background-repeat:no-repeat;
+	background-image:url(../resoure/TMALL.png);
+	display:inline-block;
+	border:1px solid black;
+	background-size: 190px 90px;
+	overflow:hidden;
+}
 
 
 
