@@ -354,19 +354,60 @@ feature：内容决定大小
 		overflow:hidden;
 
 - 背景图片
-	- background-image:url(dog.jpg)
-	  background-image:url(../resoure/dog.jpg)
+	- 设置背景图片的地址
+	 	background-image:url(dog.jpg)
+		background-image:url(../resoure/dog.jpg)
 
-	设置背景图片大小
-	- background-size:100px 100px;(宽 高)
+	- 设置背景图片大小
+		background-size:100px 100px;(宽 高)
+
+	- 设置背景图片是否重复
+		background-repeat:repeat;
+		默认值：repeat (重复)
+		no-repeat(不重复)
+		repeat-x (x轴平铺)
+		repeat-y (y轴平铺) 
+	- 设置背景图片位置
+    	background-position:x,y
+    	- left top / left bottom (left right top bottom center) 随机组合
+    	左上  左下
 
 
+- 当css和js被屏蔽时依然要展示页面
+	
+	方案1：
+	/*首行缩进190px 使文字溢出边框*/
+	text-indent:190px;
+
+	/*文字溢出：不换行*/
+	white-space: nowrap;
+
+	/*文字溢出隐藏*/
+	overflow:hidden;
+
+	方案2：
+	.a1 a{
+	height:0px;
+	width:190px;
+
+	background-repeat:no-repeat;
+	background-image:url(../resoure/TMALL.png);
+	display:inline-block;
+	border:1px solid black;
+	background-size: 190px 90px;
+
+	overflow:hidden;
+	padding-top:90px;
+	}
 
 
-
-
-
-
+- 特殊知识点：
+	- 行级（span strong em ）元素只能嵌套行级元素
+	- 块级元素只能嵌套块级元素 （div p ul li ol form address ）
+	- p 标签内不能嵌套块级元素
+	- a 标签不能嵌套a标签
+	
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 
 
