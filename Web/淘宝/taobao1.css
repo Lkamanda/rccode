@@ -10,20 +10,28 @@ ul{
 
 }
 
-.navigation_1{
-	width:1190px;
+
+.cover_top{
 	height:30px;
 	background-color:#f5f5f5;
+}
+
+
+
+.navigation_1{
+	margin:0 auto;
+	height:30px;
+	width:1190px;
 	border:1px solid black;
 }
 
 .cover_top_ul1{
-	width:359px;
+	/*width:359px;*/
 	height:30px;
 	float:left;
-	border:1px solid red;
+	/*border:1px solid red;*/
+	/*background-color:#f5f5f5;*/
 }
-
 
 
 .cover_top_ul_2_li_1::after,
@@ -83,8 +91,9 @@ ul{
 	width:606px;
 	height:30px;
 	border:1px solid red;
-	float:left;
-	margin-left: 150px;
+/*	float:left;
+	margin-left: 150px;*/
+	float:right;
 }
 
 
@@ -94,8 +103,7 @@ ul{
 .cover_top_ul_2_li_4,
 .cover_top_ul_2_li_5,
 .cover_top_ul_2_li_6,
-.cover_top_ul_2_li_7,
-.cover_top_ul_2{
+.cover_top_ul_2_li_7{
 	float:left;
 	border:1px solid red;
 	text-align: center;
@@ -103,19 +111,12 @@ ul{
 }
 
 
-.cover_top_ul_2_li_1{
-	width:70px;
-}
-
-.cover_top_ul_2_li_2{
-	width:70px;
-}
-
-.cover_top_ul_2_li_3{
-	width:70px;
-}
-
-.cover_top_ul_2_li_4{
+.cover_top_ul_2_li_1,
+.cover_top_ul_2_li_2,
+.cover_top_ul_2_li_3,
+.cover_top_ul_2_li_4,
+.cover_top_ul_2_li_6,
+.cover_top_ul_2_li_7{
 	width:70px;
 }
 
@@ -123,47 +124,41 @@ ul{
 	width:100px;
 }
 
-.cover_top_ul_2_li_6{
-	width:70px;
+
+.top-wrap{
+	height:97px;
+	border:1px solid green;
 }
 
-.cover_top_ul_2_li_7{
-	width:70px;
-}
-
-
-.navigation_2{
-	height:100px;
+.top-wrap.clearfix{
+	margin:0 auto;
 	width:1190px;
-	/*background-image:url(Resources/back_ground_navigation_2.png);*/
+	height:97px;
+	border:1px solid blue;
 }
 
-.navigation_2 .a{
-	display:block;
-	float:left;
-}
 
-.navigation_2.a::after{
-	content:"";
+.top-wrap.clearfix a::after{
+	content: "";
 	clear:both;
 }
 
 
-.list_fl_n2{
-	float: left;
-	width:1085px;
-	margin-top:15px;
-	border:10px solid green;	
+
+.top-wrap.clearfix a{
+	background-image:url(Resources/taobao_title.png);
+	background-repeat: no-repeat;
+	display:block;
+	margin-top: 20px;
+	margin-left:22px;
+	padding-top:58px;
+	width:142px;
+	height:0;
+	border: 1px solid red;
+	text-indent: 142px;
+	white-space: nowrap;
+	overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
 
 
 

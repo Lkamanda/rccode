@@ -1,0 +1,16 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.wrapper{
+	height:30px;
+	background-color: #123;
+}
+
+.content{
+	margin:0 auto;
+	height:30px;                                                                                                                    :30px;
+	width:1200px;
+	background-color: #0f0;
+}
