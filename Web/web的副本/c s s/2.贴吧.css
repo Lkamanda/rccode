@@ -1,0 +1,26 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+div{
+	width:200px;
+	line-height:20px;
+	height:20px;
+	font-family: arial;
+	font-size:14px;
+	color:rgba(255, 255, 255, 0.8);
+	background-color: blue;
+}
+
+
+div::before{
+	content:"";
+	display:inline-block;
+	width:12px;
+	height:11px;
+	background-image:url("");
+	background-size:100% 100%;
+	margin-left:5px;
+	vertical-align:;
+}
