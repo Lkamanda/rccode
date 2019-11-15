@@ -429,11 +429,44 @@ feature：内容决定大小
 	- 调整对齐线： 
 	 	vertical-align:n px; middle
 
+- 居中：
+	1.line-height  =  height
+	2.字体高度 = 容器高度 然后加padding
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+ 
+- 设置字体透明度：
+	color:rgba(255, 255, 255, 0.8);
 
+- 调整
+	vertical-align: -4px;
 
+1.html的基本结构
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+</body>
+</html>                                             
+2.常见的行级元素和块级元素
+行级：span  a strong em del  
+块级： div ul li p form 
 
+3.用户名密码提交表单
+	<form>
+		<span class="username">username:</span>
+		<input type="text" name="username"><br>
+		<span class="password">password:</span>
+		<input type='password' name='password'><br>
+		sex:<input type="radio" name="gender" value="male" checked="checked">Male
+		<input type="radio" name="gender" value="female">Female
+		<input type='submit'>
+	</form>
+
+4.position定位值的区别
+absolute：脱离原来的位置，与最近父级进行定位，如没有与文档进行定位
+relative：生成相对定位元素，相对与正常位置进行定位
+fixed: 相对与浏览器定位
 
 
 

@@ -232,16 +232,3 @@ ul{
 
 
 
-.fz-wrapper{
-	height:22px;
-	width: 627px;
-	border:1px solid green;
-}
-
-.fz-list-li{
-	line-height:22px;
-	text-align: center;
-	float:left;
-	height:22px;
-	width:627px;
-}
