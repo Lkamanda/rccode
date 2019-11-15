@@ -3,7 +3,8 @@
 	padding:0;
 }
 
-div{
+.style1{
+	padding:0 5px;
 	width:200px;
 	line-height:20px;
 	height:20px;
@@ -11,16 +12,74 @@ div{
 	font-size:14px;
 	color:rgba(255, 255, 255, 0.8);
 	background-color: blue;
+	border:1px solid red ;
 }
 
 
-div::before{
+.style1::before{
 	content:"";
 	display:inline-block;
 	width:12px;
 	height:11px;
-	background-image:url("");
+	background-image:url("../resoure/dog.jpg");
 	background-size:100% 100%;
-	margin-left:5px;
-	vertical-align:;
+	margin-right:5px;
+	vertical-align:-1px;
+
 }
+
+
+.style2{
+	height:30px;
+	line-height:30px;
+	padding:20px 0px;
+	font-size:30px;
+	border:1px solid red;
+	color:#FFFFF0;
+	font-family: arial;
+	background-color:blue;
+}
+
+
+.style2::before{
+	content:"";
+	display:inline-block;
+	background-image:url("../resoure/dog.jpg");
+	width:30;
+	height:30px;
+	background-size:100% 100%;
+	vertical-align: -4px;
+	margin:0 10px;
+}
+
+
+
+
+
+.style2::after{
+	content:"";
+	display:inline-block;
+	background-image:url("../resoure/dog.jpg");
+	width:30;
+	height:30px;
+	background-size:100% 100%;
+	vertical-align: -4px;
+	margin:0 10px;
+	float:right;
+}
+
+.username{
+	width:60px;
+	height:30px;
+}
+
+.password{
+	width:60px;
+	height:30px;
+}
+
+
+
+
+
+
