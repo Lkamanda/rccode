@@ -1,0 +1,39 @@
+.wrapper{
+	width:320px;
+/*	height:330px;*/
+	border:1px solid red;
+	color:#333;
+}
+
+.img1{
+	width:100px;
+	height:100px;
+	float:left;
+}
+
+/*.img1::after{
+	content:"";
+	display: inline-block;
+	clear:both;
+}
+*/
+.wrapper:hover{
+	height:400px;
+}
+
+.line1{
+	height:40px;
+	font-size: 20px;
+	line-height:20px;
+	margin-bottom: 8px;
+	/*display:inline-block;*/
+	border:1px solid green;
+	overflow: hidden;
+}
+
+.line2{
+	width:320px;
+	color: #666;
+	line-height: 1.2em;
+	font-size: 12px;
+}
