@@ -128,9 +128,10 @@ ul{
 .top-wrap{
 	height:97px;
 	border:1px solid green;
+	padding-top:34px;
 }
 
-.top-wrap.clearfix{
+.top-wrap-content{
 	margin:0 auto;
 	width:1190px;
 	height:97px;
@@ -142,8 +143,6 @@ ul{
 	content: "";
 	clear:both;
 }
-
-
 
 
 .top-wrap-content .taobao-png{
@@ -166,8 +165,14 @@ ul{
 	width:627px;
 	height:87px;
 	border:1px solid red;
-	/*float: left;*/
-	margin:5px 200px;
+	float: left;
+	margin-left:100px;
+	margin-top:5px;
+}
+
+.search::after{
+	content:"";
+	clear:both;
 }
 
 .search_title_list{
@@ -230,8 +235,8 @@ ul{
 }
 
 .fz-wrapper{
-	height:22px;
-	border:1px solid green;
+	height:20px;
+/*	border:1px solid green;*/
 }
 
 .fz-list-li{
@@ -257,6 +262,86 @@ ul{
 
 .fz-list-li::after{
 	content:"";
-
+	display: block;
 	clear:"both";
-};
+}
+
+.fz-list-li-red::after{
+	content:"";
+	display: block;
+	clear:"both";
+}
+
+
+/*二维码*/
+.qr{
+	float:right;
+	height:90px;
+	width:76px;
+	border: 1px solid blue;
+	text-align: center;
+	border:1px solid #eee;
+	background-color: #fff;
+	text-decoration: none;
+	margin:2px 80px;
+}
+
+
+
+.qr::after{
+	content:"";
+	clear:both;
+}
+.qr a{
+	text-decoration: none;
+}
+.qr a img{
+	height:62px;
+	width:62px;
+	margin:0 7px;
+	display:block;
+
+}
+
+.qr a span {
+	font-size:12px;
+	color:#ff5000;
+	height:76px;
+	margin:0 auto;
+	line-height: 20px;
+	margin:0 4px;
+}
+
+/*导航栏*/
+.main-nav-wrapper{
+	background-color: #ff5500;
+	height:30px;
+	border:1px solid red;
+}
+
+.main-nav{
+	margin: 0 auto;
+	height:30px;
+	width:1190px;
+	border:1px solid green;
+}
+
+.main-nav h2{
+	color:#ffffff;
+	background-color:#ff8200;
+	height:30px;
+	width:190px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid blue;
+}
+
+.main-nav-ul{
+	float:left;
+	display:inline-block;
+}
+
+.main-nav-ul::{
+	content:"";
+	clear:both;
+}
