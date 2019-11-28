@@ -79,9 +79,7 @@ with open(file="read.text", mode="r", encoding="utf-8") as f:
     print(new_line)
 
     for line in new_line:
-
         for i in line:
             if i.isalpha():
-                print(i)
-                i_list = i.strip()
-                print(i_list)
+                
+
