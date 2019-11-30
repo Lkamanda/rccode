@@ -71,8 +71,6 @@
 
 
 
-
-
 /**/
 
 .main-center{
@@ -80,4 +78,16 @@
 	height:520px;
 	border:1px solid black;
 	float: left;
+}
+.box{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	text-align: center;
+}
+.box1{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform:translate(-50%,-50%);
 }
