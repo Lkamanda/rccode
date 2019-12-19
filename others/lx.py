@@ -81,5 +81,6 @@ with open(file="read.text", mode="r", encoding="utf-8") as f:
     for line in new_line:
         for i in line:
             if i.isalpha():
-                
+                a = i[:len(i)+1]
+                print("1"+ a)
 
