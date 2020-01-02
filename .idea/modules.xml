@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/pythonjichu.iml" filepath="$PROJECT_DIR$/.idea/pythonjichu.iml" />
       <module fileurl="file://$PROJECT_DIR$/../ui_aut/.idea/ui_aut.iml" filepath="$PROJECT_DIR$/../ui_aut/.idea/ui_aut.iml" />
       <module fileurl="file://$PROJECT_DIR$/../vip04/.idea/vip04.iml" filepath="$PROJECT_DIR$/../vip04/.idea/vip04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../interface/.idea/vip_interfacetest.iml" filepath="$PROJECT_DIR$/../interface/.idea/vip_interfacetest.iml" />
     </modules>
   </component>
 </project>
